@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flazio DS: Accordion component</title>
+        <!-- Poppins font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://kit.fontawesome.com/340462d3b5.css"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container" style="max-width: 272px">
+            <section style="margin: 2rem auto">
+                <aside class="toolbar">
+                    <div class="editor-component">
+                        <p class="fw-medium mb-0">Margini</p>
+                        <div class="editor-component-body">
+                            <div class="toolbar-button-control">
+                                <span
+                                    for="font-weight"
+                                    class="form-label form-label-sm"
+                                    >Spaziatura orizzontale</span
+                                >
+                                <div class="btn-wrapper">
+                                    <a
+                                        class="btn btn-outline-info p-0 is-active"
+                                    >
+                                        <img
+                                            src="assets/images/padding-x-xs.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura orizzontale molto piccola"
+                                        />
+                                    </a>
+                                    <a class="btn btn-outline-info p-0">
+                                        <img
+                                            src="assets/images/padding-x-sm.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura orizzontale piccola"
+                                        />
+                                    </a>
+                                    <a class="btn btn-outline-info p-0">
+                                        <img
+                                            src="assets/images/padding-x-md.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura orizzontale media"
+                                        />
+                                    </a>
+                                    <a class="btn btn-outline-info p-0">
+                                        <img
+                                            src="assets/images/padding-x-lg.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura orizzontale larga"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <div class="toolbar-button-control">
+                                <span
+                                    for="font-weight"
+                                    class="form-label form-label-sm"
+                                    >Spaziatura verticale</span
+                                >
+                                <div class="btn-wrapper">
+                                    <a
+                                        class="btn btn-outline-info p-0 is-active"
+                                    >
+                                        <img
+                                            src="assets/images/padding-y-xs.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura verticale molto piccola"
+                                        />
+                                    </a>
+                                    <a class="btn btn-outline-info p-0">
+                                        <img
+                                            src="assets/images/padding-y-sm.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura verticale piccola"
+                                        />
+                                    </a>
+                                    <a class="btn btn-outline-info p-0">
+                                        <img
+                                            src="assets/images/padding-y-md.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura verticale media"
+                                        />
+                                    </a>
+                                    <a class="btn btn-outline-info p-0">
+                                        <img
+                                            src="assets/images/padding-y-lg.png"
+                                            height="44"
+                                            width="44"
+                                            alt="Spaziatura verticale larga"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="link fs-sm mt-3" href="#"
+                                >Configurazione avanzata
+                                <i class="fa-regular fa-arrow-right"></i
+                            ></a>
+                        </div>
+                        <div class="editor-component-body">
+                            <div class="toolbar-slider-control">
+                                <div class="toolbar-slider-control-header">
+                                    <div class="toolbar-slider-control-title">
+                                        <i
+                                            class="fa-regular fa-distribute-spacing-horizontal"
+                                        ></i>
+                                        <label
+                                            for="customRange3"
+                                            class="form-label form-label-sm mb-0"
+                                        >
+                                            Spaziatura orizzontale</label
+                                        >
+                                    </div>
+                                    <div class="btn-group">
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-minus"
+                                            ></i>
+                                        </button>
+                                        <input
+                                            type="text"
+                                            class="form-control form-control-sm"
+                                            value="16px"
+                                        />
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-plus"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-range-container">
+                                    <input
+                                        type="range"
+                                        class="form-range"
+                                        min="0"
+                                        max="40"
+                                        step="4"
+                                    />
+                                    <div class="form-range-ticks"></div>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <div class="toolbar-slider-control">
+                                <div class="toolbar-slider-control-header">
+                                    <div class="toolbar-slider-control-title">
+                                        <i
+                                            class="fa-regular fa-distribute-spacing-vertical"
+                                        ></i>
+                                        <label
+                                            for="customRange3"
+                                            class="form-label form-label-sm mb-0"
+                                            >Spaziatura verticale</label
+                                        >
+                                    </div>
+                                    <div class="btn-group">
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-minus"
+                                            ></i>
+                                        </button>
+                                        <input
+                                            type="text"
+                                            class="form-control form-control-sm"
+                                            value="16px"
+                                        />
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-plus"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-range-container">
+                                    <input
+                                        type="range"
+                                        class="form-range"
+                                        min="0"
+                                        max="40"
+                                        step="4"
+                                    />
+                                    <div class="form-range-ticks"></div>
+                                </div>
+                            </div>
+                            <a class="link fs-sm mt-3" href="#"
+                                >Configurazione semplice
+                                <i class="fa-regular fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <hr />
+                </aside>
+            </section>
+        </div>
+        <script src="form-range.js"></script>
+    </body>
+</html>

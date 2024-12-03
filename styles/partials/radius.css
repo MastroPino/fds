@@ -1,0 +1,9 @@
+:root {
+    --fds-radius-1: 0.5rem;
+    --fds-radius-2: 0.75rem;
+    --fds-radius-3: 1rem;
+    --fds-radius-4: 1.5rem;
+    --fds-radius-5: 2rem;
+    --fds-radius-circle: 50%;
+    --fds-radius-pill: 50rem;
+}

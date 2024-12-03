@@ -1,0 +1,10 @@
+.toolbar-text-format {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: var(--fds-spacer-2);
+
+    background-color: var(--fds-neutral-gray);
+    border-radius: var(--fds-radius-2);
+}

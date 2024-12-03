@@ -1,0 +1,140 @@
+:root {
+    /* Colors */
+    --fds-input-text-color: var(--fds-text-body);
+    --fds-input-bg-color: var(--fds-color-white);
+    --fds-input-border-color: var(--fds-border-input);
+    --fds-input-focus-border-color: #86b7fe;
+    --fds-input-focus-box-shadow-color: rgba(13, 110, 253, 0.25);
+    --fds-input-placeholder-color: var(--fds-text-placeholder);
+    --fds-input-disabled-bg-color: var(--fds-neutral-gray);
+    --fds-input-disabled-text-color: var(--fds-text-body);
+    --fds-input-label-color: var(--fds-text-body);
+
+    /* Typography */
+    --fds-input-font-size: var(--fds-input-font-size);
+    --fds-input-font-weight: var(--fds-fw-medium);
+    --fds-input-line-height: 1.5;
+    --fds-input-label-font-weight: var(--fds-fw-default);
+
+    /* Spacing */
+    --fds-input-padding-y: 0.5rem;
+    --fds-input-padding-x: 1rem;
+    --fds-input-padding-y-sm: 0.015rem;
+    --fds-input-padding-x-sm: 0.75rem;
+    --fds-input-padding-y-lg: 1rem;
+    --fds-input-padding-x-lg: 0.875rem;
+    --fds-input-label-margin-bottom: var(--fds-spacer-1);
+
+    /* Sizes */
+    --fds-input-height-sm: 2rem;
+    --fds-input-height: 2.5rem;
+    --fds-input-height-lg: 3.5rem;
+
+    /* Borders */
+    --fds-input-border-width: 1px;
+    --fds-input-border-radius: var(--fds-btn-border-radius);
+    --fds-input-border-radius-sm: var(--fds-btn-border-radius-sm);
+    --fds-input-border-radius-lg: var(--fds-btn-border-radius-lg);
+
+    /* Transitions */
+    --fds-input-transition: border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+/* Form controls base styles */
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: var(--fds-input-height);
+    padding: var(--fds-input-padding-y) var(--fds-input-padding-x);
+    font-size: var(--fds-input-font-size);
+    font-weight: var(--fds-input-font-weight);
+    line-height: var(--fds-input-line-height);
+    color: var(--fds-input-text-color);
+    background-color: var(--fds-input-bg-color);
+    background-clip: padding-box;
+    border: var(--fds-input-border-width) solid var(--fds-input-border-color);
+    border-radius: var(--fds-input-border-radius);
+    transition: var(--fds-input-transition);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Small inputs */
+.form-control-sm {
+    min-height: var(--fds-input-height-sm);
+    padding: var(--fds-input-padding-y-sm) var(--fds-input-padding-x-sm);
+    font-size: var(--fds-input-font-size-sm);
+    border-radius: var(--fds-input-border-radius-sm);
+}
+
+/* Large inputs */
+.form-control-lg {
+    min-height: var(--fds-input-height-lg);
+    padding: var(--fds-input-padding-y-lg) var(--fds-input-padding-x-lg);
+    font-size: var(--fds-input-font-size-lg);
+    border-radius: var(--fds-input-border-radius-lg);
+}
+
+.form-control:focus {
+    color: var(--fds-input-text-color);
+    background-color: var(--fds-input-bg-color);
+    border-color: var(--fds-input-focus-border-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--fds-input-focus-box-shadow-color);
+}
+
+.form-control::placeholder {
+    color: var(--fds-input-placeholder-color);
+    opacity: 1;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: var(--fds-input-disabled-bg-color);
+    opacity: 1;
+}
+
+/* Standard form label */
+.form-label {
+    display: inline-block;
+    color: var(--fds-text-body);
+    /* Poppins/03. Label/Label 1 */
+    font-family: var(--fds-font-family-base);
+    font-size: var(--fds-base-font-size);
+    font-style: normal;
+    font-weight: var(--fds-fw-medium);
+    line-height: 1rem; /* 100% */
+    margin-bottom: var(--fds-input-label-margin-bottom);
+}
+
+.form-label-sm {
+    font-size: var(--fds-font-size-sm);
+}
+
+.form-label-lg {
+    font-size: var(--fds-font-size-lg);
+}
+
+/* Textarea specific */
+textarea.form-control {
+    min-height: calc(
+        var(--fds-input-line-height) * var(--fds-input-font-size) +
+            var(--fds-input-padding-y) * 2 + 2px
+    );
+}
+
+textarea.form-control-sm {
+    min-height: calc(
+        var(--fds-input-line-height) * var(--fds-input-font-size-sm) +
+            var(--fds-input-padding-y-sm) * 2 + 2px
+    );
+}
+
+textarea.form-control-lg {
+    min-height: calc(
+        var(--fds-input-line-height) * var(--fds-input-font-size-lg) +
+            var(--fds-input-padding-y-lg) * 2 + 2px
+    );
+}

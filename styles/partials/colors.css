@@ -1,0 +1,120 @@
+/* WIP styles */
+:root {
+    --fds-border-color: #e0e0e0;
+    --fds-border-card: var(--fds-border-color);
+    --fds-neutral-gray: #f5f5f5;
+    --fds-border-input: #a9a9a9;
+    --fds-text-blue: var(--fds-color-info);
+    --fds-text-body: #384049;
+    --fds-text-body-secondary: #606e7c;
+    --fds-text-body-tertiary: var(--fds-text-placeholder);
+    --fds-text-placeholder: #7e8b98;
+    /* Brand primary */
+    --fds-color-primary: #0071f1;
+    /* Calcolato solo sul blue di Flazio, sarebbe opportuno integrare mixin su scss per ricavare automaticamente questi valori */
+    --fds-color-primary-light-95: #f2f8fe;
+    --fds-color-primary-light-90: #e5f1fe;
+    --fds-color-primary-light-80: #cce3fc;
+    --fds-color-primary-light-70: #b2d4fb;
+    --fds-color-primary-light-60: #99c6f9;
+    --fds-color-primary-light-20: #338df4;
+    --fds-color-primary-light-10: #1a7ff2;
+    --fds-color-primary-dark-10: #0066d9;
+    --fds-color-primary-dark-20: #005ac1;
+    --fds-color-primary-dark-30: #004fa9;
+    --fds-color-primary-dark-40: #004491;
+    --fds-color-primary-dark-50: #003979;
+    --fds-color-primary-dark-60: #002d60;
+    --fds-color-primary-dark-70: #002248;
+    --fds-color-primary-dark-80: #001730;
+    --fds-color-primary-dark-90: #000b18;
+    /* Complementary colors */
+    --fds-color-complementary: #f18000;
+    --fds-color-eye-catcher: #f10071;
+    /* Semantics */
+    --fds-color-danger: #ff4d4f;
+    --fds-color-info: #0091f0;
+    --fds-color-success: #00b994;
+    --fds-color-warning: #ffbf00;
+    /* Feedback colors */
+    --fds-color-attention-dark: #623300;
+    --fds-color-attention-light: #fdebd7;
+    --fds-color-confirmation-dark: #004b01;
+    --fds-color-confirmation-light: #edfeed;
+    --fds-color-error-dark: #850200;
+    --fds-color-error-light: #fee9e8;
+    --fds-color-info-dark: #003569;
+    --fds-color-info-light: #e8f7fc;
+    --fds-color-disabled-dark: #606e7c;
+    --fds-color-disabled-light: #cfd3d9;
+    /* Neutral colors */
+    --fds-color-white: #ffffff;
+    --fds-color-black: #000000;
+    --fds-color-neutral-05: #0d0d0d;
+    --fds-color-neutral-10: #1a1a1a;
+    --fds-color-neutral-20: #333333;
+    --fds-color-neutral-40: #666666;
+    --fds-color-neutral-60: #999999;
+    --fds-color-neutral-80: #cccccc;
+    --fds-color-neutral-90: #e5e5e5;
+
+    /* Danger light variations */
+    --fds-color-danger-light-95: #fff2f2;
+    --fds-color-danger-light-90: #ffe5e5;
+    --fds-color-danger-light-80: #ffcccc;
+    --fds-color-danger-light-70: #ffb2b2;
+    --fds-color-danger-light-60: #ff9999;
+    --fds-color-danger-light-20: #ff7373;
+    --fds-color-danger-light-10: #ff6060;
+
+    /* Danger dark variations */
+    --fds-color-danger-dark-10: #e64547;
+    --fds-color-danger-dark-20: #cc3d3f;
+    --fds-color-danger-dark-30: #b33537;
+    --fds-color-danger-dark-40: #992d2f;
+    --fds-color-danger-dark-50: #802527;
+    --fds-color-danger-dark-60: #661d1f;
+    --fds-color-danger-dark-70: #4d1617;
+    --fds-color-danger-dark-80: #330e0f;
+    --fds-color-danger-dark-90: #1a0707;
+
+    /* Success light variations */
+    --fds-color-success-light-95: #f2fdf9;
+    --fds-color-success-light-90: #e5faf4;
+    --fds-color-success-light-80: #ccf6ea;
+    --fds-color-success-light-70: #b2f2df;
+    --fds-color-success-light-60: #99eed5;
+    --fds-color-success-light-20: #33c7a6;
+    --fds-color-success-light-10: #1ac09d;
+
+    /* Success dark variations */
+    --fds-color-success-dark-10: #00a785;
+    --fds-color-success-dark-20: #009475;
+    --fds-color-success-dark-30: #008266;
+    --fds-color-success-dark-40: #006f57;
+    --fds-color-success-dark-50: #005d47;
+    --fds-color-success-dark-60: #004a38;
+    --fds-color-success-dark-70: #003829;
+    --fds-color-success-dark-80: #00251b;
+    --fds-color-success-dark-90: #00130d;
+
+    /* Focus light variations */
+    --fds-color-info-light-95: #f2f8fe;
+    --fds-color-info-light-90: #e5f1fd;
+    --fds-color-info-light-80: #cce3fb;
+    --fds-color-info-light-70: #b2d6f9;
+    --fds-color-info-light-60: #99c8f7;
+    --fds-color-info-light-20: #338ff3;
+    --fds-color-info-light-10: #1a82f1;
+
+    /* Focus dark variations */
+    --fds-color-info-dark-10: #0083d8;
+    --fds-color-info-dark-20: #0074c0;
+    --fds-color-info-dark-30: #0066a8;
+    --fds-color-info-dark-40: #005790;
+    --fds-color-info-dark-50: #004978;
+    --fds-color-info-dark-60: #003a60;
+    --fds-color-info-dark-70: #002c48;
+    --fds-color-info-dark-80: #001d30;
+    --fds-color-info-dark-90: #000f18;
+}

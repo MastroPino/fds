@@ -1,0 +1,32 @@
+:root {
+    --fds-font-family-base: "Poppins", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    --fds-font-family-heading: "Poppins", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+
+    --fds-font-size-base: 1rem; /* Base Font Size (16px) */
+    --fds-font-size-sm: 0.81rem;
+    --fds-font-size-xs: 0.69rem;
+    --fds-font-size-lg: 1.125rem;
+
+    --fds-fw-lighter: lighter;
+    --fds-fw-light: 300;
+    --fds-fw-normal: 400;
+    --fds-fw-medium: 500;
+    --fds-fw-semibold: 600;
+    --fds-fw-bold: 700;
+    --fds-fw-bolder: bolder;
+
+    --fds-lh-base: 1.5;
+    --fds-lh-base-sm: 1.2;
+    --fds-lh-base-lg: 2;
+
+    /* Titles */
+    --fds-h1-font-size: 2.19rem;
+    --fds-h2-font-size: 1.62rem;
+    --fds-h3-font-size: 1.25rem;
+    --fds-h4-font-size: 1.12rem;
+    --fds-h5-font-size: 1rem;
+}

@@ -1,0 +1,10 @@
+.editor-component {
+    display: flex;
+    flex-flow: column;
+    gap: var(--fds-spacer-3);
+    .editor-component-body {
+        display: flex;
+        flex-flow: column;
+        gap: var(--fds-spacer-2);
+    }
+}

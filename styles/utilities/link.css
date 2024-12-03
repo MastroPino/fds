@@ -1,0 +1,97 @@
+/* Base link styles */
+.link {
+    font-weight: var(--fds-fw-medium);
+
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+/* Link colors with underline matching */
+.link-primary {
+    color: var(--fds-primary);
+    text-decoration-color: var(--fds-primary);
+}
+.link-primary:hover {
+    color: var(--fds-primary-darker);
+    text-decoration-color: var(--fds-primary-darker);
+}
+
+.link-secondary {
+    color: var(--fds-secondary);
+    text-decoration-color: var(--fds-secondary);
+}
+.link-secondary:hover {
+    color: var(--fds-secondary-darker);
+    text-decoration-color: var(--fds-secondary-darker);
+}
+
+/* Feedback state links */
+.link-success {
+    color: var(--fds-success);
+    text-decoration-color: var(--fds-success);
+}
+.link-success:hover {
+    color: var(--fds-success-darker);
+    text-decoration-color: var(--fds-success-darker);
+}
+
+.link-danger {
+    color: var(--fds-danger);
+    text-decoration-color: var(--fds-danger);
+}
+.link-danger:hover {
+    color: var(--fds-danger-darker);
+    text-decoration-color: var(--fds-danger-darker);
+}
+
+.link-warning {
+    color: var(--fds-warning);
+    text-decoration-color: var(--fds-warning);
+}
+.link-warning:hover {
+    color: var(--fds-warning-darker);
+    text-decoration-color: var(--fds-warning-darker);
+}
+
+.link-info {
+    color: var(--fds-info);
+    text-decoration-color: var(--fds-info);
+}
+.link-info:hover {
+    color: var(--fds-info-darker);
+    text-decoration-color: var(--fds-info-darker);
+}
+
+/* Underline offset utilities */
+.link-offset-1 {
+    text-underline-offset: 0.125em;
+}
+.link-offset-2 {
+    text-underline-offset: 0.25em;
+}
+.link-offset-3 {
+    text-underline-offset: 0.375em;
+}
+.link-offset-4 {
+    text-underline-offset: 0.45em;
+}
+
+/* Animated hover effect */
+.link-offset-animated {
+    transition: text-underline-offset 0.2s ease;
+}
+.link-offset-animated:hover {
+    text-underline-offset: 0.4em;
+}
+
+/* Optional: thickness variations */
+.link-thin {
+    text-decoration-thickness: 1px;
+}
+.link-medium {
+    text-decoration-thickness: 2px;
+}
+.link-thick {
+    text-decoration-thickness: 3px;
+}

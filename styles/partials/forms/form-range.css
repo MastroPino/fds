@@ -1,0 +1,89 @@
+:root {
+    --fds-track-height: 0.25rem;
+    --fds-track-bg-color: var(--fds-color-primary);
+    --fds-thumb-width: 1rem;
+    --fds-thumb-height: 1rem;
+    --fds-thumb-bg-color: #fff;
+    --fds-thumb-border-color: var(--fds-border-color);
+    --fds-thumb-shadow: var(--fds-shadow-md);
+    --fds-disabled-opacity: 0.65;
+}
+
+.form-range {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: calc(var(--fds-thumb-height) + 0.5rem);
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-range:focus {
+    outline: none;
+}
+
+.form-range::-webkit-slider-thumb {
+    width: var(--fds-thumb-width);
+    height: var(--fds-thumb-height);
+    margin-top: calc((var(--fds-track-height) - var(--fds-thumb-height)) / 2);
+    background-color: var(--fds-thumb-bg-color);
+    border: 1px solid var(--fds-thumb-border-color);
+    border-radius: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: var(--fds-thumb-shadow);
+}
+
+.form-range::-moz-range-thumb {
+    width: var(--fds-thumb-width);
+    height: var(--fds-thumb-height);
+    background-color: var(--fds-thumb-bg-color);
+    border: 1px solid var(--fds-thumb-border-color);
+    border-radius: 50%;
+    box-shadow: var(--fds-thumb-shadow);
+}
+
+.form-range::-webkit-slider-runnable-track {
+    height: var(--fds-track-height);
+    background-color: var(--fds-track-bg-color);
+    border-radius: 0.25rem;
+}
+
+.form-range::-moz-range-track {
+    height: var(--fds-track-height);
+    background-color: var(--fds-track-bg-color);
+    border-radius: 0.25rem;
+}
+
+.form-range:disabled {
+    pointer-events: none;
+    opacity: var(--fds-disabled-opacity);
+}
+
+.form-range-ticks {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    width: 100%;
+    min-height: 1rem;
+}
+
+.form-range-ticks span {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    font-size: var(--fds-font-size-sm);
+    color: var(--fds-text-placeholder);
+    text-align: center;
+}
+
+.form-range-ticks span:before {
+    content: "";
+    height: 0.25rem;
+    border-left: 1px solid var(--fds-text-placeholder);
+    position: absolute;
+    top: -0.25rem;
+    left: calc(50% - 1px);
+}

@@ -1,0 +1,5 @@
+:root {
+    --fds-border-width: 1px;
+    --fds-border-style: solid;
+    --fds-border-color: var(--fds-border-color);
+}

@@ -1,0 +1,186 @@
+/* Form Floating */
+:root {
+    --fds-form-floating-height: 3.5rem;
+    --fds-form-floating-border-height: 2px;
+    --fds-form-floating-total-height: calc(
+        var(--fds-form-floating-height) + var(--fds-form-floating-border-height)
+    );
+    --fds-form-floating-line-height: 1.5;
+    --fds-form-floating-padding-x: var(--fds-spacer-2);
+    --fds-form-floating-padding-y: var(--fds-spacer-2);
+    --fds-form-floating-input-padding-top: 1.625rem;
+    --fds-form-floating-input-padding-bottom: 0.625rem;
+    --fds-form-floating-label-height: 1.5em;
+    --fds-form-floating-label-opacity: 1;
+    --fds-form-floating-transition: opacity 0.1s ease-in-out,
+        transform 0.1s ease-in-out;
+    --fds-form-floating-label-disabled-color: var(--fds-color-disabled-dark);
+    --fds-form-floating-icon-size: 2rem;
+    --fds-form-floating-icon-spacing: var(--fds-spacer-1);
+}
+
+.form-floating {
+    position: relative;
+}
+
+.form-floating .form-control {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: var(--fds-form-floating-total-height);
+    min-height: var(--fds-form-floating-total-height);
+    padding: var(--fds-form-floating-padding-y)
+        var(--fds-form-floating-padding-x);
+    background-color: var(--fds-color-white);
+    background-clip: padding-box;
+    border: 1px solid var(--fds-border-input);
+    border-radius: var(--fds-radius-2);
+    color: var(--fds-text-body);
+    font-family: var(--fds-font-family-base);
+    font-size: var(--fds-font-size-base);
+    font-weight: var(--fds-fw-medium);
+    line-height: var(--fds-form-floating-line-height);
+    appearance: none;
+    transition:
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.form-floating > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--fds-form-floating-padding-y)
+        var(--fds-form-floating-padding-x);
+    border: 1px solid transparent;
+    color: var(--fds-input-placeholder-color);
+    font-weight: var(--fds-fw-medium);
+    line-height: var(--fds-form-floating-line-height);
+    overflow: hidden;
+    pointer-events: none;
+    text-overflow: ellipsis;
+    transform-origin: 0 0;
+    white-space: nowrap;
+    transition: var(--fds-form-floating-transition);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .form-control:not(:placeholder-shown) ~ label {
+        transition: none;
+    }
+
+    .form-control:not(:placeholder-shown):not(:focus) ~ label,
+    .form-control:focus ~ label {
+        transition: var(--fds-form-floating-transition);
+    }
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    opacity: var(--fds-form-floating-label-opacity);
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    color: var(--fds-text-body);
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: var(--fds-form-floating-input-padding-top);
+    padding-bottom: var(--fds-form-floating-input-padding-bottom);
+}
+
+/* Sfondo della label in stato focus/filled */
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+    position: absolute;
+    inset: 1rem 0.375rem;
+    z-index: -1;
+    height: 1.5em;
+    content: "";
+    background-color: var(--fds-color-white);
+    border-radius: var(--fds-radius-2);
+}
+
+/* Disabled state */
+.form-floating > .form-control:disabled ~ label,
+.form-floating > .form-control:readonly ~ label {
+    color: var(--fds-form-floating-label-disabled-color);
+}
+
+/* For placeholder-shown browser support */
+.form-floating > .form-control:-webkit-autofill ~ label {
+    opacity: var(--fds-form-floating-label-opacity);
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+/* Invalid state */
+.form-floating.is-invalid .form-control {
+    border-color: var(--fds-color-danger);
+}
+
+.form-floating.is-invalid label {
+    color: var(--fds-color-danger);
+}
+
+/* Placeholder color */
+.form-floating > .form-control::placeholder {
+    color: transparent;
+}
+
+/* Icon styles */
+.form-control-icon {
+    position: absolute;
+    top: 50%;
+    left: var(--fds-form-floating-padding-x);
+    z-index: 2;
+    display: flex;
+    width: var(--fds-form-floating-icon-size);
+    height: var(--fds-form-floating-icon-size);
+    align-items: center;
+    justify-content: center;
+    color: var(--fds-text-body);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form-floating:has(.form-control-icon) .form-control {
+    padding-left: calc(
+        var(--fds-form-floating-padding-x) + var(--fds-form-floating-icon-size) +
+            var(--fds-form-floating-icon-spacing)
+    );
+}
+
+.form-floating:has(.form-control-icon) > label {
+    padding-left: calc(
+        var(--fds-form-floating-padding-x) + var(--fds-form-floating-icon-size) +
+            var(--fds-form-floating-icon-spacing)
+    );
+    transform-origin: 0 0;
+}
+
+.form-floating:has(.form-control-icon)
+    > .form-control:not(:placeholder-shown)
+    ~ label,
+.form-floating:has(.form-control-icon) > .form-control:focus ~ label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.65rem);
+    transform-origin: left top;
+}
+
+.form-floating:has(.form-control-icon) > .form-control:focus ~ label::after,
+.form-floating:has(.form-control-icon)
+    > .form-control:not(:placeholder-shown)
+    ~ label::after {
+    inset: 1rem 0.375rem 1rem
+        calc(
+            var(--fds-form-floating-padding-x) +
+                var(--fds-form-floating-icon-size) - 0.375rem
+        );
+}
+
+.form-floating:has(.form-control-icon)
+    > .form-control:-webkit-autofill
+    ~ label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.65rem);
+    transform-origin: left top;
+}

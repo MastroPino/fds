@@ -1,0 +1,120 @@
+:root {
+    /* Breakpoints */
+    --container-breakpoint-sm: 576px;
+    --container-breakpoint-md: 768px;
+    --container-breakpoint-lg: 992px;
+    --container-breakpoint-xl: 1200px;
+    --container-breakpoint-xxl: 1400px;
+
+    /* Container max widths */
+    --container-max-width-sm: 540px;
+    --container-max-width-md: 720px;
+    --container-max-width-lg: 960px;
+    --container-max-width-xl: 1140px;
+    --container-max-width-xxl: 1320px;
+}
+
+/* Basic container */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(
+        --spacer-2
+    ); /* Using spacer-2 (16px) instead of hardcoded value */
+    padding-left: var(--spacer-2);
+}
+
+/* Fluid container */
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--spacer-2);
+    padding-left: var(--spacer-2);
+}
+
+/* Responsive containers */
+@media (min-width: 576px) {
+    .container {
+        max-width: var(--container-max-width-sm);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: var(--container-max-width-md);
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: var(--container-max-width-lg);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: var(--container-max-width-xl);
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: var(--container-max-width-xxl);
+    }
+}
+
+/* Responsive containers that are 100% wide until a breakpoint */
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--spacer-2);
+    padding-left: var(--spacer-2);
+}
+
+/* Breakpoint-specific container max-widths */
+@media (min-width: 576px) {
+    .container-sm {
+        max-width: var(--container-max-width-sm);
+    }
+}
+
+@media (min-width: 768px) {
+    .container-sm,
+    .container-md {
+        max-width: var(--container-max-width-md);
+    }
+}
+
+@media (min-width: 992px) {
+    .container-sm,
+    .container-md,
+    .container-lg {
+        max-width: var(--container-max-width-lg);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: var(--container-max-width-xl);
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: var(--container-max-width-xxl);
+    }
+}

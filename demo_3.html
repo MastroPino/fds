@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flazio DS: Accordion component</title>
+        <!-- Poppins font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://kit.fontawesome.com/340462d3b5.css"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="accordion-container" aria-label="Accordion Section">
+                <div
+                    class="accordion t-ultra-simple"
+                    id="accordionExample"
+                    data-icon-style="plus"
+                    role="tablist"
+                >
+                    <!-- First Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                                id="buttonOne"
+                                role="tab"
+                                aria-selected="true"
+                                tabindex="0"
+                            >
+                                Accordion Item #1
+                                <span
+                                    class="accordion-remover btn btn-icon-only btn-outline-danger"
+                                    aria-label="Remove accordion item 1"
+                                    tabindex="0"
+                                >
+                                    <i
+                                        class="fa-regular fa-trash-can"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                                <span class="accordion-icon" aria-hidden="true"
+                                    ><span class="icon"></span
+                                ></span>
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            role="tabpanel"
+                            aria-labelledby="headingOne"
+                            tabindex="0"
+                        >
+                            <div class="accordion-body">
+                                Content for accordion item #1
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                                id="buttonTwo"
+                                role="tab"
+                                aria-selected="false"
+                                tabindex="0"
+                            >
+                                Accordion Item #2
+                                <span
+                                    class="accordion-remover btn btn-icon-only btn-outline-danger"
+                                    aria-label="Remove accordion item 2"
+                                    tabindex="0"
+                                >
+                                    <i
+                                        class="fa-regular fa-trash-can"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                                <span
+                                    class="accordion-icon"
+                                    aria-hidden="true"
+                                ></span>
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            role="tabpanel"
+                            aria-labelledby="headingTwo"
+                            tabindex="-1"
+                        >
+                            <div class="accordion-body">
+                                Content for accordion item #2
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                                id="buttonThree"
+                                role="tab"
+                                aria-selected="false"
+                                tabindex="0"
+                            >
+                                Accordion Item #3
+                                <span
+                                    class="accordion-remover btn btn-icon-only btn-outline-danger"
+                                    aria-label="Remove accordion item 3"
+                                    tabindex="0"
+                                >
+                                    <i
+                                        class="fa-regular fa-trash-can"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                                <span
+                                    class="accordion-icon"
+                                    aria-hidden="true"
+                                ></span>
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            role="tabpanel"
+                            aria-labelledby="headingThree"
+                            tabindex="-1"
+                        >
+                            <div class="accordion-body">
+                                Content for accordion item #3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-add-line">
+                    <button
+                        class="btn btn-outline-primary"
+                        aria-label="Add new accordion item"
+                        tabindex="0"
+                    >
+                        <i
+                            class="fa-regular fa-circle-plus"
+                            aria-hidden="true"
+                        ></i>
+                        <span>Aggiungi riga</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="accordion.js"></script>
+    </body>
+</html>

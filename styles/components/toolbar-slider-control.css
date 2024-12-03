@@ -1,0 +1,27 @@
+.toolbar-slider-control {
+    display: flex;
+    flex-flow: column;
+    gap: var(--fds-spacer-3);
+    .toolbar-slider-control-header {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--fds-spacer-2);
+        .toolbar-slider-control-title {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--fds-spacer-1);
+        }
+        .btn-group {
+            display: flex;
+            gap: var(--fds-spacer-1);
+            .form-control {
+                text-align: center;
+                width: 4rem;
+            }
+        }
+    }
+}

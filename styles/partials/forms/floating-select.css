@@ -1,0 +1,78 @@
+:root {
+    --fds-select-text-color: var(--fds-text-body);
+    --fds-select-bg-color: var(--fds-color-white);
+    --fds-select-border-color: var(--fds-border-input);
+    --fds-select-focus-border-color: var(--fds-color-primary);
+    --fds-select-focus-box-shadow-color: var(--fds-color-primary-light-90);
+    --fds-select-transition: border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    --fds-select-padding-right: 2.5rem;
+    --fds-select-bg-size: 16px 12px;
+    --fds-floating-total-height: 3.5rem;
+    --fds-floating-padding-y: var(--fds-spacer-2);
+    --fds-floating-padding-x: var(--fds-spacer-2);
+    --fds-floating-line-height: 1.5;
+    --fds-floating-label-opacity: 0.65;
+    --fds-floating-input-padding-top: 1.625rem;
+    --fds-floating-input-padding-bottom: 0.625rem;
+    --fds-floating-icon-size: 1.5rem;
+    --fds-floating-icon-spacing: 0.5rem;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    height: var(--fds-floating-total-height);
+    min-height: var(--fds-floating-total-height);
+    padding: var(--fds-floating-padding-y) var(--fds-floating-padding-x);
+    font-size: var(--fds-font-size-base);
+    font-family: var(--fds-font-family-base);
+    font-weight: var(--fds-fw-medium);
+    line-height: var(--fds-floating-line-height);
+    color: var(--fds-select-text-color);
+    background-color: var(--fds-select-bg-color);
+    border: 1px solid var(--fds-select-border-color);
+    border-radius: var(--fds-input-border-radius);
+    transition: var(--fds-select-transition);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right var(--fds-floating-padding-x) center;
+    background-size: var(--fds-select-bg-size);
+    padding-right: var(--fds-select-padding-right);
+}
+
+.form-select:focus {
+    border-color: var(--fds-select-focus-border-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--fds-select-focus-box-shadow-color);
+}
+
+/* Stati focus e filled per select standard */
+.form-floating > .form-select:focus ~ label,
+.form-floating > .form-select:not([value=""]) ~ label {
+    opacity: var(--fds-floating-label-opacity);
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    color: var(--fds-text-body);
+}
+
+/* Gestione icona */
+.form-floating:has(.form-control-icon) .form-select {
+    padding-left: calc(
+        var(--fds-floating-padding-x) + var(--fds-floating-icon-size) +
+            var(--fds-floating-icon-spacing)
+    );
+}
+
+/* Animazione label con icona */
+.form-floating:has(.form-control-icon) > .form-select:focus ~ label,
+.form-floating:has(.form-control-icon) > .form-select:not([value=""]) ~ label {
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.65rem);
+    transform-origin: left top;
+}
+
+.form-floating > .form-select:focus,
+.form-floating > .form-select:not([value=""]) {
+    padding-top: var(--fds-floating-input-padding-top);
+    padding-bottom: var(--fds-floating-input-padding-bottom);
+}

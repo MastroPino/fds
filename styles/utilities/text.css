@@ -1,0 +1,135 @@
+/* Font Weight */
+.fw-lighter {
+    font-weight: var(--fds-fw-lighter) !important;
+}
+.fw-light {
+    font-weight: var(--fds-fw-light) !important;
+}
+.fw-normal {
+    font-weight: var(--fds-fw-normal) !important;
+}
+.fw-medium {
+    font-weight: var(--fds-fw-medium) !important;
+}
+.fw-semibold {
+    font-weight: var(--fds-fw-semibold) !important;
+}
+.fw-bold {
+    font-weight: var(--fds-fw-bold) !important;
+}
+.fw-bolder {
+    font-weight: var(--fds-fw-bolder) !important;
+}
+
+/* Font Style */
+.fst-italic {
+    font-style: var(--fds-fs-italic) !important;
+}
+.fst-normal {
+    font-style: var(--fds-fs-normal) !important;
+}
+
+/* Text Decoration */
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+.text-decoration-line-through {
+    text-decoration: line-through !important;
+}
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+/* Text Transform */
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+/* Text Alignment */
+.text-start {
+    text-align: start !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-end {
+    text-align: end !important;
+}
+
+/* Text Wrap */
+.text-wrap {
+    white-space: normal !important;
+}
+.text-nowrap {
+    white-space: nowrap !important;
+}
+.text-break {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+/* Line Height */
+.lh-1 {
+    line-height: 1 !important;
+}
+.lh-sm {
+    line-height: var(--fds-lh-sm) !important;
+}
+.lh-base {
+    line-height: var(--fds-lh-base) !important;
+}
+.lh-lg {
+    line-height: var(--fds-lh-lg) !important;
+}
+
+/* Font Size */
+.fs-1 {
+    font-size: var(--fds-h1-font-size) !important;
+}
+.fs-2 {
+    font-size: var(--fds-h2-font-size) !important;
+}
+.fs-3 {
+    font-size: var(--fds-h3-font-size) !important;
+}
+.fs-4 {
+    font-size: var(--fds-h4-font-size) !important;
+}
+.fs-5 {
+    font-size: var(--fds-h5-font-size) !important;
+}
+.fs-sm {
+    font-size: var(--fds-font-size-sm) !important;
+}
+.fs-xs {
+    font-size: var(--fds-font-size-xs) !important;
+}
+
+/* Text Truncate */
+.text-truncate {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+/* Monospace */
+.font-monospace {
+    font-family: var(--fds-font-monospace) !important;
+}
+
+/* User Select */
+.user-select-all {
+    user-select: all !important;
+}
+.user-select-auto {
+    user-select: auto !important;
+}
+.user-select-none {
+    user-select: none !important;
+}

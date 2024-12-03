@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flazio DS: Accordion component</title>
+        <!-- Poppins font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://kit.fontawesome.com/340462d3b5.css"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container" style="max-width: 272px">
+            <section style="margin: 2rem auto">
+                <aside class="toolbar">
+                    <div class="editor-component">
+                        <p class="fw-medium mb-0">Tipografia</p>
+                        <div class="editor-component-body">
+                            WIP Dropdown
+                            <a class="link fs-sm mt-3" href="#"
+                                >Configurazione avanzata
+                                <i class="fa-regular fa-arrow-right"></i
+                            ></a>
+                        </div>
+                        <div class="editor-component-body">
+                            <!--
+                            Controllo slider per la dimensione del testo
+                            Componenti:
+                            - Label descrittiva
+                            - Gruppo di controlli con bottoni +/- e input numerico
+                            - Slider range con tick marks
+                            - Range: 0-40px con step di 4px
+                            - Valore default: 16px
+                            -->
+                            <div class="toolbar-slider-control">
+                                <div class="toolbar-slider-control-header">
+                                    <label
+                                        for="customRange3"
+                                        class="form-label form-label-sm mb-0"
+                                        >Dimensione</label
+                                    >
+                                    <div class="btn-group">
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-minus"
+                                            ></i>
+                                        </button>
+                                        <input
+                                            type="text"
+                                            class="form-control form-control-sm"
+                                            value="16px"
+                                        />
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-plus"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-range-container">
+                                    <input
+                                        type="range"
+                                        class="form-range"
+                                        min="0"
+                                        max="40"
+                                        step="4"
+                                    />
+                                    <div class="form-range-ticks"></div>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <!--
+                            Controllo slider per la spaziatura dei caratteri
+                            Componenti:
+                            - Label descrittiva
+                            - Gruppo di controlli con bottoni +/- e input numerico
+                            - Slider range con tick marks
+                            - Range: 0-2px con step di 0.1px
+                            - Valore default: 0px
+                            -->
+                            <div class="toolbar-slider-control">
+                                <div class="toolbar-slider-control-header">
+                                    <label
+                                        for="letter-spacing"
+                                        class="form-label form-label-sm mb-0"
+                                        >Spaziatura caratteri</label
+                                    >
+                                    <div class="btn-group">
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-minus"
+                                            ></i>
+                                        </button>
+                                        <input
+                                            type="text"
+                                            class="form-control form-control-sm"
+                                            id="letter-spacing"
+                                            value="0px"
+                                        />
+                                        <button
+                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-plus"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-range-container">
+                                    <input
+                                        type="range"
+                                        class="form-range"
+                                        for="letter-spacing"
+                                        min="0"
+                                        max="2"
+                                        step="0.1"
+                                    />
+                                    <div class="form-range-ticks"></div>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <!--
+                            Controllo bottoni per il peso del font
+                            Componenti:
+                            - Label descrittiva
+                            - Gruppo di bottoni con le varianti di peso:
+                              light, normal (default), medium, semibold, bold
+                            - Stato attivo evidenziato sulla variante selezionata
+                            -->
+                            <div class="toolbar-button-control">
+                                <span
+                                    for="font-weight"
+                                    class="form-label form-label-sm"
+                                    >Peso</span
+                                >
+                                <div class="btn-wrapper">
+                                    <button
+                                        class="btn btn-icon-only btn-outline-info fw-light"
+                                    >
+                                        A
+                                    </button>
+                                    <button
+                                        class="btn btn-icon-only btn-outline-info fw-normal is-active"
+                                    >
+                                        A
+                                    </button>
+                                    <button
+                                        class="btn btn-icon-only btn-outline-info fw-medium"
+                                    >
+                                        A
+                                    </button>
+                                    <button
+                                        class="btn btn-icon-only btn-outline-info fw-semibold"
+                                    >
+                                        A
+                                    </button>
+                                    <button
+                                        class="btn btn-icon-only btn-outline-info fw-bold"
+                                    >
+                                        A
+                                    </button>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <!--
+                            Controllo bottoni per la formattazione del testo
+                            Componenti:
+                            - Gruppo di bottoni per stili testo:
+                              corsivo, sottolineato, barrato, maiuscole
+                            - Gruppo di bottoni per allineamento:
+                              sinistra, centro, destra, giustificato
+                            - Stile base senza bordi colorati
+                            -->
+                            <div class="toolbar-text-format">
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-italic"></i>
+                                </button>
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-underline"></i>
+                                </button>
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-text-slash"></i>
+                                </button>
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-font-case"></i>
+                                </button>
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-align-left"></i>
+                                </button>
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-align-center"></i>
+                                </button>
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-align-right"></i>
+                                </button>
+                                <button class="btn btn-icon-only">
+                                    <i class="fa-solid fa-align-justify"></i>
+                                </button>
+                            </div>
+
+                            <a class="link fs-sm mt-3" href="#"
+                                >Configurazione semplice
+                                <i class="fa-regular fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="editor-component">
+                        <p class="fw-medium mb-0">Colori</p>
+                        <div class="editor-component-body">
+                            <div class="toolbar-button-control">
+                                <label
+                                    for="themeColors"
+                                    class="form-label form-label-sm"
+                                    >Colori del tuo tema</label
+                                >
+                                <div class="btn-wrapper">
+                                    <a
+                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body is-active"
+                                    ></a>
+                                    <a
+                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body-secondary"
+                                    ></a>
+                                    <a
+                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body-tertiary"
+                                    ></a>
+                                    <a
+                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-white"
+                                    ></a>
+                                    <a
+                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary"
+                                    ></a>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <div class="toolbar-button-control">
+                                <label
+                                    for="themeColors"
+                                    class="form-label form-label-sm"
+                                    >Colori personalizzati</label
+                                >
+                                <div class="btn-wrapper">
+                                    <a
+                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary"
+                                    ></a>
+                                    <div
+                                        class="color-selector"
+                                        style="position: relative"
+                                    >
+                                        <input
+                                            type="color"
+                                            class="form-control form-control-color"
+                                            id="exampleColorInput"
+                                            value="#563d7c"
+                                            title="Choose your color"
+                                            style="
+                                                position: absolute;
+                                                opacity: 0;
+                                                visibility: hidden;
+                                            "
+                                        />
+
+                                        <button
+                                            onclick="document.getElementById('exampleColorInput').click()"
+                                            class="btn btn-icon-only btn-outline-info fw-light"
+                                        >
+                                            <i
+                                                class="fa-regular fa-circle-plus"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="link fs-sm mt-3" href="#"
+                                >Configurazione avanzata
+                                <i class="fa-regular fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </div>
+        <script src="form-range.js"></script>
+    </body>
+</html>

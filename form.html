@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flazio DS: Accordion component</title>
+        <!-- Poppins font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome-->
+        <link
+            rel="stylesheet"
+            href="https://kit.fontawesome.com/340462d3b5.css"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <section style="margin: 2rem auto">
+                <h1>input</h1>
+                <!-- Small -->
+                <div class="mb-3">
+                    <label class="form-label">Small input</label>
+                    <input type="text" class="form-control form-control-sm" />
+                </div>
+
+                <!-- Default -->
+                <div class="mb-3">
+                    <label class="form-label">Default input</label>
+                    <input type="text" class="form-control" />
+                </div>
+
+                <!-- Large -->
+                <div class="mb-3">
+                    <label class="form-label">Large input</label>
+                    <input type="text" class="form-control form-control-lg" />
+                </div>
+            </section>
+            <section style="margin: 2rem auto">
+                <h1>input</h1>
+                <!-- Input standard -->
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput1"
+                        placeholder="Name"
+                        value=""
+                    />
+                    <label for="floatingInput1">Name</label>
+                </div>
+
+                <!-- Input con valore pre-popolato -->
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput2"
+                        placeholder="Name"
+                        value="Mario Rossi"
+                    />
+                    <label for="floatingInput2">Name</label>
+                </div>
+
+                <!-- Input con icona -->
+                <div class="form-floating">
+                    <div class="form-control-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput3"
+                        placeholder="Name"
+                        value="Ciaone"
+                    />
+                    <label for="floatingInput3">Name</label>
+                </div>
+
+                <!-- Input con icona -->
+                <div class="form-floating">
+                    <div class="form-control-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput3"
+                        placeholder="Name"
+                        value=""
+                    />
+                    <label for="floatingInput3">Name</label>
+                </div>
+            </section>
+            <section style="margin: 2rem auto">
+                <h1>select</h1>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect">
+                        <option value="">Seleziona un'opzione</option>
+                        <option value="1">Opzione 1</option>
+                        <option value="2">Opzione 2</option>
+                        <option value="3">Opzione 3</option>
+                    </select>
+                    <label for="floatingSelect">Seleziona</label>
+                </div>
+
+                <!-- Select con icona -->
+                <div class="form-floating">
+                    <div class="form-control-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <select class="form-select" id="floatingSelectIcon">
+                        <option value="">Seleziona un'opzione</option>
+                        <option value="1">Opzione 1</option>
+                        <option value="2">Opzione 2</option>
+                        <option value="3">Opzione 3</option>
+                    </select>
+                    <label for="floatingSelectIcon">Seleziona</label>
+                </div>
+            </section>
+            <section style="margin: 2rem auto">
+                <h1>range</h1>
+                <div class="slider-container">
+                    <label for="customRange1" class="form-label"
+                        >Seleziona un valore</label
+                    >
+                    <input type="range" class="form-range" id="customRange1" />
+                </div>
+                <div class="slider-container">
+                    <label for="customRange2" class="form-label"
+                        >Valore tra 0 e 100</label
+                    >
+                    <input
+                        type="range"
+                        class="form-range"
+                        id="customRange2"
+                        min="0"
+                        max="100"
+                        step="5"
+                    />
+                </div>
+                <div class="slider-container">
+                    <label for="customRange3" class="form-label"
+                        >Example range</label
+                    >
+                    <input
+                        type="range"
+                        class="form-range"
+                        min="0"
+                        max="40"
+                        step="4"
+                    />
+                    <div class="form-range-ticks"></div>
+                </div>
+            </section>
+        </div>
+        <script src="form-range.js"></script>
+    </body>
+</html>

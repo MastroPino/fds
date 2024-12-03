@@ -1,0 +1,18 @@
+@import "forms/floating-labels.css";
+@import "forms/floating-select.css";
+@import "forms/form-range.css";
+@import "forms/form-control.css";
+
+:root {
+    /* Forms */
+    --fds-input-font-size: var(--fds-font-size-base);
+    --fds-input-font-size-xs: var(--fds-font-size-xs);
+    --fds-input-font-size-sm: var(--fds-font-size-sm);
+    --fds-input-font-size-lg: var(--fds-font-size-lg);
+
+    --fds-input-placeholder-color: var(--fds-text-placeholder);
+}
+
+.form-control::placeholder {
+    color: var(--fds-input-placeholder-color);
+}

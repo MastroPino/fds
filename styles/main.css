@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    font-family: var(--fds-font-family-base);
+    font-size: var(--fds-font-size-base);
+    font-weight: var(--fds-font-weight-normal);
+    line-height: 1.5; /* 150% of font-size-base */
+    color: var(--fds-text-body);
+    background-color: var(--fds-color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fds-font-family-heading);
+}
