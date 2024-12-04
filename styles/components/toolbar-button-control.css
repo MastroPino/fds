@@ -1,6 +1,10 @@
+/* Questo css è per il componente che stilizza i bottoni per settare un valore */
 .toolbar-button-control {
     .btn-wrapper {
         display: flex;
         gap: var(--fds-spacer-1);
+        .btn:has(img) {
+            overflow: hidden;
+        }
     }
 }

@@ -49,7 +49,7 @@
     cursor: pointer;
     background: transparent;
     color: var(--fds-text-body);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Base button interactions */

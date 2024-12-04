@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -24,7 +24,40 @@
                     <div class="editor-component">
                         <p class="fw-medium mb-0">Tipografia</p>
                         <div class="editor-component-body">
-                            WIP Dropdown
+                            <div class="dropdown">
+                                <div class="form-floating">
+                                    <div
+                                        class="dropdown-toggle form-control"
+                                        id="dropdownButton"
+                                    >
+                                        <span class="form-label">Name</span>
+                                        <span class="form-label">Name</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="dropdown-toggle"
+                                    id="dropdownButton"
+                                >
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" id="dropdownMenu">
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
                             <a class="link fs-sm mt-3" href="#"
                                 >Configurazione avanzata
                                 <i class="fa-regular fa-arrow-right"></i
@@ -271,7 +304,7 @@
                                 >
                                 <div class="btn-wrapper">
                                     <a
-                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary"
+                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary btn-trash-hover"
                                     ></a>
                                     <div
                                         class="color-selector"
@@ -306,6 +339,7 @@
                 </aside>
             </section>
         </div>
-        <script src="form-range.js"></script>
+        <script src="scripts/form-range.js"></script>
+        <script src="scripts/dropdown.js"></script>
     </body>
 </html>

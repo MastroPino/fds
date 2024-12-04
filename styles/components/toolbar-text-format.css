@@ -1,3 +1,4 @@
+/* Questo css è per il componente che stilizza il testo nella modalità avanzata di Typography */
 .toolbar-text-format {
     display: grid;
     grid-template-rows: repeat(2, 1fr);

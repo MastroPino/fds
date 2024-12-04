@@ -1,3 +1,4 @@
+/* Questo css è per il componente che stilizza lo stepper con l'input e il range slider */
 .toolbar-slider-control {
     display: flex;
     flex-flow: column;
