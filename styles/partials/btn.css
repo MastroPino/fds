@@ -20,12 +20,12 @@
     --fds-btn-focus-color-danger: var(--fds-color-danger-light-80);
     --fds-btn-focus-color-success: var(--fds-color-success-light-80);
 
-    --fds-btn-padding-x: 0.8rem;
-    --fds-btn-padding-y: 2rem;
-    --fds-btn-padding-x-sm: 0.6rem;
-    --fds-btn-padding-y-sm: 1rem;
-    --fds-btn-padding-x-lg: 1.25rem;
-    --fds-btn-padding-y-lg: 2.5rem;
+    --fds-btn-padding-y: 0.8rem;
+    --fds-btn-padding-x: 2rem;
+    --fds-btn-padding-y-sm: 0.6rem;
+    --fds-btn-padding-x-sm: 1rem;
+    --fds-btn-padding-y-lg: 1.25rem;
+    --fds-btn-padding-x-lg: 2.5rem;
 
     --fds-btn-border-radius: var(--fds-radius-2);
     --fds-btn-border-radius-sm: var(--fds-radius-1);
@@ -41,7 +41,7 @@
     vertical-align: middle;
     user-select: none;
     border: var(--fds-btn-border-width) solid transparent;
-    padding: var(--fds-btn-padding-x) var(--fds-btn-padding-y);
+    padding: var(--fds-btn-padding-y) var(--fds-btn-padding-x);
     font-size: var(--fds-btn-font-size-base);
     line-height: var(--fds-btn-line-height);
     border-radius: var(--fds-btn-border-radius);
@@ -49,6 +49,7 @@
     cursor: pointer;
     background: transparent;
     color: var(--fds-text-body);
+    overflow: hidden;
 }
 
 /* Base button interactions */
@@ -79,13 +80,13 @@
 
 /* Button sizes */
 .btn-sm {
-    padding: var(--fds-btn-padding-x-sm) var(--fds-btn-padding-y-sm);
+    padding: var(--fds-btn-padding-y-sm) var(--fds-btn-padding-x-sm);
     font-size: var(--fds-btn-font-size-sm);
     border-radius: var(--fds-btn-border-radius-sm);
 }
 
 .btn-lg {
-    padding: var(--fds-btn-padding-x-lg) var(--fds-btn-padding-y-lg);
+    padding: var(--fds-btn-padding-y-lg) var(--fds-btn-padding-x-lg);
     font-size: var(--fds-btn-font-size-lg);
     border-radius: var(--fds-btn-border-radius-lg);
 }
