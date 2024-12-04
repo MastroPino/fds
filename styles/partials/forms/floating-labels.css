@@ -41,9 +41,7 @@
     font-weight: var(--fds-fw-medium);
     line-height: var(--fds-form-floating-line-height);
     appearance: none;
-    transition:
-        border-color 0.15s ease-in-out,
-        box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-floating > label {
@@ -163,7 +161,7 @@
     > .form-control:not(:placeholder-shown)
     ~ label,
 .form-floating:has(.form-control-icon) > .form-control:focus ~ label {
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.65rem);
+    transform: scale(0.8) translateY(-0.5rem) translateX(0.65rem);
     transform-origin: left top;
 }
 
@@ -181,6 +179,6 @@
 .form-floating:has(.form-control-icon)
     > .form-control:-webkit-autofill
     ~ label {
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.65rem);
+    transform: scale(0.8) translateY(-0.5rem) translateX(0.65rem);
     transform-origin: left top;
 }
