@@ -205,7 +205,7 @@
 }
 
 .btn-outline-info:hover {
-    color: var(--fds-text-info);
+    color: var(--fds-text-body);
     background-color: transparent;
     border-color: var(--fds-color-info-light-20);
 }

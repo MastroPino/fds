@@ -364,10 +364,12 @@
                                 il valore numerico nell'input
                             -->
                             <div class="dropdown">
-                                <div
+                                <button
                                     class="dropdown-toggle dropdown-input"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
+                                    aria-controls="font-family"
                                     tabindex="0"
-                                    role="button"
                                 >
                                     <div class="dropdown-input-titles">
                                         <span class="form-label-sm"
@@ -380,8 +382,13 @@
                                             Tutti i lati</span
                                         >
                                     </div>
-                                </div>
-                                <div class="dropdown-menu">
+                                </button>
+                                <div
+                                    class="dropdown-menu"
+                                    id="menu-id"
+                                    role="menu"
+                                    hidden
+                                >
                                     <div class="dropdown-menu-header">
                                         <h5>Posizione</h5>
                                     </div>
@@ -502,7 +509,13 @@
                             </div>
                             <hr class="m-0" />
                             <div class="dropdown">
-                                <div class="dropdown-toggle dropdown-input">
+                                <button
+                                    class="dropdown-toggle dropdown-input"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
+                                    aria-controls="font-family"
+                                    tabindex="0"
+                                >
                                     <div class="dropdown-input-titles">
                                         <span class="form-label-sm">Stile</span>
                                         <span class="selected-item"
@@ -512,8 +525,13 @@
                                             Solid</span
                                         >
                                     </div>
-                                </div>
-                                <div class="dropdown-menu">
+                                </button>
+                                <div
+                                    class="dropdown-menu"
+                                    id="menu-id"
+                                    role="menu"
+                                    hidden
+                                >
                                     <div class="dropdown-menu-header">
                                         <h5>Stile</h5>
                                     </div>

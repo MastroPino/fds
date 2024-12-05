@@ -25,7 +25,13 @@
                         <p class="fw-medium mb-0">Tipografia</p>
                         <div class="editor-component-body">
                             <div class="dropdown">
-                                <div class="dropdown-toggle dropdown-input">
+                                <button
+                                    class="dropdown-toggle dropdown-input"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
+                                    aria-controls="font-family"
+                                    tabindex="0"
+                                >
                                     <div class="dropdown-input-titles">
                                         <span class="form-label-sm"
                                             >Font family</span
@@ -34,8 +40,13 @@
                                             >Poppins</span
                                         >
                                     </div>
-                                </div>
-                                <div class="dropdown-menu">
+                                </button>
+                                <div
+                                    class="dropdown-menu"
+                                    id="menu-id"
+                                    role="menu"
+                                    hidden
+                                >
                                     <div class="dropdown-menu-header">
                                         <h5>Font family</h5>
                                     </div>
@@ -68,7 +79,13 @@
                             </div>
                             <hr class="m-0" />
                             <div class="dropdown">
-                                <div class="dropdown-toggle dropdown-input">
+                                <button
+                                    class="dropdown-toggle dropdown-input"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
+                                    aria-controls="font-family"
+                                    tabindex="0"
+                                >
                                     <div class="dropdown-input-titles">
                                         <span class="form-label-sm"
                                             >Dimensione</span
@@ -77,8 +94,13 @@
                                             >Paragrafo</span
                                         >
                                     </div>
-                                </div>
-                                <div class="dropdown-menu">
+                                </button>
+                                <div
+                                    class="dropdown-menu"
+                                    id="menu-id"
+                                    role="menu"
+                                    hidden
+                                >
                                     <div class="dropdown-menu-header">
                                         <h5>Dimensione</h5>
                                     </div>
@@ -252,7 +274,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="link fs-sm mt-3" href="#"
+                            <a class="link fs-sm mt-3" href="#" tabindex="0"
                                 >Configurazione avanzata
                                 <i class="fa-regular fa-arrow-right"></i
                             ></a>
@@ -277,6 +299,7 @@
                                     <div class="btn-group">
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-minus"
@@ -289,6 +312,7 @@
                                         />
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-plus"
@@ -327,6 +351,7 @@
                                     <div class="btn-group">
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-minus"
@@ -340,6 +365,7 @@
                                         />
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-plus"
@@ -377,26 +403,31 @@
                                 <div class="btn-wrapper">
                                     <button
                                         class="btn btn-icon-only btn-outline-info fw-light"
+                                        tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
                                         class="btn btn-icon-only btn-outline-info fw-normal is-active"
+                                        tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
                                         class="btn btn-icon-only btn-outline-info fw-medium"
+                                        tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
                                         class="btn btn-icon-only btn-outline-info fw-semibold"
+                                        tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
                                         class="btn btn-icon-only btn-outline-info fw-bold"
+                                        tabindex="0"
                                     >
                                         A
                                     </button>
@@ -413,28 +444,28 @@
                             - Stile base senza bordi colorati
                             -->
                             <div class="toolbar-text-format">
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-italic"></i>
                                 </button>
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-underline"></i>
                                 </button>
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-text-slash"></i>
                                 </button>
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-font-case"></i>
                                 </button>
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-align-left"></i>
                                 </button>
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-align-center"></i>
                                 </button>
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-align-right"></i>
                                 </button>
-                                <button class="btn btn-icon-only">
+                                <button class="btn btn-icon-only" tabindex="0">
                                     <i class="fa-solid fa-align-justify"></i>
                                 </button>
                             </div>
@@ -466,18 +497,28 @@
                                 <div class="btn-wrapper">
                                     <a
                                         class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body is-active"
+                                        tabindex="0"
+                                        href="#"
                                     ></a>
                                     <a
                                         class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body-secondary"
+                                        tabindex="0"
+                                        href="#"
                                     ></a>
                                     <a
                                         class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body-tertiary"
+                                        tabindex="0"
+                                        href="#"
                                     ></a>
                                     <a
                                         class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-white"
+                                        tabindex="0"
+                                        href="#"
                                     ></a>
                                     <a
                                         class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary"
+                                        tabindex="0"
+                                        href="#"
                                     ></a>
                                 </div>
                             </div>
@@ -499,6 +540,7 @@
                                 <div class="btn-wrapper">
                                     <a
                                         class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary btn-trash-hover"
+                                        tabindex="0"
                                     ></a>
                                     <div
                                         class="color-selector"
@@ -520,6 +562,7 @@
                                         <button
                                             onclick="document.getElementById('exampleColorInput').click()"
                                             class="btn btn-icon-only btn-outline-info fw-light"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-plus"
