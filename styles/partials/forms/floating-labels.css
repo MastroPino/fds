@@ -54,7 +54,7 @@
         var(--fds-form-floating-padding-x);
     border: 1px solid transparent;
     color: var(--fds-input-placeholder-color);
-    font-weight: var(--fds-fw-medium);
+    font-weight: var(--fds-fw-normal);
     line-height: var(--fds-form-floating-line-height);
     overflow: hidden;
     pointer-events: none;
@@ -78,7 +78,7 @@
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label {
     opacity: var(--fds-form-floating-label-opacity);
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    transform: scale(0.8) translateY(-0.5rem) translateX(0.15rem);
     color: var(--fds-text-body);
 }
 
@@ -109,7 +109,7 @@
 /* For placeholder-shown browser support */
 .form-floating > .form-control:-webkit-autofill ~ label {
     opacity: var(--fds-form-floating-label-opacity);
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    transform: scale(0.8) translateY(-0.5rem) translateX(0.15rem);
 }
 
 /* Invalid state */

@@ -98,7 +98,7 @@
     flex-flow: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: var(--fds-spacer-1);
+    gap: var(--fds-spacer-micro);
 }
 
 .dropdown-input .form-label-sm {
