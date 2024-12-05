@@ -161,7 +161,7 @@
     > .form-control:not(:placeholder-shown)
     ~ label,
 .form-floating:has(.form-control-icon) > .form-control:focus ~ label {
-    transform: scale(0.8) translateY(-0.5rem) translateX(0.65rem);
+    transform: scale(0.8) translateY(-0.5rem) translateX(0.95rem);
     transform-origin: left top;
 }
 
@@ -179,6 +179,6 @@
 .form-floating:has(.form-control-icon)
     > .form-control:-webkit-autofill
     ~ label {
-    transform: scale(0.8) translateY(-0.5rem) translateX(0.65rem);
+    transform: scale(0.8) translateY(-0.5rem) translateX(0.95rem);
     transform-origin: left top;
 }

@@ -16,15 +16,16 @@
     --fds-selected-font-family: var(--fds-font-family-base);
     --fds-selected-font-size: var(--fds-font-size-base);
     --fds-selected-font-weight: var(--fds-fw-medium);
-    --fds-selected-line-height: 1;
+    --fds-selected-line-height: var(--fds-form-floating-line-height);
 
     --fds-caret-width: 0.3em;
     --fds-caret-vertical-align: calc(var(--fds-caret-width) * 0.85);
     --fds-caret-spacing: calc(var(--fds-caret-width) * 0.85);
 
-    /* New variables for dropdown-menu */
     --fds-dropdown-menu-border-radius: var(--fds-radius-3);
     --fds-dropdown-menu-box-shadow: var(--fds-shadow-md);
+
+    --fds-dropdown-height: var(--fds-form-floating-total-height);
 }
 
 .dropdown {
@@ -91,6 +92,7 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    min-height: var(--fds-dropdown-height);
 }
 
 .dropdown-input-titles {
@@ -98,7 +100,6 @@
     flex-flow: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: var(--fds-spacer-micro);
 }
 
 .dropdown-input .form-label-sm {
