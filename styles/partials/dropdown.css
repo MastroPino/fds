@@ -23,6 +23,9 @@
     --fds-caret-vertical-align: calc(var(--fds-caret-width) * 0.85);
     --fds-caret-spacing: calc(var(--fds-caret-width) * 0.85);
 
+    --fds-dropdown-menu-border-width: 1px;
+    --fds-dropdown-menu-border-style: solid;
+    --fds-dropdown-menu-border-color: var(--fds-border-color);
     --fds-dropdown-menu-border-radius: var(--fds-radius-3);
     --fds-dropdown-menu-box-shadow: var(--fds-shadow-xl);
 
@@ -83,8 +86,10 @@
     min-width: var(--fds-dropdown-menu-min-width);
     border-radius: var(--fds-dropdown-menu-border-radius);
     margin-top: var(--fds-spacer-micro);
-    max-height: 75vh; /* Imposta l'altezza massima */
-    overflow: hidden; /* Nasconde l'overflow per il menu */
+    overflow: hidden;
+    border: var(--fds-dropdown-menu-border-width)
+        var(--fds-dropdown-menu-border-style)
+        var(--fds-dropdown-menu-border-color);
 }
 
 .dropdown-menu.show {
@@ -126,9 +131,6 @@
 }
 
 .dropdown-menu .dropdown-menu-body {
-    max-height: calc(
-        75vh - var(--fds-dropdown-padding) * 2
-    ); /* Altezza massima meno il padding dell'header */
     overflow-y: auto; /* Abilita lo scroll verticale */
     .list-unstyled {
         margin-top: var(--fds-spacer-2);

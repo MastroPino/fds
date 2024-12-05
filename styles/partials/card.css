@@ -7,6 +7,10 @@
     --fds-card-footer-bg: var(--fds-neutral-gray);
     --fds-card-link-color: var(--fds-color-info);
     --fds-card-link-hover-color: var(--fds-color-info-dark-20);
+    --fds-card-border-width: 1px;
+    --fds-card-border-style: solid;
+    --fds-card-border-color: var(--fds-border-card);
+    --fds-card-border-width-active: 2px;
 }
 
 /* Card Component */
@@ -18,8 +22,14 @@
     word-wrap: break-word;
     background-color: var(--fds-card-bg);
     background-clip: border-box;
-    border: 1px solid var(--fds-card-border-color);
+    border: var(--fds-card-border-width) var(--fds-card-border-style)
+        var(--fds-card-border-color);
     border-radius: var(--fds-card-border-radius);
+}
+
+.card.is-active {
+    border-color: var(--fds-color-primary);
+    border-width: var(--fds-card-border-width-active);
 }
 
 .card-body {
