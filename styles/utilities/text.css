@@ -101,7 +101,8 @@
 .fs-4 {
     font-size: var(--fds-h4-font-size) !important;
 }
-.fs-5 {
+.fs-5,
+.fs-default {
     font-size: var(--fds-h5-font-size) !important;
 }
 .fs-sm {

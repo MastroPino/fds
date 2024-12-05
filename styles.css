@@ -7,6 +7,8 @@
 @import "styles/utilities/padding.css";
 @import "styles/utilities/link.css";
 @import "styles/utilities/radius.css";
+@import "styles/utilities/display.css";
+@import "styles/utilities/flex.css";
 
 @import "styles/partials/container.css";
 @import "styles/partials/root.css";
@@ -21,6 +23,7 @@
 @import "styles/partials/input-group.css";
 @import "styles/partials/form.css";
 @import "styles/partials/dropdown.css";
+@import "styles/partials/card.css";
 
 /* Component style */
 @import "styles/components/accordion.css";

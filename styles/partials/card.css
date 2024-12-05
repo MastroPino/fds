@@ -1,0 +1,95 @@
+:root {
+    --fds-card-bg: var(--fds-color-white);
+    --fds-card-border-color: var(--fds-border-card);
+    --fds-card-border-radius: var(--fds-radius-1);
+    --fds-card-padding: var(--fds-spacer-2);
+    --fds-card-header-bg: var(--fds-neutral-gray);
+    --fds-card-footer-bg: var(--fds-neutral-gray);
+    --fds-card-link-color: var(--fds-color-info);
+    --fds-card-link-hover-color: var(--fds-color-info-dark-20);
+}
+
+/* Card Component */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--fds-card-bg);
+    background-clip: border-box;
+    border: 1px solid var(--fds-card-border-color);
+    border-radius: var(--fds-card-border-radius);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--fds-card-padding);
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+}
+
+.card-subtitle {
+    margin-top: -0.375rem;
+    margin-bottom: 0;
+}
+
+.card-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    color: var(--fds-card-link-color);
+    text-decoration: none;
+}
+
+.card-link:hover {
+    color: var(--fds-card-link-hover-color);
+    text-decoration: underline;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: var(--fds-card-header-bg);
+    border-bottom: 1px solid var(--fds-card-border-color);
+}
+
+.card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: var(--fds-card-footer-bg);
+    border-top: 1px solid var(--fds-card-border-color);
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-img-bottom {
+    width: 100%;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.card-deck {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 576px) {
+    .card-deck {
+        flex-direction: row;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .card-deck .card {
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+}
