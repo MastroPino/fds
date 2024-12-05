@@ -1,5 +1,5 @@
 :root {
-    --fds-dropdown-bg-color: var(--fds-color-primary);
+    --fds-dropdown-bg-color: var(--fds-color-white);
     --fds-dropdown-text-color: var(--fds-text-body);
     --fds-dropdown-padding: var(--fds-spacer-2);
     --fds-dropdown-border: var(--fds-btn-border-width) solid
@@ -24,7 +24,7 @@
     --fds-caret-spacing: calc(var(--fds-caret-width) * 0.85);
 
     --fds-dropdown-menu-border-radius: var(--fds-radius-3);
-    --fds-dropdown-menu-box-shadow: var(--fds-shadow-md);
+    --fds-dropdown-menu-box-shadow: var(--fds-shadow-xl);
 
     --fds-dropdown-height: var(--fds-form-floating-total-height);
 }
@@ -83,21 +83,46 @@
     min-width: var(--fds-dropdown-menu-min-width);
     border-radius: var(--fds-dropdown-menu-border-radius);
     margin-top: var(--fds-spacer-micro);
+    max-height: 75vh; /* Imposta l'altezza massima */
+    overflow: hidden; /* Nasconde l'overflow per il menu */
 }
 
 .dropdown-menu.show {
     display: block;
 }
 
+.dropdown-menu.show + .dropdown-toggle {
+    border-color: var(
+        --fds-input-border-focus-color
+    ); /* Colore del bordo in stato di focus */
+    box-shadow: var(--fds-input-box-shadow-focus); /* Ombra in stato di focus */
+    outline: none; /* Rimuove il contorno predefinito */
+}
+
 .dropdown-menu .dropdown-menu-header {
+    position: sticky;
+    top: 0;
+    background-color: var(--fds-dropdown-bg-color);
     padding: var(--fds-dropdown-padding);
     border-bottom: 1px solid var(--fds-border-color);
+    z-index: 2; /* Assicurati che l'header sia sopra il contenuto scrollabile */
     h1,
     h2,
     h3,
     h4,
     h5 {
         margin-bottom: 0;
+    }
+}
+
+.dropdown-menu .dropdown-menu-body {
+    max-height: calc(
+        75vh - var(--fds-dropdown-padding) * 2
+    ); /* Altezza massima meno il padding dell'header */
+    overflow-y: auto; /* Abilita lo scroll verticale */
+    .list-unstyled {
+        margin-top: var(--fds-spacer-2);
+        list-style: none !important;
     }
 }
 
