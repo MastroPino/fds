@@ -135,7 +135,7 @@
 
 .btn-primary:focus,
 .btn-primary:focus-visible {
-    outline: 0;
+    outline: none;
     color: var(--fds-color-white);
     background-color: var(--fds-color-primary);
     border-color: var(--fds-color-primary);
@@ -173,7 +173,7 @@
     color: var(--fds-text-body);
     background-color: transparent;
     border-color: var(--fds-color-primary);
-    box-shadow: var(--fds-btn-focus-shadow) var(--fds-btn-focus-color-primary);
+    box-shadow: var(--fds-focus-ring-box-shadow);
 }
 
 .btn-outline-primary:focus:not(:focus-visible) {

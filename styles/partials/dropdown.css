@@ -50,10 +50,8 @@
 }
 
 .dropdown-toggle:focus {
-    border-color: var(
-        --fds-input-border-focus-color
-    ); /* Colore del bordo in stato di focus */
-    box-shadow: var(--fds-input-box-shadow-focus); /* Ombra in stato di focus */
+    border-color: var(--fds-input-focus-border-color);
+    box-shadow: var(--fds-focus-ring-box-shadow);
     outline: none; /* Rimuove il contorno predefinito */
 }
 
