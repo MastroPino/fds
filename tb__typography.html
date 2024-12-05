@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tooltbar Typography</title>
+        <title>Toolbar Tipografia</title>
         <!-- Poppins font -->
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -19,32 +19,54 @@
     </head>
     <body>
         <div class="container" style="max-width: 272px">
-            <section style="margin: 2rem auto">
-                <aside class="toolbar">
+            <section
+                style="margin: 2rem auto"
+                aria-labelledby="typography-title"
+            >
+                <aside
+                    class="toolbar"
+                    role="toolbar"
+                    aria-label="Configurazione tipografia"
+                >
                     <div class="editor-component">
-                        <p class="fw-medium mb-0">Tipografia</p>
+                        <h2 id="typography-title" class="fw-medium mb-0">
+                            Tipografia
+                        </h2>
                         <div class="editor-component-body">
+                            <!-- Dropdown Font Family -->
                             <div class="dropdown">
                                 <button
+                                    id="font-family-button"
                                     class="dropdown-toggle dropdown-input"
                                     aria-expanded="false"
-                                    aria-haspopup="true"
-                                    aria-controls="font-family"
+                                    aria-haspopup="listbox"
+                                    aria-controls="font-family-list"
+                                    aria-labelledby="font-family-label font-family-selected"
                                     tabindex="0"
                                 >
                                     <div class="dropdown-input-titles">
-                                        <span class="form-label-sm"
-                                            >Font family</span
+                                        <span
+                                            id="font-family-label"
+                                            class="form-label-sm"
+                                            role="heading"
+                                            aria-level="3"
                                         >
-                                        <span class="selected-item"
-                                            >Poppins</span
+                                            Famiglia di caratteri
+                                        </span>
+                                        <span
+                                            id="font-family-selected"
+                                            class="selected-item"
+                                            aria-live="polite"
                                         >
+                                            Poppins
+                                        </span>
                                     </div>
                                 </button>
                                 <div
+                                    id="font-family-list"
                                     class="dropdown-menu"
-                                    id="menu-id"
-                                    role="menu"
+                                    role="listbox"
+                                    aria-labelledby="font-family-label"
                                     hidden
                                 >
                                     <div class="dropdown-menu-header">

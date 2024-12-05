@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,10 +19,16 @@
     </head>
     <body>
         <div class="container" style="max-width: 272px">
-            <section style="margin: 2rem auto">
-                <aside class="toolbar">
+            <section style="margin: 2rem auto" aria-labelledby="margin-title">
+                <aside
+                    class="toolbar"
+                    role="toolbar"
+                    aria-label="Configurazione margini"
+                >
                     <div class="editor-component">
-                        <p class="fw-medium mb-0">Margini</p>
+                        <h2 id="margin-title" class="fw-medium mb-0">
+                            Margini
+                        </h2>
                         <div class="editor-component-body">
                             <!--
                                 Questo componente permette di gestire le spaziature orizzontali e verticali
