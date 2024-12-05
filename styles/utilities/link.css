@@ -1,66 +1,107 @@
-/* Base link styles */
+/* --------------------------------
+   Base link styles
+-------------------------------- */
 .link {
+    display: inline;
     font-weight: var(--fds-fw-medium);
-
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
 }
 
-/* Link colors with underline matching */
+/* --------------------------------
+   Link variants
+-------------------------------- */
 .link-primary {
-    color: var(--fds-primary);
-    text-decoration-color: var(--fds-primary);
-}
-.link-primary:hover {
-    color: var(--fds-primary-darker);
-    text-decoration-color: var(--fds-primary-darker);
-}
-
-.link-secondary {
-    color: var(--fds-secondary);
-    text-decoration-color: var(--fds-secondary);
-}
-.link-secondary:hover {
-    color: var(--fds-secondary-darker);
-    text-decoration-color: var(--fds-secondary-darker);
-}
-
-/* Feedback state links */
-.link-success {
-    color: var(--fds-success);
-    text-decoration-color: var(--fds-success);
-}
-.link-success:hover {
-    color: var(--fds-success-darker);
-    text-decoration-color: var(--fds-success-darker);
-}
-
-.link-danger {
-    color: var(--fds-danger);
-    text-decoration-color: var(--fds-danger);
-}
-.link-danger:hover {
-    color: var(--fds-danger-darker);
-    text-decoration-color: var(--fds-danger-darker);
-}
-
-.link-warning {
-    color: var(--fds-warning);
-    text-decoration-color: var(--fds-warning);
-}
-.link-warning:hover {
-    color: var(--fds-warning-darker);
-    text-decoration-color: var(--fds-warning-darker);
+    color: var(--fds-color-primary);
+    text-decoration-color: var(--fds-color-primary);
 }
 
 .link-info {
-    color: var(--fds-info);
-    text-decoration-color: var(--fds-info);
+    color: var(--fds-color-info);
+    text-decoration-color: var(--fds-color-info);
 }
+
+.link-success {
+    color: var(--fds-color-success);
+    text-decoration-color: var(--fds-color-success);
+}
+
+.link-danger {
+    color: var(--fds-color-danger);
+    text-decoration-color: var(--fds-color-danger);
+}
+
+/* --------------------------------
+   Hover states
+-------------------------------- */
+.link-primary:hover {
+    color: var(--fds-color-primary-dark-20);
+    text-decoration-color: var(--fds-color-primary-dark-20);
+}
+
 .link-info:hover {
-    color: var(--fds-info-darker);
-    text-decoration-color: var(--fds-info-darker);
+    color: var(--fds-color-info-dark-20);
+    text-decoration-color: var(--fds-color-info-dark-20);
+}
+
+.link-success:hover {
+    color: var(--fds-color-success-dark-20);
+    text-decoration-color: var(--fds-color-success-dark-20);
+}
+
+.link-danger:hover {
+    color: var(--fds-color-danger-dark-20);
+    text-decoration-color: var(--fds-color-danger-dark-20);
+}
+
+/* --------------------------------
+   Thickness variants
+-------------------------------- */
+.link-thin {
+    text-decoration-thickness: 1px;
+}
+
+.link-medium {
+    text-decoration-thickness: 2px;
+}
+
+.link-thick {
+    text-decoration-thickness: 3px;
+}
+
+/* --------------------------------
+   Focus states
+-------------------------------- */
+.link:focus {
+    outline: none;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.link:focus-visible {
+    text-decoration: none;
+    box-shadow: var(--fds-focus-ring-box-shadow);
+}
+
+.link-primary:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-primary-light-80);
+}
+
+.link-info:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width) var(--fds-color-info-light-80);
+}
+
+.link-success:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-success-light-80);
+}
+
+.link-danger:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-danger-light-80);
 }
 
 /* Underline offset utilities */
@@ -85,13 +126,30 @@
     text-underline-offset: 0.4em;
 }
 
-/* Optional: thickness variations */
-.link-thin {
-    text-decoration-thickness: 1px;
+/* Focus states per ogni variante */
+.link-primary:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-primary),
+            transparent var(--fds-focus-ring-opacity)
+        );
 }
-.link-medium {
-    text-decoration-thickness: 2px;
+
+.link-success:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-success),
+            transparent var(--fds-focus-ring-opacity)
+        );
 }
-.link-thick {
-    text-decoration-thickness: 3px;
+
+.link-danger:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-danger),
+            transparent var(--fds-focus-ring-opacity)
+        );
 }

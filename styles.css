@@ -2,6 +2,7 @@
 
 @import "styles/utilities/reboot.css";
 @import "styles/utilities/colors.css";
+@import "styles/utilities/colors-shade.css";
 @import "styles/utilities/text.css";
 @import "styles/utilities/margin.css";
 @import "styles/utilities/padding.css";

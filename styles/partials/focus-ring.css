@@ -1,6 +1,6 @@
 :root {
     --fds-focus-ring-width: 0.25rem;
-    --fds-focus-ring-opacity: 0.25;
+    --fds-focus-ring-opacity: 25%;
     --fds-focus-ring-color: var(--fds-color-primary-light-80);
     --fds-focus-ring-blur: 0rem;
     --fds-focus-ring-box-shadow: 0 0 var(--fds-focus-ring-blur)

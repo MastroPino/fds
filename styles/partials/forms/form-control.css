@@ -3,8 +3,7 @@
     --fds-input-text-color: var(--fds-text-body);
     --fds-input-bg-color: var(--fds-color-white);
     --fds-input-border-color: var(--fds-border-input);
-    --fds-input-focus-border-color: #86b7fe;
-    --fds-input-focus-box-shadow-color: rgba(13, 110, 253, 0.25);
+    --fds-input-focus-border-color: var(--fds-color-primary-light-60);
     --fds-input-placeholder-color: var(--fds-text-placeholder);
     --fds-input-disabled-bg-color: var(--fds-neutral-gray);
     --fds-input-disabled-text-color: var(--fds-text-body);
@@ -18,10 +17,10 @@
 
     /* Spacing */
     --fds-input-padding-y: 0.5rem;
-    --fds-input-padding-x: 1rem;
+    --fds-input-padding-x: var(--fds-spacer-2);
     --fds-input-padding-y-sm: 0.015rem;
     --fds-input-padding-x-sm: 0.75rem;
-    --fds-input-padding-y-lg: 1rem;
+    --fds-input-padding-y-lg: var(--fds-spacer-2);
     --fds-input-padding-x-lg: 0.875rem;
     --fds-input-label-margin-bottom: var(--fds-spacer-1);
 
