@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,27 +20,32 @@
     </head>
     <body>
         <div class="container" style="max-width: 272px">
-            <section style="margin: 2rem auto">
-                <aside class="toolbar">
+            <section style="margin: 2rem auto" aria-labelledby="border-title">
+                <aside
+                    class="toolbar"
+                    role="toolbar"
+                    aria-label="Configurazione bordi"
+                >
                     <div class="editor-component">
-                        <p class="fw-medium mb-0">Bordi</p>
+                        <h2 id="border-title" class="fw-medium mb-0">Bordi</h2>
                         <div class="editor-component-body">
-                            <!--
-                                Questo componente permette di gestire le spaziature orizzontali e verticali
-                                attraverso due serie di bottoni con preview visive. Per entrambe le direzioni
-                                sono disponibili quattro dimensioni (molto piccola, piccola, media e larga)
-                                visualizzate tramite immagini rappresentative. Include anche un link per
-                                passare alla configurazione avanzata.
-                            -->
                             <div class="toolbar-button-control">
                                 <span
-                                    for="font-weight"
+                                    id="position-label"
                                     class="form-label form-label-sm"
-                                    >Posizione</span
                                 >
-                                <div class="btn-wrapper">
-                                    <a
+                                    Posizione
+                                </span>
+                                <div
+                                    class="btn-wrapper"
+                                    role="group"
+                                    aria-labelledby="position-label"
+                                >
+                                    <button
                                         class="btn btn-outline-info p-0 is-active"
+                                        aria-pressed="true"
+                                        aria-label="Tutti i bordi"
+                                        tabindex="0"
                                     >
                                         <img
                                             src="assets/images/border-all.jpg"
@@ -51,10 +56,16 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo molto piccolo"
+                                            alt="Bordo su tutti i lati"
+                                            role="presentation"
                                         />
-                                    </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    </button>
+                                    <button
+                                        class="btn btn-outline-info p-0"
+                                        aria-pressed="false"
+                                        aria-label="Solo bordo superiore"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-top.jpg"
                                             srcset="
@@ -64,10 +75,16 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo piccolo"
+                                            alt="Bordo solo superiore"
+                                            role="presentation"
                                         />
-                                    </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    </button>
+                                    <button
+                                        class="btn btn-outline-info p-0"
+                                        aria-pressed="false"
+                                        aria-label="Solo bordo destro"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-right.jpg"
                                             srcset="
@@ -77,10 +94,16 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo medio"
+                                            alt="Bordo solo destro"
+                                            role="presentation"
                                         />
-                                    </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    </button>
+                                    <button
+                                        class="btn btn-outline-info p-0"
+                                        aria-pressed="false"
+                                        aria-label="Solo bordo inferiore"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-bottom.jpg"
                                             srcset="
@@ -90,10 +113,16 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo grande"
+                                            alt="Bordo solo inferiore"
+                                            role="presentation"
                                         />
-                                    </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    </button>
+                                    <button
+                                        class="btn btn-outline-info p-0"
+                                        aria-pressed="false"
+                                        aria-label="Solo bordo sinistro"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-left.jpg"
                                             srcset="
@@ -103,21 +132,30 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Margine molto grande"
+                                            alt="Bordo solo sinistro"
+                                            role="presentation"
                                         />
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
-                            <hr class="m-0" />
+                            <hr class="m-0" role="separator" />
                             <div class="toolbar-button-control">
                                 <span
-                                    for="font-weight"
+                                    id="size-label"
                                     class="form-label form-label-sm"
-                                    >Posizione</span
                                 >
-                                <div class="btn-wrapper">
-                                    <a
+                                    Dimensione
+                                </span>
+                                <div
+                                    class="btn-wrapper"
+                                    role="group"
+                                    aria-labelledby="size-label"
+                                >
+                                    <button
                                         class="btn btn-outline-info p-0 is-active"
+                                        aria-pressed="true"
+                                        aria-label="Bordo molto sottile"
+                                        tabindex="0"
                                     >
                                         <img
                                             src="assets/images/border-xs.jpg"
@@ -128,10 +166,16 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo extra piccolo"
+                                            alt=""
+                                            role="presentation"
                                         />
-                                    </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    </button>
+                                    <button
+                                        class="btn btn-outline-info p-0"
+                                        aria-pressed="false"
+                                        aria-label="Bordo sottile"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-sm.jpg"
                                             srcset="
@@ -141,10 +185,16 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo piccolo"
+                                            alt=""
+                                            role="presentation"
                                         />
-                                    </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    </button>
+                                    <button
+                                        class="btn btn-outline-info p-0"
+                                        aria-pressed="false"
+                                        aria-label="Bordo medio"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-md.jpg"
                                             srcset="
@@ -154,10 +204,16 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo medio"
+                                            alt=""
+                                            role="presentation"
                                         />
-                                    </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    </button>
+                                    <button
+                                        class="btn btn-outline-info p-0"
+                                        aria-pressed="false"
+                                        aria-label="Bordo largo"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-lg.jpg"
                                             srcset="
@@ -167,12 +223,13 @@
                                             "
                                             height="44"
                                             width="44"
-                                            alt="Bordo grande"
+                                            alt=""
+                                            role="presentation"
                                         />
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
-                            <hr class="m-0" />
+                            <hr class="m-0" role="separator" />
                             <div class="toolbar-button-control">
                                 <span
                                     for="font-weight"
@@ -182,6 +239,8 @@
                                 <div class="btn-wrapper">
                                     <a
                                         class="btn btn-outline-info p-0 is-active"
+                                        href="#"
+                                        tabindex="0"
                                     >
                                         <img
                                             src="assets/images/border-solid.jpg"
@@ -195,7 +254,11 @@
                                             alt="Bordo solido"
                                         />
                                     </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    <a
+                                        class="btn btn-outline-info p-0"
+                                        href="#"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/border-dash.jpg"
                                             srcset="
@@ -220,6 +283,8 @@
                                 <div class="btn-wrapper">
                                     <a
                                         class="btn btn-outline-info p-0 is-active"
+                                        href="#"
+                                        tabindex="0"
                                     >
                                         <img
                                             src="assets/images/rounded-1.jpg"
@@ -233,7 +298,11 @@
                                             alt="Bordo leggermente arrotondato"
                                         />
                                     </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    <a
+                                        class="btn btn-outline-info p-0"
+                                        href="#"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/rounded-2.jpg"
                                             srcset="
@@ -246,7 +315,11 @@
                                             alt="Bordo mediamente arrotondato"
                                         />
                                     </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    <a
+                                        class="btn btn-outline-info p-0"
+                                        href="#"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/rounded-3.jpg"
                                             srcset="
@@ -259,7 +332,11 @@
                                             alt="Bordo molto arrotondato"
                                         />
                                     </a>
-                                    <a class="btn btn-outline-info p-0">
+                                    <a
+                                        class="btn btn-outline-info p-0"
+                                        href="#"
+                                        tabindex="0"
+                                    >
                                         <img
                                             src="assets/images/rounded-4.jpg"
                                             srcset="
@@ -274,7 +351,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <a class="link fs-sm mt-3" href="#"
+                            <a class="link fs-sm mt-3" href="#" tabindex="0"
                                 >Configurazione avanzata
                                 <i class="fa-regular fa-arrow-right"></i
                             ></a>
@@ -287,7 +364,11 @@
                                 il valore numerico nell'input
                             -->
                             <div class="dropdown">
-                                <div class="dropdown-toggle dropdown-input">
+                                <div
+                                    class="dropdown-toggle dropdown-input"
+                                    tabindex="0"
+                                    role="button"
+                                >
                                     <div class="dropdown-input-titles">
                                         <span class="form-label-sm"
                                             >Posizione</span
@@ -310,6 +391,7 @@
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
+                                                    tabindex="0"
                                                 >
                                                     <i
                                                         class="fa-regular fa-border-all"
@@ -321,6 +403,7 @@
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
+                                                    tabindex="0"
                                                 >
                                                     <i
                                                         class="fa-regular fa-border-top"
@@ -332,6 +415,7 @@
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
+                                                    tabindex="0"
                                                 >
                                                     <i
                                                         class="fa-regular fa-border-right"
@@ -343,6 +427,7 @@
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
+                                                    tabindex="0"
                                                 >
                                                     <i
                                                         class="fa-regular fa-border-bottom"
@@ -354,6 +439,7 @@
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
+                                                    tabindex="0"
                                                 >
                                                     <i
                                                         class="fa-regular fa-border-left"
@@ -382,6 +468,7 @@
                                     <div class="btn-group">
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-minus"
@@ -394,6 +481,7 @@
                                         />
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-plus"
@@ -435,6 +523,7 @@
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
+                                                    tabindex="0"
                                                 >
                                                     <i
                                                         class="fa-regular fa-square"
@@ -446,6 +535,7 @@
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
+                                                    tabindex="0"
                                                 >
                                                     <i
                                                         class="fa-regular fa-square-dashed"
@@ -473,6 +563,7 @@
                                     <div class="btn-group">
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-minus"
@@ -485,6 +576,7 @@
                                         />
                                         <button
                                             class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            tabindex="0"
                                         >
                                             <i
                                                 class="fa-regular fa-circle-plus"
@@ -503,7 +595,7 @@
                                     <div class="form-range-ticks"></div>
                                 </div>
                             </div>
-                            <a class="link fs-sm mt-3" href="#"
+                            <a class="link fs-sm mt-3" href="#" tabindex="0"
                                 >Configurazione semplice
                                 <i class="fa-regular fa-arrow-right"></i
                             ></a>

@@ -15,9 +15,9 @@
         color 0.15s ease-in-out;
     --fds-btn-border-width: 2px;
     --fds-btn-border-color: transparent;
-    --fds-btn-focus-width: 0.25rem;
-    --fds-btn-focus-shadow: 0 0 0 var(--fds-btn-focus-width);
+    --fds-btn-focus-shadow: var(--fds-focus-ring-box-shadow);
     --fds-btn-focus-color-primary: var(--fds-color-primary-light-80);
+    --fds-btn-focus-color-info: var(--fds-color-primary-light-80);
     --fds-btn-focus-color-danger: var(--fds-color-danger-light-80);
     --fds-btn-focus-color-success: var(--fds-color-success-light-80);
 
@@ -139,7 +139,7 @@
     color: var(--fds-color-white);
     background-color: var(--fds-color-primary);
     border-color: var(--fds-color-primary);
-    box-shadow: var(--fds-btn-focus-shadow) var(--fds-btn-focus-color-primary);
+    box-shadow: var(--fds-focus-ring-box-shadow);
 }
 
 .btn-primary:focus:not(:focus-visible) {
@@ -224,7 +224,8 @@
     color: var(--fds-color-info);
     background-color: transparent;
     border-color: var(--fds-color-info);
-    box-shadow: var(--fds-btn-focus-shadow) var(--fds-btn-focus-color-info);
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        var(--fds-btn-focus-color-info);
 }
 
 .btn-outline-info:focus:not(:focus-visible) {
@@ -266,7 +267,8 @@
     color: var(--fds-color-danger);
     background-color: transparent;
     border-color: var(--fds-color-danger);
-    box-shadow: var(--fds-btn-focus-shadow) var(--fds-btn-focus-color-danger);
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        var(--fds-btn-focus-color-danger);
 }
 
 .btn-outline-danger:focus:not(:focus-visible) {
@@ -308,7 +310,8 @@
     color: var(--fds-color-success);
     background-color: transparent;
     border-color: var(--fds-color-success);
-    box-shadow: var(--fds-btn-focus-shadow) var(--fds-btn-focus-color-success);
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        var(--fds-btn-focus-color-success);
 }
 
 .btn-outline-success:focus:not(:focus-visible) {
