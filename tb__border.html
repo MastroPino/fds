@@ -286,6 +286,86 @@
                                 il valore anche tramite pulsanti dedicati o inserendo direttamente
                                 il valore numerico nell'input
                             -->
+                            <div class="dropdown">
+                                <div class="dropdown-toggle dropdown-input">
+                                    <div class="dropdown-input-titles">
+                                        <span class="form-label-sm"
+                                            >Posizione</span
+                                        >
+                                        <span class="selected-item"
+                                            ><i
+                                                class="fa-regular fa-border-all"
+                                            ></i>
+                                            Tutti i lati</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-menu-header">
+                                        <h5>Posizione</h5>
+                                    </div>
+                                    <div class="dropdown-menu-body">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-border-all"
+                                                    ></i>
+                                                    Tutti i lati
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-border-top"
+                                                    ></i>
+                                                    Solo sopra
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-border-right"
+                                                    ></i>
+                                                    Solo a destra
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-border-bottom"
+                                                    ></i>
+                                                    Solo a sotto
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-border-left"
+                                                    ></i>
+                                                    Solo a sinistra
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
                             <div class="toolbar-slider-control">
                                 <div class="toolbar-slider-control-header">
                                     <div class="toolbar-slider-control-title">
@@ -330,6 +410,51 @@
                                         step="4"
                                     />
                                     <div class="form-range-ticks"></div>
+                                </div>
+                            </div>
+                            <hr class="m-0" />
+                            <div class="dropdown">
+                                <div class="dropdown-toggle dropdown-input">
+                                    <div class="dropdown-input-titles">
+                                        <span class="form-label-sm">Stile</span>
+                                        <span class="selected-item"
+                                            ><i
+                                                class="fa-regular fa-square"
+                                            ></i>
+                                            Solid</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-menu-header">
+                                        <h5>Stile</h5>
+                                    </div>
+                                    <div class="dropdown-menu-body">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-square"
+                                                    ></i>
+                                                    Solid
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-square-dashed"
+                                                    ></i>
+                                                    Dashed
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <hr class="m-0" />
@@ -384,10 +509,11 @@
                             ></a>
                         </div>
                     </div>
-                    <hr />
                 </aside>
             </section>
         </div>
+
+        <script src="scripts/dropdown.js"></script>
         <script src="scripts/form-range.js"></script>
     </body>
 </html>
