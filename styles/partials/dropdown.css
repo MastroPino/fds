@@ -1,10 +1,11 @@
 :root {
     --fds-dropdown-bg-color: var(--fds-color-primary);
     --fds-dropdown-text-color: var(--fds-text-body);
-    --fds-dropdown-padding: var(--fds-spacer-1) var(--fds-spacer-2);
-    --fds-dropdown-border: none;
+    --fds-dropdown-padding: var(--fds-spacer-2);
+    --fds-dropdown-border: var(--fds-btn-border-width) solid
+        var(--fds-btn-border-color);
     --fds-dropdown-item-bg-hover: var(--fds-neutral-gray);
-    --fds-dropdown-item-padding: var(--fds-spacer-3);
+    --fds-dropdown-item-padding: var(--fds-spacer-1) var(--fds-spacer-2);
     --fds-dropdown-item-text-color: var(--fds-text-body);
     --fds-dropdown-menu-bg-color: var(--fds-color-white);
     --fds-dropdown-menu-shadow: var(--fds-shadow-md);
@@ -52,13 +53,24 @@
 .dropdown-toggle::after {
     content: "";
     display: inline-block;
-    margin-left: var(--fds-caret-spacing);
-    vertical-align: var(--fds-caret-vertical-align);
-    border: var(--fds-caret-width) solid transparent;
-    border-top-color: var(--fds-dropdown-text-color);
-    border-bottom: 0;
-    border-right: 0;
-    transform: rotate(45deg);
+    width: 1rem; /* Regola la larghezza in base alla tua immagine */
+    height: 1rem; /* Regola l'altezza in base alla tua immagine */
+    background-image: var(
+        --fds-floating-background-image
+    ); /* Sostituisci con l'URL dell'immagine del caret */
+    background-size: var(--fds-select-bg-size);
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-left: var(
+        --fds-floating-padding-x
+    ); /* Spazio tra il testo e il caret */
+    transform: rotate(0deg); /* Puoi ruotare l'immagine se necessario */
+}
+
+.dropdown-toggle.show {
+    border-color: var(--fds-input-focus-border-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--fds-input-focus-box-shadow-color);
 }
 
 .dropdown-menu {
@@ -67,9 +79,26 @@
     background-color: var(--fds-dropdown-menu-bg-color);
     box-shadow: var(--fds-dropdown-menu-box-shadow);
     z-index: 1;
+    width: 100%;
     min-width: var(--fds-dropdown-menu-min-width);
     border-radius: var(--fds-dropdown-menu-border-radius);
     margin-top: var(--fds-spacer-micro);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu .dropdown-menu-header {
+    padding: var(--fds-dropdown-padding);
+    border-bottom: 1px solid var(--fds-border-color);
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-bottom: 0;
+    }
 }
 
 .dropdown-menu .dropdown-item {
@@ -92,7 +121,7 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    min-height: var(--fds-dropdown-height);
+    height: var(--fds-dropdown-height);
 }
 
 .dropdown-input-titles {

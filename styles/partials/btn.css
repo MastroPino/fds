@@ -14,6 +14,7 @@
     --fds-btn-transition: border-color 0.15s ease-in-out,
         color 0.15s ease-in-out;
     --fds-btn-border-width: 2px;
+    --fds-btn-border-color: transparent;
     --fds-btn-focus-width: 0.25rem;
     --fds-btn-focus-shadow: 0 0 0 var(--fds-btn-focus-width);
     --fds-btn-focus-color-primary: var(--fds-color-primary-light-80);
@@ -40,7 +41,7 @@
     text-align: center;
     vertical-align: middle;
     user-select: none;
-    border: var(--fds-btn-border-width) solid transparent;
+    border: var(--fds-btn-border-width) solid var(--fds-btn-border-color);
     padding: var(--fds-btn-padding-y) var(--fds-btn-padding-x);
     font-size: var(--fds-btn-font-size-base);
     line-height: var(--fds-btn-line-height);

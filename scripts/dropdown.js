@@ -3,12 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdownMenu = document.getElementById('dropdownMenu');
 
     dropdownButton.addEventListener('click', function() {
-        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        dropdownMenu.classList.toggle('show');
+        dropdownButton.classList.toggle('show');
     });
 
     window.addEventListener('click', function(event) {
-        if (!event.target.matches('.dropdown-toggle')) {
-            dropdownMenu.style.display = 'none';
+        if (!event.target.matches('#dropdownButton')) {
+            dropdownMenu.classList.remove('show');
+            dropdownButton.classList.remove('show');
         }
     });
 });
