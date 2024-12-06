@@ -4,6 +4,7 @@
     --fds-input-bg-color: var(--fds-color-white);
     --fds-input-border-color: var(--fds-border-input);
     --fds-input-focus-border-color: var(--fds-color-primary-light-60);
+    --fds-input-border-color-filled: var(--fds-color-black-20);
     --fds-input-placeholder-color: var(--fds-text-placeholder);
     --fds-input-disabled-bg-color: var(--fds-neutral-gray);
     --fds-input-disabled-text-color: var(--fds-text-body);
@@ -142,6 +143,13 @@ textarea.form-control-lg {
         var(--fds-input-line-height) * var(--fds-input-font-size-lg) +
             var(--fds-input-padding-y-lg) * 2 + 2px
     );
+}
+
+/* Stato compilato (filled) */
+.form-control:not(:placeholder-shown):not(:focus):not(.is-invalid):not(
+        .is-valid
+    ) {
+    border-color: var(--fds-input-border-color-filled);
 }
 
 /* Valid state */
