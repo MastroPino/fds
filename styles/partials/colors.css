@@ -7,8 +7,8 @@
     --fds-text-blue: var(--fds-color-info);
     --fds-text-body: #384049;
     --fds-text-body-secondary: #606e7c;
-    --fds-text-body-tertiary: var(--fds-text-placeholder);
-    --fds-text-placeholder: #7e8b98;
+    --fds-text-body-tertiary: #7e8b98;
+    --fds-text-placeholder: var(--fds-text-body-tertiary);
     /* Brand primary */
     --fds-color-primary: #0071f1;
     /* Complementary colors */
