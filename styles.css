@@ -34,6 +34,7 @@
 @import "styles/components/toolbar-slider-control.css";
 @import "styles/components/toolbar-button-control.css";
 @import "styles/components/toolbar-text-format.css";
+@import "styles/components/toolbar-dropdown.css";
 
 /* Remove demo css */
 @import "styles/demo.css";

@@ -1,0 +1,26 @@
+.dropdown-menu .dropdown-item.is-active .card .card-body .card-title::after,
+.dropdown-menu .dropdown-item.is-active::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-image: var(--fds-form-select-indicator);
+    background-size: var(--fds-select-bg-size);
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-left: auto;
+    color: var(--fds-form-select-indicator-color);
+    float: right;
+}
+
+.dropdown-menu .dropdown-item.is-active .card {
+    border-color: var(--fds-color-primary);
+    border-width: var(--fds-card-border-width-active);
+}
+
+.dropdown-menu .dropdown-item .card {
+    flex: 1;
+}
+
+.dropdown-menu .dropdown-item.is-active:has(.card)::after {
+    content: none;
+}
