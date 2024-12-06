@@ -89,7 +89,7 @@
                 </div>
             </section>
             <section style="margin: 2rem auto">
-                <h1>input</h1>
+                <h1>floating labels</h1>
                 <!-- Input standard -->
                 <div class="form-floating">
                     <input
@@ -145,6 +145,85 @@
                 </div>
             </section>
             <section style="margin: 2rem auto">
+                <h1>floating labels</h1>
+                <!-- Input standard -->
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control is-valid"
+                        id="floatingInput1"
+                        placeholder="Name"
+                        value=""
+                    />
+                    <label for="floatingInput1">Name</label>
+                </div>
+
+                <!-- Input con valore pre-popolato -->
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control is-valid"
+                        id="floatingInput2"
+                        placeholder="Name"
+                        value="Mario Rossi"
+                    />
+                    <label for="floatingInput2">Name</label>
+                </div>
+
+                <!-- Input con icona -->
+                <div class="form-floating">
+                    <div class="form-control-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control is-valid"
+                        id="floatingInput3"
+                        placeholder="Name"
+                        value="Ciaone"
+                    />
+                    <label for="floatingInput3">Name</label>
+                </div>
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control is-invalid"
+                        id="floatingInput1"
+                        placeholder="Name"
+                        value=""
+                    />
+                    <label for="floatingInput1">Name</label>
+                </div>
+
+                <!-- Input con valore pre-popolato -->
+                <div class="form-floating">
+                    <input
+                        type="text"
+                        class="form-control is-invalid"
+                        id="floatingInput2"
+                        placeholder="Name"
+                        value="Mario Rossi"
+                    />
+                    <label for="floatingInput2">Name</label>
+                </div>
+
+                <!-- Input con icona -->
+                <div class="form-floating">
+                    <div class="form-control-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control is-invalid"
+                        id="floatingInput3"
+                        placeholder="Name"
+                        value="Ciaone"
+                    />
+                    <label for="floatingInput3">Name</label>
+                </div>
+            </section>
+
+            <section style="margin: 2rem auto">
                 <h1>select</h1>
                 <div class="form-floating">
                     <select class="form-select" id="floatingSelect">
@@ -170,6 +249,63 @@
                     <label for="floatingSelectIcon">Seleziona</label>
                 </div>
             </section>
+            <section style="margin: 2rem auto">
+                <h1>select feedback</h1>
+                <div class="form-floating">
+                    <select class="form-select is-valid" id="floatingSelect">
+                        <option value="">Seleziona un'opzione</option>
+                        <option value="1">Opzione 1</option>
+                        <option value="2">Opzione 2</option>
+                        <option value="3">Opzione 3</option>
+                    </select>
+                    <label for="floatingSelect">Seleziona</label>
+                </div>
+
+                <!-- Select con icona -->
+                <div class="form-floating">
+                    <div class="form-control-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <select
+                        class="form-select is-valid"
+                        id="floatingSelectIcon"
+                    >
+                        <option value="">Seleziona un'opzione</option>
+                        <option value="1">Opzione 1</option>
+                        <option value="2">Opzione 2</option>
+                        <option value="3">Opzione 3</option>
+                    </select>
+                    <label for="floatingSelectIcon">Seleziona</label>
+                </div>
+
+                <div class="form-floating">
+                    <select class="form-select is-invalid" id="floatingSelect">
+                        <option value="">Seleziona un'opzione</option>
+                        <option value="1">Opzione 1</option>
+                        <option value="2">Opzione 2</option>
+                        <option value="3">Opzione 3</option>
+                    </select>
+                    <label for="floatingSelect">Seleziona</label>
+                </div>
+
+                <!-- Select con icona -->
+                <div class="form-floating">
+                    <div class="form-control-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <select
+                        class="form-select is-invalid"
+                        id="floatingSelectIcon"
+                    >
+                        <option value="">Seleziona un'opzione</option>
+                        <option value="1">Opzione 1</option>
+                        <option value="2">Opzione 2</option>
+                        <option value="3">Opzione 3</option>
+                    </select>
+                    <label for="floatingSelectIcon">Seleziona</label>
+                </div>
+            </section>
+
             <section style="margin: 2rem auto">
                 <h1>range</h1>
                 <div class="slider-container">
@@ -206,6 +342,6 @@
                 </div>
             </section>
         </div>
-        <script src="form-range.js"></script>
+        <script src="scripts/form-range.js"></script>
     </body>
 </html>
