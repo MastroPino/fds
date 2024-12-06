@@ -1,0 +1,147 @@
+:root {
+    /* Switch specific variables */
+    --fds-switch-width: 2.75rem; /* 44px */
+    --fds-switch-height: 1.5rem; /* 24px */
+    --fds-switch-padding: 0.125rem; /* 2px */
+    --fds-switch-toggle-size: 1.25rem; /* 20px */
+    /* Correzione offset per centrare la maniglia */
+    --fds-switch-toggle-offset: 1.25rem; /* Ridotto da 1.375rem */
+    --fds-switch-bg: var(--fds-border-input);
+    --fds-switch-checked-bg: var(--fds-color-primary);
+    --fds-switch-toggle-bg: var(--fds-color-white);
+
+    /* Icone per gli stati dello switch */
+    --fds-switch-icon-check: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.5L4.33333 8L11 1' stroke='%23606E7C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    --fds-switch-icon-disabled: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7M1 7L7 1' stroke='%23606E7C' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+
+    --fds-switch-icon-size: 0.75rem; /* 12px */
+}
+
+/* Switch base styles */
+.form-switch {
+    padding-left: 0;
+    min-height: var(--fds-switch-height);
+}
+
+.form-switch .form-check-input {
+    width: var(--fds-switch-width);
+    height: var(--fds-switch-height);
+    /* Rimuovi l'aspetto predefinito della checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Stili base */
+    background-image: none !important; /* Forza rimozione immagine checkbox */
+    background-color: var(--fds-switch-bg);
+    border: none;
+    border-radius: var(--fds-switch-height);
+    margin-left: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Switch toggle */
+.form-switch .form-check-input::before {
+    content: "";
+    position: absolute;
+    top: var(--fds-switch-padding);
+    left: var(--fds-switch-padding);
+    width: var(--fds-switch-toggle-size);
+    height: var(--fds-switch-toggle-size);
+    background-color: var(--fds-switch-toggle-bg);
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+    z-index: 2; /* Assicura che la maniglia sia sempre sopra */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: var(--fds-switch-icon-disabled);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--fds-switch-icon-size);
+}
+
+/* Checked state */
+.form-switch .form-check-input:checked {
+    background-color: var(--fds-switch-checked-bg);
+}
+
+.form-switch .form-check-input:checked::before {
+    transform: translateX(var(--fds-switch-toggle-offset));
+    background-image: var(--fds-switch-icon-check);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--fds-switch-icon-size);
+}
+
+/* Aggiungere lo stile per l'icona check quando è attivo */
+/* .form-switch .form-check-input:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(var(--fds-switch-padding) + var(--fds-switch-toggle-offset));
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 9px;
+    background-image: var(--fds-switch-icon-check);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+} */
+
+/* Hover states */
+.form-switch .form-check-input:not(:disabled):hover {
+    opacity: 0.9;
+}
+
+.form-switch .form-check-input:not(:disabled):checked:hover {
+    background-color: var(--fds-color-primary);
+}
+
+/* Focus state */
+.form-switch .form-check-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-primary-light-80);
+}
+
+/* Disabled state */
+.form-switch .form-check-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled::before {
+    opacity: var(--fds-form-check-input-disabled-opacity);
+}
+
+/* Aggiungere l'icona X per lo stato disabled */
+.form-switch .form-check-input:disabled::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: var(--fds-switch-padding);
+    transform: translate(0, -50%);
+    width: 8px;
+    height: 8px;
+    background-image: var(--fds-switch-icon-disabled);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+}
+
+/* Assicurarsi che l'icona si sposti con la maniglia quando è checked e disabled */
+.form-switch .form-check-input:disabled:checked::after {
+    left: calc(var(--fds-switch-padding) + var(--fds-switch-toggle-offset));
+}
+
+/* Validation states */
+.form-switch .form-check-input.is-valid:checked {
+    background-color: var(--fds-color-success);
+}
+
+.form-switch .form-check-input.is-invalid:checked {
+    background-color: var(--fds-color-danger);
+}

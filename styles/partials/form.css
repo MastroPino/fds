@@ -3,6 +3,7 @@
 @import "forms/form-range.css";
 @import "forms/form-control.css";
 @import "forms/form-check.css";
+@import "forms/form-switch.css";
 
 :root {
     /* Forms */
