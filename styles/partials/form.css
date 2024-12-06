@@ -2,6 +2,7 @@
 @import "forms/floating-select.css";
 @import "forms/form-range.css";
 @import "forms/form-control.css";
+@import "forms/form-check.css";
 
 :root {
     /* Forms */

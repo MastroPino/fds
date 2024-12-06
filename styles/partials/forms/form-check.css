@@ -1,0 +1,161 @@
+:root {
+    /* Dimensions - aggiornate secondo Figma */
+    --fds-form-check-input-width: 1.25rem; /* 20px */
+    --fds-form-check-input-height: 1.25rem; /* 20px */
+    --fds-form-check-input-border-radius: 0.375rem; /* 6px */
+    --fds-form-check-radio-border-radius: 50%;
+
+    /* Colors - usando le variabili esistenti */
+    --fds-form-check-input-bg: var(--fds-color-white);
+    --fds-form-check-input-border-width: 2px;
+    --fds-form-check-input-border-color: var(--fds-border-input);
+    --fds-form-check-input-checked-bg: var(--fds-color-primary);
+    --fds-form-check-input-checked-border-color: var(--fds-color-primary);
+    --fds-form-check-input-focus-border: var(--fds-color-primary-light-60);
+
+    /* Shadow per focus */
+    --fds-form-check-input-focus-box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-primary-light-80);
+
+    /* Spacing - aggiornato secondo Figma */
+    --fds-form-check-margin-bottom: var(--fds-spacer-2);
+    --fds-form-check-label-padding-left: 0.75rem; /* 12px */
+    --fds-form-check-input-margin-y: 0.1875rem; /* 3px per allineamento verticale */
+
+    /* States */
+    --fds-form-check-input-disabled-opacity: 0.5;
+    --fds-form-check-input-disabled-bg: var(--fds-input-disabled-bg-color);
+
+    /* Background images per stati checked */
+    --fds-form-check-input-checked-bg-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.21053L4.41379 8.5L11 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    --fds-form-check-radio-checked-bg-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='white'/%3E%3C/svg%3E");
+
+    --fds-form-check-input-indeterminate-bg-image: url("data:image/svg+xml,%3Csvg width='10' height='2' viewBox='0 0 10 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L10 1' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+
+    /* Background size per le icone */
+    --fds-form-check-input-checked-size: 0.75rem;
+    --fds-form-radio-input-checked-size: 0.65rem;
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    min-height: 1.5rem; /* 24px secondo Figma */
+    margin-bottom: var(--fds-form-check-margin-bottom);
+    cursor: pointer;
+}
+
+.form-check-input {
+    width: var(--fds-form-check-input-width);
+    height: var(--fds-form-check-input-height);
+    margin-top: var(--fds-form-check-input-margin-y);
+    background-color: var(--fds-form-check-input-bg);
+    border: var(--fds-form-check-input-border-width) solid
+        var(--fds-form-check-input-border-color); /* Border più spesso */
+    appearance: none;
+    print-color-adjust: exact;
+    transition: all 0.2s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+.form-check-input[type="checkbox"] {
+    border-radius: var(--fds-form-check-input-border-radius);
+}
+
+.form-check-input[type="radio"] {
+    border-radius: var(--fds-form-check-radio-border-radius);
+}
+
+.form-check-input:checked {
+    background-color: var(--fds-color-primary);
+    border-color: var(--fds-color-primary);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-check-input:focus {
+    border-color: var(--fds-color-primary);
+    box-shadow: var(--fds-form-check-input-focus-box-shadow);
+}
+
+.form-check-input:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: var(--fds-form-check-input-disabled-opacity);
+    background-color: var(--fds-form-check-input-disabled-bg);
+}
+
+.form-check-input[type="checkbox"]:checked {
+    background-image: var(--fds-form-check-input-checked-bg-image);
+    background-size: var(--fds-form-check-input-checked-size);
+}
+
+.form-check-input[type="checkbox"]:indeterminate {
+    background-image: var(--fds-form-check-input-indeterminate-bg-image);
+    background-size: var(--fds-form-radio-input-checked-size);
+}
+
+.form-check-input[type="radio"]:checked {
+    background-image: var(--fds-form-check-radio-checked-bg-image);
+    background-size: var(--fds-form-radio-input-checked-size);
+}
+
+.form-check-input:disabled:checked[type="checkbox"] {
+    background-image: var(--fds-form-check-input-checked-bg-image);
+}
+
+.form-check-input:disabled:checked[type="radio"] {
+    background-image: var(--fds-form-check-radio-checked-bg-image);
+}
+
+.form-check-label {
+    display: inline-block;
+    margin-left: var(--fds-form-check-label-padding-left);
+    font-size: var(--fds-font-size-base);
+    line-height: 1.5;
+    color: var(--fds-text-body);
+    font-family: var(--fds-font-family-base);
+    font-size: var(--fds-input-font-size);
+    font-weight: var(--fds-input-font-weight);
+    user-select: none;
+}
+
+/* Hover state */
+.form-check-input:not(:disabled):not(:checked):hover {
+    border-color: var(--fds-form-check-input-focus-border);
+}
+
+/* Validation states */
+.form-check-input.is-valid {
+    border-color: var(--fds-form-feedback-border-valid);
+}
+
+.form-check-input.is-valid:checked {
+    background-color: var(--fds-color-success);
+}
+
+.form-check-input.is-valid:focus {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-success-light-80);
+}
+
+.form-check-input.is-invalid {
+    border-color: var(--fds-form-feedback-border-invalid);
+}
+
+.form-check-input.is-invalid:checked {
+    background-color: var(--fds-color-danger);
+}
+
+.form-check-input.is-invalid:focus {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-danger-light-80);
+}
+
+/* Disabled state */
+.form-check-input:disabled,
+.form-check-input:disabled ~ .form-check-label {
+    opacity: var(--fds-form-check-input-disabled-opacity);
+    cursor: not-allowed;
+}

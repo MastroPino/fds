@@ -54,7 +54,7 @@
         var(--fds-form-floating-padding-x);
     border: 1px solid transparent;
     color: var(--fds-input-placeholder-color);
-    font-weight: var(--fds-fw-normal);
+    font-weight: var(--fds-input-label-font-weight);
     line-height: var(--fds-form-floating-line-height);
     overflow: hidden;
     pointer-events: none;

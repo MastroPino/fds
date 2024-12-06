@@ -14,7 +14,7 @@
     --fds-input-font-size: var(--fds-input-font-size);
     --fds-input-font-weight: var(--fds-fw-medium);
     --fds-input-line-height: 1.5;
-    --fds-input-label-font-weight: var(--fds-fw-default);
+    --fds-input-label-font-weight: var(--fds-fw-medium);
 
     /* Spacing */
     --fds-input-padding-y: var(--fds-spacer-1);
@@ -110,7 +110,7 @@
     font-family: var(--fds-font-family-base);
     font-size: var(--fds-base-font-size);
     font-style: normal;
-    font-weight: var(--fds-fw-medium);
+    font-weight: var(--fds-input-label-font-weight);
     line-height: 1rem; /* 100% */
     margin-bottom: var(--fds-input-label-margin-bottom);
 }
@@ -155,6 +155,7 @@ textarea.form-control-lg {
 /* Valid state */
 .form-control.is-valid {
     border-color: var(--fds-form-feedback-border-valid);
+    border-width: 2px;
     padding-right: calc(1.5em + 0.75rem);
     background-image: var(--fds-form-feedback-icon-valid);
     background-repeat: no-repeat;
@@ -171,6 +172,7 @@ textarea.form-control-lg {
 /* Invalid state */
 .form-control.is-invalid {
     border-color: var(--fds-form-feedback-border-invalid);
+    border-width: 2px;
     padding-right: calc(1.5em + 0.75rem);
     background-image: var(--fds-form-feedback-icon-invalid);
     background-repeat: no-repeat;
