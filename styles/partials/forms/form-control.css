@@ -16,7 +16,7 @@
     --fds-input-label-font-weight: var(--fds-fw-default);
 
     /* Spacing */
-    --fds-input-padding-y: 0.5rem;
+    --fds-input-padding-y: var(--fds-spacer-1);
     --fds-input-padding-x: var(--fds-spacer-2);
     --fds-input-padding-y-sm: 0.015rem;
     --fds-input-padding-x-sm: 0.75rem;
