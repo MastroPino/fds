@@ -20,7 +20,7 @@
     /* Spacing - aggiornato secondo Figma */
     --fds-form-check-margin-bottom: var(--fds-spacer-2);
     --fds-form-check-label-padding-left: 0.75rem; /* 12px */
-    --fds-form-check-input-margin-y: 0.063rem; /* 1px per allineamento verticale */
+    --fds-form-check-input-margin-y: 0.1875rem; /* 3px per allineamento verticale */
 
     /* States */
     --fds-form-check-input-disabled-opacity: 0.5;

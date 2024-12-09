@@ -1,4 +1,4 @@
-.toolbar {
+.fds-toolbar {
     display: flex;
     flex-flow: column;
     /* gap: var(--fds-spacer-3); */

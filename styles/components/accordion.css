@@ -48,29 +48,29 @@
 }
 
 /* Accordion Container */
-.accordion {
+.fds-accordion {
     width: 100%;
 }
 
 /* Accordion Items */
-.accordion-item {
+.fds-accordion-item {
     background-color: var(--fds-accordion-body-bg);
     border: var(--fds-accordion-border-style) var(--fds-accordion-border-color);
     border-width: var(--fds-accordion-border-width);
     box-shadow: var(--fds-accordion-box-shadow);
 }
 
-.accordion-item:not(:first-of-type) {
+.fds-accordion-item:not(:first-of-type) {
     margin-top: var(--fds-accordion-item-spacing);
 }
 
 /* Border radius handling */
-.accordion-item:first-of-type {
+.fds-accordion-item:first-of-type {
     border-top-left-radius: var(--fds-accordion-border-radius);
     border-top-right-radius: var(--fds-accordion-border-radius);
 }
 
-.accordion-item:first-of-type .accordion-button {
+.fds-accordion-item:first-of-type .fds-accordion-button {
     border-top-left-radius: calc(
         var(--fds-accordion-border-radius) - var(--fds-accordion-border-width)
     );
@@ -79,12 +79,12 @@
     );
 }
 
-.accordion-item:last-of-type {
+.fds-accordion-item:last-of-type {
     border-bottom-left-radius: var(--fds-accordion-border-radius);
     border-bottom-right-radius: var(--fds-accordion-border-radius);
 }
 
-.accordion-item:last-of-type .accordion-button.collapsed {
+.fds-accordion-item:last-of-type .fds-accordion-button.collapsed {
     border-bottom-left-radius: calc(
         var(--fds-accordion-border-radius) - var(--fds-accordion-border-width)
     );
@@ -93,18 +93,18 @@
     );
 }
 
-.accordion-item:last-of-type .accordion-button[aria-expanded="true"] {
+.fds-accordion-item:last-of-type .fds-accordion-button[aria-expanded="true"] {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 /* Accordion Header */
-.accordion-header {
+.fds-accordion-header {
     margin: 0;
 }
 
 /* Accordion Button */
-.accordion-button {
+.fds-accordion-button {
     position: relative;
     display: flex;
     align-items: center;
@@ -126,19 +126,19 @@
 }
 
 /* Button states */
-/*.accordion-button:not(.collapsed),*/
-.accordion-button[aria-expanded="true"] {
+/*.fds-accordion-button:not(.collapsed),*/
+.fds-accordion-button[aria-expanded="true"] {
     color: var(--fds-accordion-active-color);
     background-color: var(--fds-accordion-active-bg);
 }
 
-.accordion-button:hover {
+.fds-accordion-button:hover {
     background-color: var(--fds-accordion-active-bg);
     color: var(--fds-accordion-active-color);
 }
 
 /* Icon styles */
-.accordion-icon {
+.fds-accordion-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +151,7 @@
     color: currentColor; /* Inherits color from parent */
 }
 
-.accordion-icon svg {
+.fds-accordion-icon svg {
     width: var(--fds-accordion-icon-size);
     height: var(--fds-accordion-icon-size);
     transform-origin: center;
@@ -161,39 +161,39 @@
 }
 
 /* Hover state */
-.accordion-button:hover .accordion-icon {
+.fds-accordion-button:hover .fds-accordion-icon {
     background-color: var(--fds-accordion-icon-bg-color-hover);
 }
 
-.accordion-button[aria-expanded="false"] .accordion-icon svg {
+.fds-accordion-button[aria-expanded="false"] .fds-accordion-icon svg {
     transform: rotate(0deg);
 }
 
-.accordion-button[aria-expanded="true"] .accordion-icon svg {
+.fds-accordion-button[aria-expanded="true"] .fds-accordion-icon svg {
     transform: rotate(var(--fds-accordion-icon-rotation));
 }
 
 /* Collapse styles */
-.accordion-collapse {
+.fds-accordion-collapse {
     transition: height 0.3s ease;
 }
 
-.accordion-collapse.collapse {
+.fds-accordion-collapse.fds-collapse {
     height: 0;
     overflow: hidden;
 }
 
-.accordion-collapse.collapse.show {
+.fds-accordion-collapse.fds-collapse.fds-show {
     height: auto;
 }
 
-.accordion-collapse.collapsing {
+.fds-accordion-collapse.fds-collapsing {
     height: 0;
     overflow: hidden;
 }
 
 /* Accordion Body */
-.accordion-body {
+.fds-accordion-body {
     padding: var(--fds-accordion-body-padding-y)
         var(--fds-accordion-body-padding-x);
     font-family: var(--fds-accordion-body-font-family);
@@ -206,16 +206,16 @@
 
 /* Responsive adjustments */
 @media (max-width: var(--fds-container-breakpoint-md)) {
-    .accordion-button {
+    .fds-accordion-button {
         padding: var(--fds-spacer-2);
     }
 
-    .accordion-body {
+    .fds-accordion-body {
         padding: var(--fds-spacer-2);
     }
 }
 
-.accordion-add-line {
+.fds-accordion-add-line {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,9 +223,10 @@
 }
 
 /* Remover styles - simile a accordion-icon ma con le sue peculiarità */
-.accordion-remover {
+.fds-accordion-remover {
     width: var(--fds-accordion-icon-bg-size);
     height: var(--fds-accordion-icon-bg-size);
+    flex-basis: var(--fds-accordion-icon-bg-size);
     transition: border-color 0.3s ease-in-out;
     margin-left: auto; /* Spinge l'elemento a destra */
     border-color: var(
@@ -238,13 +239,13 @@
 }
 
 /* Aggiusta il layout del button per gestire i tre elementi */
-.accordion-button {
+.fds-accordion-button {
     display: flex;
     align-items: center;
     gap: var(--fds-spacer-2);
 }
 
-.accordion-title {
+.fds-accordion-title {
     flex: 1;
     min-width: 0;
 }

@@ -15,6 +15,6 @@
     --fds-input-placeholder-color: var(--fds-text-placeholder);
 }
 
-.form-control::placeholder {
+.fds-form-control::placeholder {
     color: var(--fds-input-placeholder-color);
 }

@@ -113,6 +113,10 @@
     font-weight: var(--fds-input-label-font-weight);
     line-height: 1rem; /* 100% */
     margin-bottom: var(--fds-input-label-margin-bottom);
+    /*x reboot old style*/
+    margin-top: 0;
+    padding-left: 0;
+    float: none;
 }
 
 .fds-form-label-sm {

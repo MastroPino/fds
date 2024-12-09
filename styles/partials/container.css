@@ -15,7 +15,7 @@
 }
 
 /* Basic container */
-.container {
+.fds-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -26,7 +26,7 @@
 }
 
 /* Fluid container */
-.container-fluid {
+.fds-container-fluid {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -36,41 +36,41 @@
 
 /* Responsive containers */
 @media (min-width: 576px) {
-    .container {
+    .fds-container {
         max-width: var(--container-max-width-sm);
     }
 }
 
 @media (min-width: 768px) {
-    .container {
+    .fds-container {
         max-width: var(--container-max-width-md);
     }
 }
 
 @media (min-width: 992px) {
-    .container {
+    .fds-container {
         max-width: var(--container-max-width-lg);
     }
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .fds-container {
         max-width: var(--container-max-width-xl);
     }
 }
 
 @media (min-width: 1400px) {
-    .container {
+    .fds-container {
         max-width: var(--container-max-width-xxl);
     }
 }
 
 /* Responsive containers that are 100% wide until a breakpoint */
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
+.fds-container-sm,
+.fds-container-md,
+.fds-container-lg,
+.fds-container-xl,
+.fds-container-xxl {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -80,41 +80,41 @@
 
 /* Breakpoint-specific container max-widths */
 @media (min-width: 576px) {
-    .container-sm {
+    .fds-container-sm {
         max-width: var(--container-max-width-sm);
     }
 }
 
 @media (min-width: 768px) {
-    .container-sm,
-    .container-md {
+    .fds-container-sm,
+    .fds-container-md {
         max-width: var(--container-max-width-md);
     }
 }
 
 @media (min-width: 992px) {
-    .container-sm,
-    .container-md,
-    .container-lg {
+    .fds-container-sm,
+    .fds-container-md,
+    .fds-container-lg {
         max-width: var(--container-max-width-lg);
     }
 }
 
 @media (min-width: 1200px) {
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl {
+    .fds-container-sm,
+    .fds-container-md,
+    .fds-container-lg,
+    .fds-container-xl {
         max-width: var(--container-max-width-xl);
     }
 }
 
 @media (min-width: 1400px) {
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl,
-    .container-xxl {
+    .fds-container-sm,
+    .fds-container-md,
+    .fds-container-lg,
+    .fds-container-xl,
+    .fds-container-xxl {
         max-width: var(--container-max-width-xxl);
     }
 }

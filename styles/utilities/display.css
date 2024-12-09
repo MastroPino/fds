@@ -1,34 +1,34 @@
-.d-flex {
+.fds-d-flex {
     display: flex !important;
 }
 
-.d-grid {
+.fds-d-grid {
     display: grid !important;
 }
-.d-inline {
+.fds-d-inline {
     display: inline !important;
 }
 
-.d-inline-block {
+.fds-d-inline-block {
     display: inline-block !important;
 }
 
-.d-block {
+.fds-d-block {
     display: block !important;
 }
 
-.d-none {
+.fds-d-none {
     display: none !important;
 }
 
-.d-table {
+.fds-d-table {
     display: table !important;
 }
 
-.d-table-row {
+.fds-d-table-row {
     display: table-row !important;
 }
 
-.d-table-cell {
+.fds-d-table-cell {
     display: table-cell !important;
 }

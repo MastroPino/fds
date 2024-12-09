@@ -1,7 +1,7 @@
 /* --------------------------------
    Base link styles
 -------------------------------- */
-.link {
+.fds-link {
     display: inline;
     font-weight: var(--fds-fw-medium);
     text-decoration-line: underline;
@@ -12,144 +12,145 @@
 /* --------------------------------
    Link variants
 -------------------------------- */
-.link-primary {
-    color: var(--fds-color-primary);
-    text-decoration-color: var(--fds-color-primary);
+.fds-link-primary {
+    color: var(--fds-color-primary) !important;
+    text-decoration-color: var(--fds-color-primary) !important;
 }
 
-.link-info {
-    color: var(--fds-color-info);
-    text-decoration-color: var(--fds-color-info);
+.fds-link,
+.fds-link-info {
+    color: var(--fds-color-info) !important ;
+    text-decoration-color: var(--fds-color-info) !important ;
 }
 
-.link-success {
-    color: var(--fds-color-success);
-    text-decoration-color: var(--fds-color-success);
+.fds-link-success {
+    color: var(--fds-color-success) !important ;
+    text-decoration-color: var(--fds-color-success) !important ;
 }
 
-.link-danger {
-    color: var(--fds-color-danger);
-    text-decoration-color: var(--fds-color-danger);
+.fds-link-danger {
+    color: var(--fds-color-danger) !important ;
+    text-decoration-color: var(--fds-color-danger) !important ;
 }
 
 /* --------------------------------
    Hover states
 -------------------------------- */
-.link-primary:hover {
-    color: var(--fds-color-primary-dark-20);
-    text-decoration-color: var(--fds-color-primary-dark-20);
+.fds-link-primary:hover {
+    color: var(--fds-color-primary-dark-20) !important ;
+    text-decoration-color: var(--fds-color-primary-dark-20) !important ;
 }
 
-.link-info:hover {
-    color: var(--fds-color-info-dark-20);
-    text-decoration-color: var(--fds-color-info-dark-20);
+.fds-link-info:hover {
+    color: var(--fds-color-info-dark-20) !important ;
+    text-decoration-color: var(--fds-color-info-dark-20) !important ;
 }
 
-.link-success:hover {
-    color: var(--fds-color-success-dark-20);
-    text-decoration-color: var(--fds-color-success-dark-20);
+.fds-link-success:hover {
+    color: var(--fds-color-success-dark-20) !important ;
+    text-decoration-color: var(--fds-color-success-dark-20) !important ;
 }
 
-.link-danger:hover {
-    color: var(--fds-color-danger-dark-20);
-    text-decoration-color: var(--fds-color-danger-dark-20);
+.fds-link-danger:hover {
+    color: var(--fds-color-danger-dark-20) !important ;
+    text-decoration-color: var(--fds-color-danger-dark-20) !important ;
 }
 
 /* --------------------------------
    Thickness variants
 -------------------------------- */
-.link-thin {
+.fds-link-thin {
     text-decoration-thickness: 1px;
 }
 
-.link-medium {
+.fds-link-medium {
     text-decoration-thickness: 2px;
 }
 
-.link-thick {
+.fds-link-thick {
     text-decoration-thickness: 3px;
 }
 
 /* --------------------------------
    Focus states
 -------------------------------- */
-.link:focus {
-    outline: none;
-    text-decoration: none;
-    border-radius: 0.25rem;
-    transition: box-shadow 0.2s ease-in-out;
+.fds-link:focus {
+    outline: none !important ;
+    text-decoration: none !important ;
+    border-radius: 0.25rem !important ;
+    transition: box-shadow 0.2s ease-in-out !important ;
 }
 
-.link:focus-visible {
-    text-decoration: none;
-    box-shadow: var(--fds-focus-ring-box-shadow);
+.fds-link:focus-visible {
+    text-decoration: none !important ;
+    box-shadow: var(--fds-focus-ring-box-shadow) !important ;
 }
 
-.link-primary:focus-visible {
+.fds-link-primary:focus-visible {
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
-        var(--fds-color-primary-light-80);
+        var(--fds-color-primary-light-80) !important ;
 }
 
-.link-info:focus-visible {
-    box-shadow: 0 0 0 var(--fds-focus-ring-width) var(--fds-color-info-light-80);
+.fds-link-info:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width) var(--fds-color-info-light-80) !important ;
 }
 
-.link-success:focus-visible {
+.fds-link-success:focus-visible {
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
-        var(--fds-color-success-light-80);
+        var(--fds-color-success-light-80) !important ;
 }
 
-.link-danger:focus-visible {
+.fds-link-danger:focus-visible {
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
-        var(--fds-color-danger-light-80);
+        var(--fds-color-danger-light-80) !important ;
 }
 
 /* Underline offset utilities */
-.link-offset-1 {
+.fds-link-offset-1 {
     text-underline-offset: 0.125em;
 }
-.link-offset-2 {
+.fds-link-offset-2 {
     text-underline-offset: 0.25em;
 }
-.link-offset-3 {
+.fds-link-offset-3 {
     text-underline-offset: 0.375em;
 }
-.link-offset-4 {
+.fds-link-offset-4 {
     text-underline-offset: 0.45em;
 }
 
 /* Animated hover effect */
-.link-offset-animated {
+.fds-link-offset-animated {
     transition: text-underline-offset 0.2s ease;
 }
-.link-offset-animated:hover {
+.fds-link-offset-animated:hover {
     text-underline-offset: 0.4em;
 }
 
 /* Focus states per ogni variante */
-.link-primary:focus {
+.fds-link-primary:focus {
     box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
         color-mix(
             in srgb,
             var(--fds-color-primary),
             transparent var(--fds-focus-ring-opacity)
-        );
+        ) !important ;
 }
 
-.link-success:focus {
+.fds-link-success:focus {
     box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
         color-mix(
             in srgb,
             var(--fds-color-success),
             transparent var(--fds-focus-ring-opacity)
-        );
+        ) !important ;
 }
 
-.link-danger:focus {
+.fds-link-danger:focus {
     box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
         color-mix(
             in srgb,
             var(--fds-color-danger),
             transparent var(--fds-focus-ring-opacity)
-        );
+        ) !important ;
 }

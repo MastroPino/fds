@@ -1,5 +1,9 @@
-.dropdown-menu .dropdown-item.is-active .card .card-body .card-title::after,
-.dropdown-menu .dropdown-item.is-active::after {
+.fds-dropdown-menu
+    .fds-dropdown-item.is-active
+    .card
+    .card-body
+    .card-title::after,
+.fds-dropdown-menu .fds-dropdown-item.is-active::after {
     content: "";
     width: 1rem;
     height: 1rem;
@@ -12,15 +16,15 @@
     float: right;
 }
 
-.dropdown-menu .dropdown-item.is-active .card {
+.fds-dropdown-menu .fds-dropdown-item.is-active .fds-card {
     border-color: var(--fds-color-primary);
     border-width: var(--fds-card-border-width-active);
 }
 
-.dropdown-menu .dropdown-item .card {
+.fds-dropdown-menu .fds-dropdown-item .fds-card {
     flex: 1;
 }
 
-.dropdown-menu .dropdown-item.is-active:has(.card)::after {
+.fds-dropdown-menu .fds-dropdown-item.is-active:has(.fds-card)::after {
     content: none;
 }

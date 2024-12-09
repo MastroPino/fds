@@ -62,6 +62,10 @@
     transform-origin: 0 0;
     white-space: nowrap;
     transition: var(--fds-form-floating-transition);
+    /*x reboot old style*/
+    margin-top: 0;
+    padding-left: 0;
+    float: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -160,16 +164,12 @@
 .fds-form-floating:has(.fds-form-control-icon)
     > .fds-form-control:not(:placeholder-shown)
     ~ label,
-.fds-form-floating:has(.fds-form-control-icon)
-    > .fds-form-control:focus
-    ~ label {
+.fds-form-floating:has(.fds-form-control-icon) > .fds-form-control:focus ~ label {
     transform: scale(0.8) translateY(-0.5rem) translateX(0.95rem);
     transform-origin: left top;
 }
 
-.fds-form-floating:has(.fds-form-control-icon)
-    > .fds-form-control:focus
-    ~ label::after,
+.fds-form-floating:has(.fds-form-control-icon) > .fds-form-control:focus ~ label::after,
 .fds-form-floating:has(.fds-form-control-icon)
     > .fds-form-control:not(:placeholder-shown)
     ~ label::after {

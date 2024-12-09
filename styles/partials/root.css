@@ -3,3 +3,10 @@
     --fds-border-style: solid;
     --fds-border-color: var(--fds-border-color);
 }
+
+
+
+[class*="fds-"] {
+    box-sizing: border-box;
+    font-family: var(--fds-font-family-base);
+}

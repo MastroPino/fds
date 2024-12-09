@@ -34,12 +34,12 @@
     --fds-form-select-indicator: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path  fill="currentColor" stroke="currentColor" d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>');
 }
 
-.dropdown {
+.fds-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-toggle {
+.fds-dropdown-toggle {
     background-color: var(--fds-dropdown-bg-color);
     color: var(--fds-dropdown-text-color);
     padding: var(--fds-dropdown-padding);
@@ -51,13 +51,13 @@
     justify-content: space-between;
 }
 
-.dropdown-toggle:focus {
+.fds-dropdown-toggle:focus {
     border-color: var(--fds-input-focus-border-color);
     box-shadow: var(--fds-focus-ring-box-shadow);
     outline: none;
 }
 
-.dropdown-toggle::after {
+.fds-dropdown-toggle::after {
     content: "";
     display: inline-block;
     width: 1rem;
@@ -70,13 +70,13 @@
     transform: rotate(0deg);
 }
 
-.dropdown-toggle.dropdown-menu-visible {
+.fds-dropdown-toggle.fds-dropdown-menu-visible {
     border-color: var(--fds-input-focus-border-color);
     outline: 0;
     box-shadow: var(--fds-input-box-shadow-focus);
 }
 
-.dropdown-menu {
+.fds-dropdown-menu {
     display: none;
     position: absolute;
     background-color: var(--fds-dropdown-menu-bg-color);
@@ -92,12 +92,12 @@
         var(--fds-dropdown-menu-border-color);
 }
 
-.dropdown-menu.show {
+.fds-dropdown-menu.fds-show {
     display: grid;
     grid-template: auto 1fr auto/auto;
 }
 
-.dropdown-menu.show + .dropdown-toggle {
+.fds-dropdown-menu.fds-show + .fds-dropdown-toggle {
     border-color: var(
         --fds-input-border-focus-color
     ); /* Colore del bordo in stato di focus */
@@ -105,15 +105,15 @@
     outline: none; /* Rimuove il contorno predefinito */
 }
 
-.dropdown-menu .dropdown-menu-header,
-.dropdown-menu .dropdown-menu-footer {
+.fds-dropdown-menu .fds-dropdown-menu-header,
+.fds-dropdown-menu .fds-dropdown-menu-footer {
     position: sticky;
     background-color: var(--fds-dropdown-bg-color);
     padding: var(--fds-dropdown-padding);
     z-index: 2; /* Assicurati che l'header sia sopra il contenuto scrollabile */
 }
 
-.dropdown-menu .dropdown-menu-header {
+.fds-dropdown-menu .fds-dropdown-menu-header {
     top: 0;
     border-bottom: 1px solid var(--fds-border-color);
     h1,
@@ -125,20 +125,20 @@
     }
 }
 
-.dropdown-menu .dropdown-menu-footer {
+.fds-dropdown-menu .fds-dropdown-menu-footer {
     bottom: 0;
     border-top: 1px solid var(--fds-border-color);
 }
 
-.dropdown-menu .dropdown-menu-body {
+.fds-dropdown-menu .fds-dropdown-menu-body {
     overflow-y: auto; /* Abilita lo scroll verticale */
-    .list-unstyled {
+    .fds-list-unstyled {
         margin-top: var(--fds-spacer-2);
         list-style: none !important;
     }
 }
 
-.dropdown-menu .dropdown-item {
+.fds-dropdown-menu .fds-dropdown-item {
     padding: var(--fds-dropdown-item-padding);
     text-decoration: none;
     display: flex;
@@ -148,11 +148,11 @@
     color: var(--fds-dropdown-item-text-color);
 }
 
-.dropdown-menu .dropdown-item:hover {
+.fds-dropdown-menu .fds-dropdown-item:hover {
     background-color: var(--fds-dropdown-item-bg-hover);
 }
 
-.dropdown-menu .dropdown-item.is-active::after {
+.fds-dropdown-menu .fds-dropdown-item.is-active::after {
     content: "";
     width: 1rem;
     height: 1rem;
@@ -165,7 +165,7 @@
     float: right;
 }
 
-.dropdown-input {
+.fds-dropdown-input {
     background-color: var(--fds-input-bg-color);
     border: 1px solid var(--fds-input-border-color);
     padding: var(--fds-input-padding-y) var(--fds-input-padding-x);
@@ -178,20 +178,20 @@
     width: 100%;
 }
 
-.dropdown-input-titles {
+.fds-dropdown-input-titles {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.dropdown-input .form-label,
-.dropdown-input .form-label-sm {
+.fds-dropdown-input .fds-form-label,
+.fds-dropdown-input .fds-form-label-sm {
     color: var(--fds-label-color);
     margin-right: auto;
 }
 
-.dropdown-input .selected-item {
+.fds-dropdown-input .fds-selected-item {
     overflow: hidden;
     color: var(--fds-selected-text-color);
     text-overflow: ellipsis;

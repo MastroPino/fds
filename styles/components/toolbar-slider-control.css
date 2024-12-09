@@ -16,10 +16,10 @@
             justify-content: space-between;
             gap: var(--fds-spacer-1);
         }
-        .btn-group {
+        .fds-btn-group {
             display: flex;
             gap: var(--fds-spacer-1);
-            .form-control {
+            .fds-form-control {
                 text-align: center;
                 width: 4rem;
             }

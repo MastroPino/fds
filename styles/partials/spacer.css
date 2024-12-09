@@ -8,3 +8,14 @@
     --fds-spacer-6: 4rem;
     --fds-spacer-7: 7.5rem;
 }
+
+hr.fds {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: var(--fds-border-width) solid;
+    opacity: 0.25;
+}

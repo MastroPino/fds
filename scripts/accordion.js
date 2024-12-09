@@ -1,11 +1,11 @@
 class Accordion {
   // Define static DOM lookup map for improved performance
   static _domRefs = {
-    ITEM: ".accordion-item",
-    BUTTON: ".accordion-button",
-    CONTENT: ".accordion-collapse",
-    REMOVER: ".accordion-remover",
-    ICON: ".accordion-icon",
+    ITEM: ".fds-accordion-item",
+    BUTTON: ".fds-accordion-button",
+    CONTENT: ".fds-accordion-collapse",
+    REMOVER: ".fds-accordion-remover",
+    ICON: ".fds-accordion-icon",
   };
 
   // Static method to optimize DOM queries
@@ -65,11 +65,11 @@ class Accordion {
   }
 
   cacheElements() {
-    const items = this.element.querySelectorAll(".accordion-item");
+    const items = this.element.querySelectorAll(".fds-accordion-item");
     items.forEach((item) => {
-      const button = item.querySelector(".accordion-button");
-      const content = item.querySelector(".accordion-collapse");
-      const remover = item.querySelector(".accordion-remover");
+      const button = item.querySelector(".fds-accordion-button");
+      const content = item.querySelector(".fds-accordion-collapse");
+      const remover = item.querySelector(".fds-accordion-remover");
       this.items.set(item, { button, content, remover });
     });
   }
@@ -84,7 +84,7 @@ class Accordion {
 
   setupIcons() {
     this.items.forEach(({ button }) => {
-      const iconContainer = button.querySelector(".accordion-icon");
+      const iconContainer = button.querySelector(".fds-accordion-icon");
       if (iconContainer) {
         const isExpanded = button.getAttribute("aria-expanded") === "true";
         iconContainer.innerHTML = isExpanded
@@ -114,7 +114,7 @@ class Accordion {
   }
 
   handleButtonClick(e) {
-    if (!e.target.closest(".accordion-remover")) {
+    if (!e.target.closest(".fds-accordion-remover")) {
       this.toggleSection(e.currentTarget);
     }
   }
@@ -133,7 +133,7 @@ class Accordion {
   }
 
   removeAccordionItem(remover) {
-    const item = remover.closest(".accordion-item");
+    const item = remover.closest(".fds-accordion-item");
     if (item) {
       this.items.delete(item);
       item.remove();
@@ -190,7 +190,7 @@ class Accordion {
   }
 
   updateIcon(button, isExpanded) {
-    const iconContainer = button.querySelector(".accordion-icon");
+    const iconContainer = button.querySelector(".fds-accordion-icon");
     if (iconContainer) {
       iconContainer.innerHTML = isExpanded
         ? this.iconSet.open
@@ -201,14 +201,14 @@ class Accordion {
   animateSection(element, isOpening) {
     const animation = () => {
       if (isOpening) {
-        element.classList.remove("collapse");
-        element.classList.add("collapsing");
+        element.classList.remove("fds-collapse");
+        element.classList.add("fds-collapsing");
         element.style.height = "0";
         requestAnimationFrame(() => {
           element.style.height = element.scrollHeight + "px";
           setTimeout(() => {
-            element.classList.remove("collapsing");
-            element.classList.add("collapse", "show");
+            element.classList.remove("fds-collapsing");
+            element.classList.add("fds-collapse", "fds-show");
             element.style.height = "";
           }, this.config.animation.duration);
         });
@@ -216,11 +216,11 @@ class Accordion {
         element.style.height = element.scrollHeight + "px";
         requestAnimationFrame(() => {
           element.style.height = "0";
-          element.classList.add("collapsing");
-          element.classList.remove("collapse", "show");
+          element.classList.add("fds-collapsing");
+          element.classList.remove("fds-collapse", "fds-show");
           setTimeout(() => {
-            element.classList.remove("collapsing");
-            element.classList.add("collapse");
+            element.classList.remove("fds-collapsing");
+            element.classList.add("fds-collapse");
             element.style.height = "";
           }, this.config.animation.duration);
         });
@@ -246,6 +246,6 @@ class Accordion {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const accordions = document.querySelectorAll(".accordion");
+  const accordions = document.querySelectorAll(".fds-accordion");
   accordions.forEach((accordion) => new Accordion(accordion));
 });

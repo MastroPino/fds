@@ -1,242 +1,242 @@
 /* Margin utilities */
 
 /* Margin in all directions */
-.m-0 {
+.fds-m-0 {
     margin: 0 !important;
 }
-.m-micro {
+.fds-m-micro {
     margin: var(--fds-spacer-micro) !important;
 }
-.m-1 {
+.fds-m-1 {
     margin: var(--fds-spacer-1) !important;
 }
-.m-2 {
+.fds-m-2 {
     margin: var(--fds-spacer-2) !important;
 }
-.m-3 {
+.fds-m-3 {
     margin: var(--fds-spacer-3) !important;
 }
-.m-4 {
+.fds-m-4 {
     margin: var(--fds-spacer-4) !important;
 }
-.m-5 {
+.fds-m-5 {
     margin: var(--fds-spacer-5) !important;
 }
-.m-6 {
+.fds-m-6 {
     margin: var(--fds-spacer-6) !important;
 }
-.m-7 {
+.fds-m-7 {
     margin: var(--fds-spacer-7) !important;
 }
-.m-auto {
+.fds-m-auto {
     margin: auto !important;
 }
 
 /* Margin-x (left & right) */
-.mx-0 {
+.fds-mx-0 {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
-.mx-micro {
+.fds-mx-micro {
     margin-left: var(--fds-spacer-micro) !important;
     margin-right: var(--fds-spacer-micro) !important;
 }
-.mx-1 {
+.fds-mx-1 {
     margin-left: var(--fds-spacer-1) !important;
     margin-right: var(--fds-spacer-1) !important;
 }
-.mx-2 {
+.fds-mx-2 {
     margin-left: var(--fds-spacer-2) !important;
     margin-right: var(--fds-spacer-2) !important;
 }
-.mx-3 {
+.fds-mx-3 {
     margin-left: var(--fds-spacer-3) !important;
     margin-right: var(--fds-spacer-3) !important;
 }
-.mx-4 {
+.fds-mx-4 {
     margin-left: var(--fds-spacer-4) !important;
     margin-right: var(--fds-spacer-4) !important;
 }
-.mx-5 {
+.fds-mx-5 {
     margin-left: var(--fds-spacer-5) !important;
     margin-right: var(--fds-spacer-5) !important;
 }
-.mx-6 {
+.fds-mx-6 {
     margin-left: var(--fds-spacer-6) !important;
     margin-right: var(--fds-spacer-6) !important;
 }
-.mx-7 {
+.fds-mx-7 {
     margin-left: var(--fds-spacer-7) !important;
     margin-right: var(--fds-spacer-7) !important;
 }
-.mx-auto {
+.fds-mx-auto {
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 /* Margin-y (top & bottom) */
-.my-0 {
+.fds-my-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
-.my-micro {
+.fds-my-micro {
     margin-top: var(--fds-spacer-micro) !important;
     margin-bottom: var(--fds-spacer-micro) !important;
 }
-.my-1 {
+.fds-my-1 {
     margin-top: var(--fds-spacer-1) !important;
     margin-bottom: var(--fds-spacer-1) !important;
 }
-.my-2 {
+.fds-my-2 {
     margin-top: var(--fds-spacer-2) !important;
     margin-bottom: var(--fds-spacer-2) !important;
 }
-.my-3 {
+.fds-my-3 {
     margin-top: var(--fds-spacer-3) !important;
     margin-bottom: var(--fds-spacer-3) !important;
 }
-.my-4 {
+.fds-my-4 {
     margin-top: var(--fds-spacer-4) !important;
     margin-bottom: var(--fds-spacer-4) !important;
 }
-.my-5 {
+.fds-my-5 {
     margin-top: var(--fds-spacer-5) !important;
     margin-bottom: var(--fds-spacer-5) !important;
 }
-.my-6 {
+.fds-my-6 {
     margin-top: var(--fds-spacer-6) !important;
     margin-bottom: var(--fds-spacer-6) !important;
 }
-.my-7 {
+.fds-my-7 {
     margin-top: var(--fds-spacer-7) !important;
     margin-bottom: var(--fds-spacer-7) !important;
 }
-.my-auto {
+.fds-my-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
 }
 
 /* Individual margins */
-.mt-0 {
+.fds-mt-0 {
     margin-top: 0 !important;
 }
-.mt-micro {
+.fds-mt-micro {
     margin-top: var(--fds-spacer-micro) !important;
 }
-.mt-1 {
+.fds-mt-1 {
     margin-top: var(--fds-spacer-1) !important;
 }
-.mt-2 {
+.fds-mt-2 {
     margin-top: var(--fds-spacer-2) !important;
 }
-.mt-3 {
+.fds-mt-3 {
     margin-top: var(--fds-spacer-3) !important;
 }
-.mt-4 {
+.fds-mt-4 {
     margin-top: var(--fds-spacer-4) !important;
 }
-.mt-5 {
+.fds-mt-5 {
     margin-top: var(--fds-spacer-5) !important;
 }
-.mt-6 {
+.fds-mt-6 {
     margin-top: var(--fds-spacer-6) !important;
 }
-.mt-7 {
+.fds-mt-7 {
     margin-top: var(--fds-spacer-7) !important;
 }
-.mt-auto {
+.fds-mt-auto {
     margin-top: auto !important;
 }
 
-.mb-0 {
+.fds-mb-0 {
     margin-bottom: 0 !important;
 }
-.mb-micro {
+.fds-mb-micro {
     margin-bottom: var(--fds-spacer-micro) !important;
 }
-.mb-1 {
+.fds-mb-1 {
     margin-bottom: var(--fds-spacer-1) !important;
 }
-.mb-2 {
+.fds-mb-2 {
     margin-bottom: var(--fds-spacer-2) !important;
 }
-.mb-3 {
+.fds-mb-3 {
     margin-bottom: var(--fds-spacer-3) !important;
 }
-.mb-4 {
+.fds-mb-4 {
     margin-bottom: var(--fds-spacer-4) !important;
 }
-.mb-5 {
+.fds-mb-5 {
     margin-bottom: var(--fds-spacer-5) !important;
 }
-.mb-6 {
+.fds-mb-6 {
     margin-bottom: var(--fds-spacer-6) !important;
 }
-.mb-7 {
+.fds-mb-7 {
     margin-bottom: var(--fds-spacer-7) !important;
 }
-.mb-auto {
+.fds-mb-auto {
     margin-bottom: auto !important;
 }
 
-.ms-0 {
+.fds-ms-0 {
     margin-left: 0 !important;
 }
-.ms-micro {
+.fds-ms-micro {
     margin-left: var(--fds-spacer-micro) !important;
 }
-.ms-1 {
+.fds-ms-1 {
     margin-left: var(--fds-spacer-1) !important;
 }
-.ms-2 {
+.fds-ms-2 {
     margin-left: var(--fds-spacer-2) !important;
 }
-.ms-3 {
+.fds-ms-3 {
     margin-left: var(--fds-spacer-3) !important;
 }
-.ms-4 {
+.fds-ms-4 {
     margin-left: var(--fds-spacer-4) !important;
 }
-.ms-5 {
+.fds-ms-5 {
     margin-left: var(--fds-spacer-5) !important;
 }
-.ms-6 {
+.fds-ms-6 {
     margin-left: var(--fds-spacer-6) !important;
 }
-.ms-7 {
+.fds-ms-7 {
     margin-left: var(--fds-spacer-7) !important;
 }
-.ms-auto {
+.fds-ms-auto {
     margin-left: auto !important;
 }
 
-.me-0 {
+.fds-me-0 {
     margin-right: 0 !important;
 }
-.me-micro {
+.fds-me-micro {
     margin-right: var(--fds-spacer-micro) !important;
 }
-.me-1 {
+.fds-me-1 {
     margin-right: var(--fds-spacer-1) !important;
 }
-.me-2 {
+.fds-me-2 {
     margin-right: var(--fds-spacer-2) !important;
 }
-.me-3 {
+.fds-me-3 {
     margin-right: var(--fds-spacer-3) !important;
 }
-.me-4 {
+.fds-me-4 {
     margin-right: var(--fds-spacer-4) !important;
 }
-.me-5 {
+.fds-me-5 {
     margin-right: var(--fds-spacer-5) !important;
 }
-.me-6 {
+.fds-me-6 {
     margin-right: var(--fds-spacer-6) !important;
 }
-.me-7 {
+.fds-me-7 {
     margin-right: var(--fds-spacer-7) !important;
 }
-.me-auto {
+.fds-me-auto {
     margin-right: auto !important;
 }

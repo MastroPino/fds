@@ -1,71 +1,71 @@
 /* Text colors */
-.text-primary {
+.fds-text-primary {
     color: var(--fds-color-primary) !important;
 }
-.text-info {
+.fds-text-info {
     color: var(--fds-color-info) !important;
 }
-.text-success {
+.fds-text-success {
     color: var(--fds-color-success) !important;
 }
-.text-danger {
+.fds-text-danger {
     color: var(--fds-color-danger) !important;
 }
-.text-warning {
+.fds-text-warning {
     color: var(--fds-color-warning) !important;
 }
-.text-body {
+.fds-text-body {
     color: var(--fds-text-body) !important;
 }
-.text-body-secondary {
+.fds-text-body-secondary {
     color: var(--fds-text-body-secondary) !important;
 }
-.text-body-tertiary {
+.fds-text-body-tertiary {
     color: var(--fds-text-placeholder) !important;
 }
 
 /* Background colors */
-.bg-primary {
+.fds-bg-primary {
     background-color: var(--fds-color-primary) !important;
 }
-.bg-info {
+.fds-bg-info {
     background-color: var(--fds-color-info) !important;
 }
-.bg-success {
+.fds-bg-success {
     background-color: var(--fds-color-success) !important;
 }
-.bg-danger {
+.fds-bg-danger {
     background-color: var(--fds-color-danger) !important;
 }
-.bg-warning {
+.fds-bg-warning {
     background-color: var(--fds-color-warning) !important;
 }
-.bg-text-body {
+.fds-bg-text-body {
     background-color: var(--fds-text-body) !important;
 }
-.bg-text-body-secondary {
+.fds-bg-text-body-secondary {
     background-color: var(--fds-text-body-secondary) !important;
 }
-.bg-text-body-tertiary {
+.fds-bg-text-body-tertiary {
     background-color: var(--fds-text-body-tertiary) !important;
 }
-.bg-white {
+.fds-bg-white {
     background-color: var(--fds-color-white) !important;
 }
 
 /* Border colors */
-.border-primary {
+.fds-border-primary {
     border-color: var(--fds-color-primary) !important;
 }
-.border-info {
+.fds-border-info {
     border-color: var(--fds-color-info) !important;
 }
-.border-success {
+.fds-border-success {
     border-color: var(--fds-color-success) !important;
 }
-.border-danger {
+.fds-border-danger {
     border-color: var(--fds-color-danger) !important;
 }
-.border-warning {
+.fds-border-warning {
     border-color: var(--fds-color-warning) !important;
 }

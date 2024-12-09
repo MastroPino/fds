@@ -1,219 +1,219 @@
 /* Padding utilities */
 
 /* Padding in all directions */
-.p-0 {
+.fds-p-0 {
     padding: 0 !important;
 }
-.p-micro {
+.fds-p-micro {
     padding: var(--fds-spacer-micro) !important;
 }
-.p-1 {
+.fds-p-1 {
     padding: var(--fds-spacer-1) !important;
 }
-.p-2 {
+.fds-p-2 {
     padding: var(--fds-spacer-2) !important;
 }
-.p-3 {
+.fds-p-3 {
     padding: var(--fds-spacer-3) !important;
 }
-.p-4 {
+.fds-p-4 {
     padding: var(--fds-spacer-4) !important;
 }
-.p-5 {
+.fds-p-5 {
     padding: var(--fds-spacer-5) !important;
 }
-.p-6 {
+.fds-p-6 {
     padding: var(--fds-spacer-6) !important;
 }
-.p-7 {
+.fds-p-7 {
     padding: var(--fds-spacer-7) !important;
 }
 
 /* Padding-x (left & right) */
-.px-0 {
+.fds-px-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-.px-micro {
+.fds-px-micro {
     padding-left: var(--fds-spacer-micro) !important;
     padding-right: var(--fds-spacer-micro) !important;
 }
-.px-1 {
+.fds-px-1 {
     padding-left: var(--fds-spacer-1) !important;
     padding-right: var(--fds-spacer-1) !important;
 }
-.px-2 {
+.fds-px-2 {
     padding-left: var(--fds-spacer-2) !important;
     padding-right: var(--fds-spacer-2) !important;
 }
-.px-3 {
+.fds-px-3 {
     padding-left: var(--fds-spacer-3) !important;
     padding-right: var(--fds-spacer-3) !important;
 }
-.px-4 {
+.fds-px-4 {
     padding-left: var(--fds-spacer-4) !important;
     padding-right: var(--fds-spacer-4) !important;
 }
-.px-5 {
+.fds-px-5 {
     padding-left: var(--fds-spacer-5) !important;
     padding-right: var(--fds-spacer-5) !important;
 }
-.px-6 {
+.fds-px-6 {
     padding-left: var(--fds-spacer-6) !important;
     padding-right: var(--fds-spacer-6) !important;
 }
-.px-7 {
+.fds-px-7 {
     padding-left: var(--fds-spacer-7) !important;
     padding-right: var(--fds-spacer-7) !important;
 }
 
 /* Padding-y (top & bottom) */
-.p-0 {
+.fds-p-0 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-.py-micro {
+.fds-py-micro {
     padding-top: var(--fds-spacer-micro) !important;
     padding-bottom: var(--fds-spacer-micro) !important;
 }
-.py-1 {
+.fds-py-1 {
     padding-top: var(--fds-spacer-1) !important;
     padding-bottom: var(--fds-spacer-1) !important;
 }
-.py-2 {
+.fds-py-2 {
     padding-top: var(--fds-spacer-2) !important;
     padding-bottom: var(--fds-spacer-2) !important;
 }
-.py-3 {
+.fds-py-3 {
     padding-top: var(--fds-spacer-3) !important;
     padding-bottom: var(--fds-spacer-3) !important;
 }
-.py-4 {
+.fds-py-4 {
     padding-top: var(--fds-spacer-4) !important;
     padding-bottom: var(--fds-spacer-4) !important;
 }
-.py-5 {
+.fds-py-5 {
     padding-top: var(--fds-spacer-5) !important;
     padding-bottom: var(--fds-spacer-5) !important;
 }
-.py-6 {
+.fds-py-6 {
     padding-top: var(--fds-spacer-6) !important;
     padding-bottom: var(--fds-spacer-6) !important;
 }
-.py-7 {
+.fds-py-7 {
     padding-top: var(--fds-spacer-7) !important;
     padding-bottom: var(--fds-spacer-7) !important;
 }
 
 /* Individual paddings */
-.pt-0 {
+.fds-pt-0 {
     padding-top: 0 !important;
 }
-.pt-micro {
+.fds-pt-micro {
     padding-top: var(--fds-spacer-micro) !important;
 }
-.pt-1 {
+.fds-pt-1 {
     padding-top: var(--fds-spacer-1) !important;
 }
-.pt-2 {
+.fds-pt-2 {
     padding-top: var(--fds-spacer-2) !important;
 }
-.pt-3 {
+.fds-pt-3 {
     padding-top: var(--fds-spacer-3) !important;
 }
-.pt-4 {
+.fds-pt-4 {
     padding-top: var(--fds-spacer-4) !important;
 }
-.pt-5 {
+.fds-pt-5 {
     padding-top: var(--fds-spacer-5) !important;
 }
-.pt-6 {
+.fds-pt-6 {
     padding-top: var(--fds-spacer-6) !important;
 }
-.pt-7 {
+.fds-pt-7 {
     padding-top: var(--fds-spacer-7) !important;
 }
 
-.pb-0 {
+.fds-pb-0 {
     padding-bottom: 0 !important;
 }
-.pb-micro {
+.fds-pb-micro {
     padding-bottom: var(--fds-spacer-micro) !important;
 }
-.pb-1 {
+.fds-pb-1 {
     padding-bottom: var(--fds-spacer-1) !important;
 }
-.pb-2 {
+.fds-pb-2 {
     padding-bottom: var(--fds-spacer-2) !important;
 }
-.pb-3 {
+.fds-pb-3 {
     padding-bottom: var(--fds-spacer-3) !important;
 }
-.pb-4 {
+.fds-pb-4 {
     padding-bottom: var(--fds-spacer-4) !important;
 }
-.pb-5 {
+.fds-pb-5 {
     padding-bottom: var(--fds-spacer-5) !important;
 }
-.pb-6 {
+.fds-pb-6 {
     padding-bottom: var(--fds-spacer-6) !important;
 }
-.pb-7 {
+.fds-pb-7 {
     padding-bottom: var(--fds-spacer-7) !important;
 }
 
-.ps-0 {
+.fds-ps-0 {
     padding-left: 0 !important;
 }
-.ps-micro {
+.fds-ps-micro {
     padding-left: var(--fds-spacer-micro) !important;
 }
-.ps-1 {
+.fds-ps-1 {
     padding-left: var(--fds-spacer-1) !important;
 }
-.ps-2 {
+.fds-ps-2 {
     padding-left: var(--fds-spacer-2) !important;
 }
-.ps-3 {
+.fds-ps-3 {
     padding-left: var(--fds-spacer-3) !important;
 }
-.ps-4 {
+.fds-ps-4 {
     padding-left: var(--fds-spacer-4) !important;
 }
-.ps-5 {
+.fds-ps-5 {
     padding-left: var(--fds-spacer-5) !important;
 }
-.ps-6 {
+.fds-ps-6 {
     padding-left: var(--fds-spacer-6) !important;
 }
-.ps-7 {
+.fds-ps-7 {
     padding-left: var(--fds-spacer-7) !important;
 }
 
-.pe-0 {
+.fds-pe-0 {
     padding-right: 0 !important;
 }
-.pe-micro {
+.fds-pe-micro {
     padding-right: var(--fds-spacer-micro) !important;
 }
-.pe-1 {
+.fds-pe-1 {
     padding-right: var(--fds-spacer-1) !important;
 }
-.pe-2 {
+.fds-pe-2 {
     padding-right: var(--fds-spacer-2) !important;
 }
-.pe-3 {
+.fds-pe-3 {
     padding-right: var(--fds-spacer-3) !important;
 }
-.pe-4 {
+.fds-pe-4 {
     padding-right: var(--fds-spacer-4) !important;
 }
-.pe-5 {
+.fds-pe-5 {
     padding-right: var(--fds-spacer-5) !important;
 }
-.pe-6 {
+.fds-pe-6 {
     padding-right: var(--fds-spacer-6) !important;
 }
-.pe-7 {
+.fds-pe-7 {
     padding-right: var(--fds-spacer-7) !important;
 }

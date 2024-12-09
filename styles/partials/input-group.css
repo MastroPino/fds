@@ -33,7 +33,7 @@
 }
 
 /* Base Input Group */
-.input-group {
+.fds-input-group {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -43,7 +43,7 @@
 }
 
 /* Input Group Text - Base styles */
-.input-group-text {
+.fds-input-group-text {
     display: flex;
     align-items: center;
     padding: var(--fds-input-padding-y) var(--fds-input-padding-x);
@@ -59,7 +59,7 @@
 }
 
 /* Input Group Form Control */
-.input-group .form-control {
+.fds-input-group .fds-form-control {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
@@ -67,43 +67,43 @@
 }
 
 /* Border Radius Handling - Default */
-.input-group > :not(:first-child) {
+.fds-input-group > :not(:first-child) {
     margin-left: calc(var(--fds-input-border-width) * -1);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.input-group > :not(:last-child) {
+.fds-input-group > :not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 /* Small Size Modifiers */
-.input-group-sm > .form-control,
-.input-group-sm > .input-group-text {
+.fds-input-group-sm > .fds-form-control,
+.fds-input-group-sm > .fds-input-group-text {
     padding: var(--fds-input-padding-y-sm) var(--fds-input-padding-x-sm);
     font-size: var(--fds-input-font-size-sm);
     border-radius: var(--fds-input-border-radius-sm);
 }
 
 /* Large Size Modifiers */
-.input-group-lg > .form-control,
-.input-group-lg > .input-group-text {
+.fds-input-group-lg > .fds-form-control,
+.fds-input-group-lg > .fds-input-group-text {
     padding: var(--fds-input-padding-y-lg) var(--fds-input-padding-x-lg);
     font-size: var(--fds-input-font-size-lg);
     border-radius: var(--fds-input-border-radius-lg);
 }
 
 /* Border Radius Handling - Size Specific */
-.input-group-sm > :not(:first-child),
-.input-group-lg > :not(:first-child) {
+.fds-input-group-sm > :not(:first-child),
+.fds-input-group-lg > :not(:first-child) {
     margin-left: calc(var(--fds-input-border-width) * -1);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.input-group-sm > :not(:last-child),
-.input-group-lg > :not(:last-child) {
+.fds-input-group-sm > :not(:last-child),
+.fds-input-group-lg > :not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
