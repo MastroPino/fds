@@ -19,106 +19,130 @@
     </head>
     <body>
         <div class="container">
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>input</h1>
                 <!-- Small -->
-                <div class="mb-3">
-                    <label class="form-label">Small input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Small input</label>
                     <input
                         type="text"
-                        class="form-control form-control-sm"
+                        class="fds-form-control fds-form-control-sm"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
 
                 <!-- Default -->
-                <div class="mb-3">
-                    <label class="form-label">Default input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Default input</label>
                     <input
                         type="text"
-                        class="form-control"
+                        class="fds-form-control"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
 
                 <!-- Large -->
-                <div class="mb-3">
-                    <label class="form-label">Large input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Large input</label>
                     <input
                         type="text"
-                        class="form-control form-control-lg"
+                        class="fds-form-control fds-form-control-lg"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
             </section>
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>input feedback</h1>
                 <!-- Small -->
-                <div class="mb-3">
-                    <label class="form-label">Small input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Small input</label>
                     <input
                         type="text"
-                        class="form-control form-control-sm is-invalid"
+                        class="fds-form-control fds-form-control-sm is-invalid"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
 
                 <!-- Default -->
-                <div class="mb-3">
-                    <label class="form-label">Default input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Default input</label>
                     <input
                         type="text"
-                        class="form-control is-invalid"
+                        class="fds-form-control is-invalid"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
 
                 <!-- Large -->
-                <div class="mb-3">
-                    <label class="form-label">Large input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Large input</label>
                     <input
                         type="text"
-                        class="form-control form-control-lg is-invalid"
+                        class="fds-form-control fds-form-control-lg is-invalid"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Small input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Small input</label>
                     <input
                         type="text"
-                        class="form-control form-control-sm is-valid"
+                        class="fds-form-control fds-form-control-sm is-valid"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
 
                 <!-- Default -->
-                <div class="mb-3">
-                    <label class="form-label">Default input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Default input</label>
                     <input
                         type="text"
-                        class="form-control is-valid"
+                        class="fds-form-control is-valid"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
 
                 <!-- Large -->
-                <div class="mb-3">
-                    <label class="form-label">Large input</label>
+                <div class="fds-mb-3">
+                    <label class="fds-form-label">Large input</label>
                     <input
                         type="text"
-                        class="form-control form-control-lg is-valid"
+                        class="fds-form-control fds-form-control-lg is-valid"
                         placeholder="Inizia a digitare..."
                     />
                 </div>
             </section>
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>floating labels</h1>
                 <!-- Input standard -->
-                <div class="form-floating">
+                <div class="fds-form-floating">
                     <input
                         type="text"
-                        class="form-control"
+                        class="fds-form-control"
                         id="floatingInput1"
                         placeholder="Name"
                         value=""
@@ -127,10 +151,10 @@
                 </div>
 
                 <!-- Input con valore pre-popolato -->
-                <div class="form-floating">
+                <div class="fds-form-floating">
                     <input
                         type="text"
-                        class="form-control"
+                        class="fds-form-control"
                         id="floatingInput2"
                         placeholder="Name"
                         value="Mario Rossi"
@@ -139,13 +163,13 @@
                 </div>
 
                 <!-- Input con icona -->
-                <div class="form-floating">
-                    <div class="form-control-icon">
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <input
                         type="text"
-                        class="form-control"
+                        class="fds-form-control"
                         id="floatingInput3"
                         placeholder="Name"
                         value="Ciaone"
@@ -154,13 +178,13 @@
                 </div>
 
                 <!-- Input con icona -->
-                <div class="form-floating">
-                    <div class="form-control-icon">
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <input
                         type="text"
-                        class="form-control"
+                        class="fds-form-control"
                         id="floatingInput3"
                         placeholder="Name"
                         value=""
@@ -168,13 +192,20 @@
                     <label for="floatingInput3">Name</label>
                 </div>
             </section>
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>floating labels</h1>
                 <!-- Input standard -->
-                <div class="form-floating">
+                <div class="fds-form-floating">
                     <input
                         type="text"
-                        class="form-control is-valid"
+                        class="fds-form-control is-valid"
                         id="floatingInput1"
                         placeholder="Name"
                         value=""
@@ -183,10 +214,10 @@
                 </div>
 
                 <!-- Input con valore pre-popolato -->
-                <div class="form-floating">
+                <div class="fds-form-floating">
                     <input
                         type="text"
-                        class="form-control is-valid"
+                        class="fds-form-control is-valid"
                         id="floatingInput2"
                         placeholder="Name"
                         value="Mario Rossi"
@@ -195,23 +226,23 @@
                 </div>
 
                 <!-- Input con icona -->
-                <div class="form-floating">
-                    <div class="form-control-icon">
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <input
                         type="text"
-                        class="form-control is-valid"
+                        class="fds-form-control is-valid"
                         id="floatingInput3"
                         placeholder="Name"
                         value="Ciaone"
                     />
                     <label for="floatingInput3">Name</label>
                 </div>
-                <div class="form-floating">
+                <div class="fds-form-floating">
                     <input
                         type="text"
-                        class="form-control is-invalid"
+                        class="fds-form-control is-invalid"
                         id="floatingInput1"
                         placeholder="Name"
                         value=""
@@ -220,10 +251,10 @@
                 </div>
 
                 <!-- Input con valore pre-popolato -->
-                <div class="form-floating">
+                <div class="fds-form-floating">
                     <input
                         type="text"
-                        class="form-control is-invalid"
+                        class="fds-form-control is-invalid"
                         id="floatingInput2"
                         placeholder="Name"
                         value="Mario Rossi"
@@ -232,13 +263,13 @@
                 </div>
 
                 <!-- Input con icona -->
-                <div class="form-floating">
-                    <div class="form-control-icon">
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <input
                         type="text"
-                        class="form-control is-invalid"
+                        class="fds-form-control is-invalid"
                         id="floatingInput3"
                         placeholder="Name"
                         value="Ciaone"
@@ -247,10 +278,17 @@
                 </div>
             </section>
 
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>select</h1>
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelect">
+                <div class="fds-form-floating">
+                    <select class="fds-form-select" id="floatingSelect">
                         <option value="">Seleziona un'opzione</option>
                         <option value="1">Opzione 1</option>
                         <option value="2">Opzione 2</option>
@@ -260,11 +298,11 @@
                 </div>
 
                 <!-- Select con icona -->
-                <div class="form-floating">
-                    <div class="form-control-icon">
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
                         <i class="fa-solid fa-list"></i>
                     </div>
-                    <select class="form-select" id="floatingSelectIcon">
+                    <select class="fds-form-select" id="floatingSelectIcon">
                         <option value="">Seleziona un'opzione</option>
                         <option value="1">Opzione 1</option>
                         <option value="2">Opzione 2</option>
@@ -273,10 +311,20 @@
                     <label for="floatingSelectIcon">Seleziona</label>
                 </div>
             </section>
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>select feedback</h1>
-                <div class="form-floating">
-                    <select class="form-select is-valid" id="floatingSelect">
+                <div class="fds-form-floating">
+                    <select
+                        class="fds-form-select is-valid"
+                        id="floatingSelect"
+                    >
                         <option value="">Seleziona un'opzione</option>
                         <option value="1">Opzione 1</option>
                         <option value="2">Opzione 2</option>
@@ -286,12 +334,12 @@
                 </div>
 
                 <!-- Select con icona -->
-                <div class="form-floating">
-                    <div class="form-control-icon">
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
                         <i class="fa-solid fa-list"></i>
                     </div>
                     <select
-                        class="form-select is-valid"
+                        class="fds-form-select is-valid"
                         id="floatingSelectIcon"
                     >
                         <option value="">Seleziona un'opzione</option>
@@ -302,8 +350,11 @@
                     <label for="floatingSelectIcon">Seleziona</label>
                 </div>
 
-                <div class="form-floating">
-                    <select class="form-select is-invalid" id="floatingSelect">
+                <div class="fds-form-floating">
+                    <select
+                        class="fds-form-select is-invalid"
+                        id="floatingSelect"
+                    >
                         <option value="">Seleziona un'opzione</option>
                         <option value="1">Opzione 1</option>
                         <option value="2">Opzione 2</option>
@@ -313,12 +364,12 @@
                 </div>
 
                 <!-- Select con icona -->
-                <div class="form-floating">
-                    <div class="form-control-icon">
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
                         <i class="fa-solid fa-list"></i>
                     </div>
                     <select
-                        class="form-select is-invalid"
+                        class="fds-form-select is-invalid"
                         id="floatingSelectIcon"
                     >
                         <option value="">Seleziona un'opzione</option>
@@ -330,17 +381,24 @@
                 </div>
             </section>
 
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>radio and checkbox</h1>
-                <div class="form-check">
+                <div class="fds-form-check">
                     <input
-                        class="form-check-input"
+                        class="fds-form-check-input"
                         type="checkbox"
                         id="defaultCheck"
                         aria-describedby="defaultCheckDesc"
                         tabindex="0"
                     />
-                    <label class="form-check-label" for="defaultCheck">
+                    <label class="fds-form-check-label" for="defaultCheck">
                         Checkbox predefinito
                     </label>
                     <span id="defaultCheckDesc" class="sr-only"
@@ -349,16 +407,16 @@
                     >
                 </div>
 
-                <div class="form-check">
+                <div class="fds-form-check">
                     <input
-                        class="form-check-input"
+                        class="fds-form-check-input"
                         type="checkbox"
                         id="disabledCheck"
                         disabled
                         aria-describedby="disabledCheckDesc"
                         tabindex="-1"
                     />
-                    <label class="form-check-label" for="disabledCheck">
+                    <label class="fds-form-check-label" for="disabledCheck">
                         Checkbox disabilitato
                     </label>
                     <span id="disabledCheckDesc" class="sr-only"
@@ -366,15 +424,18 @@
                     >
                 </div>
 
-                <div class="form-check">
+                <div class="fds-form-check">
                     <input
-                        class="form-check-input"
+                        class="fds-form-check-input"
                         type="checkbox"
                         id="indeterminateCheck"
                         aria-describedby="indeterminateCheckDesc"
                         tabindex="0"
                     />
-                    <label class="form-check-label" for="indeterminateCheck">
+                    <label
+                        class="fds-form-check-label"
+                        for="indeterminateCheck"
+                    >
                         Checkbox indeterminato
                     </label>
                     <span id="indeterminateCheckDesc" class="sr-only"
@@ -383,16 +444,16 @@
                     >
                 </div>
 
-                <div class="form-check">
+                <div class="fds-form-check">
                     <input
-                        class="form-check-input"
+                        class="fds-form-check-input"
                         type="radio"
                         name="flexRadioDefault"
                         id="defaultRadio"
                         aria-describedby="defaultRadioDesc"
                         tabindex="0"
                     />
-                    <label class="form-check-label" for="defaultRadio">
+                    <label class="fds-form-check-label" for="defaultRadio">
                         Radio predefinito
                     </label>
                     <span id="defaultRadioDesc" class="sr-only"
@@ -400,16 +461,16 @@
                     >
                 </div>
 
-                <div class="form-check">
+                <div class="fds-form-check">
                     <input
-                        class="form-check-input"
+                        class="fds-form-check-input"
                         type="radio"
                         name="flexRadioDefault"
                         id="defaultRadio2"
                         aria-describedby="defaultRadio2Desc"
                         tabindex="0"
                     />
-                    <label class="form-check-label" for="defaultRadio2">
+                    <label class="fds-form-check-label" for="defaultRadio2">
                         Secondo radio predefinito
                     </label>
                     <span id="defaultRadio2Desc" class="sr-only"
@@ -417,34 +478,45 @@
                         predefinito</span
                     >
                 </div>
-                <div class="form-check form-switch">
+                <div class="fds-form-check fds-form-switch">
                     <input
-                        class="form-check-input"
+                        class="fds-form-check-input"
                         type="checkbox"
                         role="switch"
                         id="flexSwitchDefault"
                     />
-                    <label class="form-check-label" for="flexSwitchDefault"
+                    <label class="fds-form-check-label" for="flexSwitchDefault"
                         >Switch predefinito</label
                     >
                 </div>
             </section>
 
-            <section style="margin: 2rem auto">
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>range</h1>
                 <div class="slider-container">
-                    <label for="customRange1" class="form-label"
+                    <label for="customRange1" class="fds-form-label"
                         >Seleziona un valore</label
                     >
-                    <input type="range" class="form-range" id="customRange1" />
+                    <input
+                        type="range"
+                        class="fds-form-range"
+                        id="customRange1"
+                    />
                 </div>
                 <div class="slider-container">
-                    <label for="customRange2" class="form-label"
+                    <label for="customRange2" class="fds-form-label"
                         >Valore tra 0 e 100</label
                     >
                     <input
                         type="range"
-                        class="form-range"
+                        class="fds-form-range"
                         id="customRange2"
                         min="0"
                         max="100"
@@ -452,20 +524,20 @@
                     />
                 </div>
                 <div class="slider-container">
-                    <label for="customRange3" class="form-label"
+                    <label for="customRange3" class="fds-form-label"
                         >Example range</label
                     >
                     <input
                         type="range"
-                        class="form-range"
+                        class="fds-form-range"
                         min="0"
                         max="40"
                         step="4"
                     />
-                    <div class="form-range-ticks"></div>
+                    <div class="fds-form-range-ticks"></div>
                 </div>
             </section>
         </div>
-        <script src="scripts/form-range.js"></script>
+        <script src="scripts/fds-form-range.js"></script>
     </body>
 </html>

@@ -3,28 +3,32 @@
     --fds-switch-width: 2.75rem; /* 44px */
     --fds-switch-height: 1.5rem; /* 24px */
     --fds-switch-padding: 0.125rem; /* 2px */
-    --fds-switch-toggle-size: 1.25rem; /* 20px */
+    --fds-switch-toggle-size: 1rem; /* 20px */
     /* Correzione offset per centrare la maniglia */
-    --fds-switch-toggle-offset: 1.25rem; /* Ridotto da 1.375rem */
-    --fds-switch-bg: var(--fds-border-input);
+    --fds-switch-toggle-offset: 1rem;
+    --fds-switch-bg: var(--fds-body-color);
     --fds-switch-checked-bg: var(--fds-color-primary);
-    --fds-switch-toggle-bg: var(--fds-color-white);
+    --fds-switch-toggle-bg: var(--fds-border-input);
+
+    --fds-switch-border-width: 2px;
+    --fds-switch-border-style: var(--fds-border-style);
+    --fds-switch-border-color: var(--fds-border-input);
 
     /* Icone per gli stati dello switch */
     --fds-switch-icon-check: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.5L4.33333 8L11 1' stroke='%23606E7C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 
     --fds-switch-icon-disabled: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7M1 7L7 1' stroke='%23606E7C' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
 
-    --fds-switch-icon-size: 0.75rem; /* 12px */
+    --fds-switch-icon-size: 0.5rem; /* 12px */
 }
 
 /* Switch base styles */
-.form-switch {
+.fds-form-switch {
     padding-left: 0;
     min-height: var(--fds-switch-height);
 }
 
-.form-switch .form-check-input {
+.fds-form-switch .fds-form-check-input {
     width: var(--fds-switch-width);
     height: var(--fds-switch-height);
     /* Rimuovi l'aspetto predefinito della checkbox */
@@ -34,7 +38,8 @@
     /* Stili base */
     background-image: none !important; /* Forza rimozione immagine checkbox */
     background-color: var(--fds-switch-bg);
-    border: none;
+    border: var(--fds-switch-border-width) var(--fds-switch-border-style)
+        var(--fds-switch-border-color);
     border-radius: var(--fds-switch-height);
     margin-left: 0;
     padding: 0;
@@ -44,7 +49,7 @@
 }
 
 /* Switch toggle */
-.form-switch .form-check-input::before {
+.fds-form-switch .fds-form-check-input::before {
     content: "";
     position: absolute;
     top: var(--fds-switch-padding);
@@ -61,14 +66,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: var(--fds-switch-icon-size);
+    color: var(--fds-color-white);
 }
 
 /* Checked state */
-.form-switch .form-check-input:checked {
+.fds-form-switch .fds-form-check-input:checked {
     background-color: var(--fds-switch-checked-bg);
 }
 
-.form-switch .form-check-input:checked::before {
+.fds-form-switch .fds-form-check-input:checked::before {
     transform: translateX(var(--fds-switch-toggle-offset));
     background-image: var(--fds-switch-icon-check);
     background-repeat: no-repeat;
@@ -77,7 +83,7 @@
 }
 
 /* Aggiungere lo stile per l'icona check quando è attivo */
-/* .form-switch .form-check-input:checked::after {
+/* .fds-form-switch .fds-form-check-input:checked::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -92,33 +98,33 @@
 } */
 
 /* Hover states */
-.form-switch .form-check-input:not(:disabled):hover {
+.fds-form-switch .fds-form-check-input:not(:disabled):hover {
     opacity: 0.9;
 }
 
-.form-switch .form-check-input:not(:disabled):checked:hover {
+.fds-form-switch .fds-form-check-input:not(:disabled):checked:hover {
     background-color: var(--fds-color-primary);
 }
 
 /* Focus state */
-.form-switch .form-check-input:focus {
+.fds-form-switch .fds-form-check-input:focus {
     outline: none;
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
         var(--fds-color-primary-light-80);
 }
 
 /* Disabled state */
-.form-switch .form-check-input:disabled {
+.fds-form-switch .fds-form-check-input:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-.form-switch .form-check-input:disabled::before {
+.fds-form-switch .fds-form-check-input:disabled::before {
     opacity: var(--fds-form-check-input-disabled-opacity);
 }
 
 /* Aggiungere l'icona X per lo stato disabled */
-.form-switch .form-check-input:disabled::after {
+.fds-form-switch .fds-form-check-input:disabled::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -133,15 +139,15 @@
 }
 
 /* Assicurarsi che l'icona si sposti con la maniglia quando è checked e disabled */
-.form-switch .form-check-input:disabled:checked::after {
+.fds-form-switch .fds-form-check-input:disabled:checked::after {
     left: calc(var(--fds-switch-padding) + var(--fds-switch-toggle-offset));
 }
 
 /* Validation states */
-.form-switch .form-check-input.is-valid:checked {
+.fds-form-switch .fds-form-check-input.is-valid:checked {
     background-color: var(--fds-color-success);
 }
 
-.form-switch .form-check-input.is-invalid:checked {
+.fds-form-switch .fds-form-check-input.is-invalid:checked {
     background-color: var(--fds-color-danger);
 }

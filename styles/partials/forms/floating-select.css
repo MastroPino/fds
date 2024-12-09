@@ -19,7 +19,7 @@
     --fds-floating-background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
-.form-select {
+.fds-form-select {
     display: block;
     width: 100%;
     height: var(--fds-floating-total-height);
@@ -42,22 +42,22 @@
     background-size: var(--fds-select-bg-size);
 }
 
-.form-select:focus {
+.fds-form-select:focus {
     border-color: var(--fds-select-focus-border-color);
     outline: 0;
     box-shadow: 0 0 0 0.25rem var(--fds-select-focus-box-shadow-color);
 }
 
 /* Stati focus e filled per select standard */
-.form-floating > .form-select:focus ~ label,
-.form-floating > .form-select:not([value=""]) ~ label {
+.fds-form-floating > .fds-form-select:focus ~ label,
+.fds-form-floating > .fds-form-select:not([value=""]) ~ label {
     opacity: var(--fds-floating-label-opacity);
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
     color: var(--fds-text-body);
 }
 
 /* Gestione icona */
-.form-floating:has(.form-control-icon) .form-select {
+.fds-form-floating:has(.fds-form-control-icon) .fds-form-select {
     padding-left: calc(
         var(--fds-floating-padding-x) + var(--fds-form-floating-icon-size) +
             var(--fds-floating-icon-spacing)
@@ -65,20 +65,22 @@
 }
 
 /* Animazione label con icona */
-.form-floating:has(.form-control-icon) > .form-select:focus ~ label,
-.form-floating:has(.form-control-icon) > .form-select:not([value=""]) ~ label {
+.fds-form-floating:has(.fds-form-control-icon) > .fds-form-select:focus ~ label,
+.fds-form-floating:has(.fds-form-control-icon)
+    > .fds-form-select:not([value=""])
+    ~ label {
     transform: scale(0.85) translateY(-0.5rem) translateX(0.65rem);
     transform-origin: left top;
 }
 
-.form-floating > .form-select:focus,
-.form-floating > .form-select:not([value=""]) {
+.fds-form-floating > .fds-form-select:focus,
+.fds-form-floating > .fds-form-select:not([value=""]) {
     padding-top: var(--fds-floating-input-padding-top);
     padding-bottom: var(--fds-floating-input-padding-bottom);
 }
 
 /* Form Select validation states */
-.form-select.is-valid {
+.fds-form-select.is-valid {
     border-color: var(--fds-form-feedback-border-valid);
     padding-right: calc(
         3.5em + var(--fds-floating-padding-x)
@@ -93,7 +95,7 @@
         var(--fds-select-bg-size);
 }
 
-.form-select.is-invalid {
+.fds-form-select.is-invalid {
     border-color: var(--fds-form-feedback-border-invalid);
     padding-right: calc(
         3.5em + var(--fds-floating-padding-x)
@@ -109,21 +111,21 @@
 }
 
 /* Focus states con validation */
-.form-select.is-valid:focus {
+.fds-form-select.is-valid:focus {
     border-color: var(--fds-color-success);
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
         var(--fds-color-success-light-80);
 }
 
-.form-select.is-invalid:focus {
+.fds-form-select.is-invalid:focus {
     border-color: var(--fds-color-danger);
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
         var(--fds-color-danger-light-80);
 }
 
 /* Feedback messages */
-.form-select.is-valid ~ .valid-feedback,
-.form-select.is-invalid ~ .invalid-feedback {
+.fds-form-select.is-valid ~ .valid-feedback,
+.fds-form-select.is-invalid ~ .invalid-feedback {
     display: block;
     margin-top: 0.25rem;
 }

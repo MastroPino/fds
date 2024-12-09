@@ -19,11 +19,11 @@
     --fds-form-floating-icon-spacing: var(--fds-spacer-1);
 }
 
-.form-floating {
+.fds-form-floating {
     position: relative;
 }
 
-.form-floating .form-control {
+.fds-form-floating .fds-form-control {
     position: relative;
     display: block;
     width: 100%;
@@ -44,7 +44,7 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.form-floating > label {
+.fds-form-floating > label {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,32 +65,32 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .form-control:not(:placeholder-shown) ~ label {
+    .fds-form-control:not(:placeholder-shown) ~ label {
         transition: none;
     }
 
-    .form-control:not(:placeholder-shown):not(:focus) ~ label,
-    .form-control:focus ~ label {
+    .fds-form-control:not(:placeholder-shown):not(:focus) ~ label,
+    .fds-form-control:focus ~ label {
         transition: var(--fds-form-floating-transition);
     }
 }
 
-.form-floating > .form-control:focus ~ label,
-.form-floating > .form-control:not(:placeholder-shown) ~ label {
+.fds-form-floating > .fds-form-control:focus ~ label,
+.fds-form-floating > .fds-form-control:not(:placeholder-shown) ~ label {
     opacity: var(--fds-form-floating-label-opacity);
     transform: scale(0.8) translateY(-0.5rem) translateX(0.15rem);
     color: var(--fds-text-body);
 }
 
-.form-floating > .form-control:focus,
-.form-floating > .form-control:not(:placeholder-shown) {
+.fds-form-floating > .fds-form-control:focus,
+.fds-form-floating > .fds-form-control:not(:placeholder-shown) {
     padding-top: var(--fds-form-floating-input-padding-top);
     padding-bottom: var(--fds-form-floating-input-padding-bottom);
 }
 
 /* Sfondo della label in stato focus/filled */
-.form-floating > .form-control:focus ~ label::after,
-.form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+.fds-form-floating > .fds-form-control:focus ~ label::after,
+.fds-form-floating > .fds-form-control:not(:placeholder-shown) ~ label::after {
     position: absolute;
     inset: 1rem 0.375rem;
     z-index: -1;
@@ -101,33 +101,33 @@
 }
 
 /* Disabled state */
-.form-floating > .form-control:disabled ~ label,
-.form-floating > .form-control:readonly ~ label {
+.fds-form-floating > .fds-form-control:disabled ~ label,
+.fds-form-floating > .fds-form-control:readonly ~ label {
     color: var(--fds-form-floating-label-disabled-color);
 }
 
 /* For placeholder-shown browser support */
-.form-floating > .form-control:-webkit-autofill ~ label {
+.fds-form-floating > .fds-form-control:-webkit-autofill ~ label {
     opacity: var(--fds-form-floating-label-opacity);
     transform: scale(0.8) translateY(-0.5rem) translateX(0.15rem);
 }
 
 /* Invalid state */
-.form-floating.is-invalid .form-control {
+.fds-form-floating.is-invalid .fds-form-control {
     border-color: var(--fds-color-danger);
 }
 
-.form-floating.is-invalid label {
+.fds-form-floating.is-invalid label {
     color: var(--fds-color-danger);
 }
 
 /* Placeholder color */
-.form-floating > .form-control::placeholder {
+.fds-form-floating > .fds-form-control::placeholder {
     color: transparent;
 }
 
 /* Icon styles */
-.form-control-icon {
+.fds-form-control-icon {
     position: absolute;
     top: 50%;
     left: var(--fds-form-floating-padding-x);
@@ -142,14 +142,14 @@
     pointer-events: none;
 }
 
-.form-floating:has(.form-control-icon) .form-control {
+.fds-form-floating:has(.fds-form-control-icon) .fds-form-control {
     padding-left: calc(
         var(--fds-form-floating-padding-x) + var(--fds-form-floating-icon-size) +
             var(--fds-form-floating-icon-spacing)
     );
 }
 
-.form-floating:has(.form-control-icon) > label {
+.fds-form-floating:has(.fds-form-control-icon) > label {
     padding-left: calc(
         var(--fds-form-floating-padding-x) + var(--fds-form-floating-icon-size) +
             var(--fds-form-floating-icon-spacing)
@@ -157,17 +157,21 @@
     transform-origin: 0 0;
 }
 
-.form-floating:has(.form-control-icon)
-    > .form-control:not(:placeholder-shown)
+.fds-form-floating:has(.fds-form-control-icon)
+    > .fds-form-control:not(:placeholder-shown)
     ~ label,
-.form-floating:has(.form-control-icon) > .form-control:focus ~ label {
+.fds-form-floating:has(.fds-form-control-icon)
+    > .fds-form-control:focus
+    ~ label {
     transform: scale(0.8) translateY(-0.5rem) translateX(0.95rem);
     transform-origin: left top;
 }
 
-.form-floating:has(.form-control-icon) > .form-control:focus ~ label::after,
-.form-floating:has(.form-control-icon)
-    > .form-control:not(:placeholder-shown)
+.fds-form-floating:has(.fds-form-control-icon)
+    > .fds-form-control:focus
+    ~ label::after,
+.fds-form-floating:has(.fds-form-control-icon)
+    > .fds-form-control:not(:placeholder-shown)
     ~ label::after {
     inset: 1rem 0.375rem 1rem
         calc(
@@ -176,15 +180,15 @@
         );
 }
 
-.form-floating:has(.form-control-icon)
-    > .form-control:-webkit-autofill
+.fds-form-floating:has(.fds-form-control-icon)
+    > .fds-form-control:-webkit-autofill
     ~ label {
     transform: scale(0.8) translateY(-0.5rem) translateX(0.95rem);
     transform-origin: left top;
 }
 
 /* Form Floating validation states */
-.form-floating > .form-control.is-valid {
+.fds-form-floating > .fds-form-control.is-valid {
     border-color: var(--fds-form-feedback-border-valid);
     padding-right: calc(1.5em + var(--fds-form-floating-padding-x));
     background-image: var(--fds-form-feedback-icon-valid);
@@ -193,7 +197,7 @@
     background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
-.form-floating > .form-control.is-invalid {
+.fds-form-floating > .fds-form-control.is-invalid {
     border-color: var(--fds-form-feedback-border-invalid);
     padding-right: calc(1.5em + var(--fds-form-floating-padding-x));
     background-image: var(--fds-form-feedback-icon-invalid);
@@ -203,26 +207,26 @@
 }
 
 /* Focus states with validation */
-.form-floating > .form-control.is-valid:focus {
+.fds-form-floating > .fds-form-control.is-valid:focus {
     border-color: var(--fds-color-success);
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
         var(--fds-color-success-light-80);
 }
 
-.form-floating > .form-control.is-invalid:focus {
+.fds-form-floating > .fds-form-control.is-invalid:focus {
     border-color: var(--fds-color-danger);
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
         var(--fds-color-danger-light-80);
 }
 
 /* Feedback messages positioning for floating labels */
-.form-floating > .form-control ~ .valid-feedback,
-.form-floating > .form-control ~ .invalid-feedback {
+.fds-form-floating > .fds-form-control ~ .valid-feedback,
+.fds-form-floating > .fds-form-control ~ .invalid-feedback {
     margin-top: calc(var(--fds-form-floating-border-height) + 0.125rem);
 }
 
 /* Show feedback messages */
-.form-floating > .form-control.is-valid ~ .valid-feedback,
-.form-floating > .form-control.is-invalid ~ .invalid-feedback {
+.fds-form-floating > .fds-form-control.is-valid ~ .valid-feedback,
+.fds-form-floating > .fds-form-control.is-invalid ~ .invalid-feedback {
     display: block;
 }

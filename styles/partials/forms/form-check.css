@@ -20,7 +20,7 @@
     /* Spacing - aggiornato secondo Figma */
     --fds-form-check-margin-bottom: var(--fds-spacer-2);
     --fds-form-check-label-padding-left: 0.75rem; /* 12px */
-    --fds-form-check-input-margin-y: 0.1875rem; /* 3px per allineamento verticale */
+    --fds-form-check-input-margin-y: 0.063rem; /* 1px per allineamento verticale */
 
     /* States */
     --fds-form-check-input-disabled-opacity: 0.5;
@@ -38,7 +38,7 @@
     --fds-form-radio-input-checked-size: 0.65rem;
 }
 
-.form-check {
+.fds-form-check {
     display: flex;
     align-items: flex-start;
     min-height: 1.5rem; /* 24px secondo Figma */
@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-.form-check-input {
+.fds-form-check-input {
     width: var(--fds-form-check-input-width);
     height: var(--fds-form-check-input-height);
     margin-top: var(--fds-form-check-input-margin-y);
@@ -59,57 +59,57 @@
     background-repeat: no-repeat;
 }
 
-.form-check-input[type="checkbox"] {
+.fds-form-check-input[type="checkbox"] {
     border-radius: var(--fds-form-check-input-border-radius);
 }
 
-.form-check-input[type="radio"] {
+.fds-form-check-input[type="radio"] {
     border-radius: var(--fds-form-check-radio-border-radius);
 }
 
-.form-check-input:checked {
+.fds-form-check-input:checked {
     background-color: var(--fds-color-primary);
     border-color: var(--fds-color-primary);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.form-check-input:focus {
+.fds-form-check-input:focus {
     border-color: var(--fds-color-primary);
     box-shadow: var(--fds-form-check-input-focus-box-shadow);
 }
 
-.form-check-input:disabled {
+.fds-form-check-input:disabled {
     pointer-events: none;
     filter: none;
     opacity: var(--fds-form-check-input-disabled-opacity);
     background-color: var(--fds-form-check-input-disabled-bg);
 }
 
-.form-check-input[type="checkbox"]:checked {
+.fds-form-check-input[type="checkbox"]:checked {
     background-image: var(--fds-form-check-input-checked-bg-image);
     background-size: var(--fds-form-check-input-checked-size);
 }
 
-.form-check-input[type="checkbox"]:indeterminate {
+.fds-form-check-input[type="checkbox"]:indeterminate {
     background-image: var(--fds-form-check-input-indeterminate-bg-image);
     background-size: var(--fds-form-radio-input-checked-size);
 }
 
-.form-check-input[type="radio"]:checked {
+.fds-form-check-input[type="radio"]:checked {
     background-image: var(--fds-form-check-radio-checked-bg-image);
     background-size: var(--fds-form-radio-input-checked-size);
 }
 
-.form-check-input:disabled:checked[type="checkbox"] {
+.fds-form-check-input:disabled:checked[type="checkbox"] {
     background-image: var(--fds-form-check-input-checked-bg-image);
 }
 
-.form-check-input:disabled:checked[type="radio"] {
+.fds-form-check-input:disabled:checked[type="radio"] {
     background-image: var(--fds-form-check-radio-checked-bg-image);
 }
 
-.form-check-label {
+.fds-form-check-label {
     display: inline-block;
     margin-left: var(--fds-form-check-label-padding-left);
     font-size: var(--fds-font-size-base);
@@ -122,40 +122,40 @@
 }
 
 /* Hover state */
-.form-check-input:not(:disabled):not(:checked):hover {
+.fds-form-check-input:not(:disabled):not(:checked):hover {
     border-color: var(--fds-form-check-input-focus-border);
 }
 
 /* Validation states */
-.form-check-input.is-valid {
+.fds-form-check-input.is-valid {
     border-color: var(--fds-form-feedback-border-valid);
 }
 
-.form-check-input.is-valid:checked {
+.fds-form-check-input.is-valid:checked {
     background-color: var(--fds-color-success);
 }
 
-.form-check-input.is-valid:focus {
+.fds-form-check-input.is-valid:focus {
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
         var(--fds-color-success-light-80);
 }
 
-.form-check-input.is-invalid {
+.fds-form-check-input.is-invalid {
     border-color: var(--fds-form-feedback-border-invalid);
 }
 
-.form-check-input.is-invalid:checked {
+.fds-form-check-input.is-invalid:checked {
     background-color: var(--fds-color-danger);
 }
 
-.form-check-input.is-invalid:focus {
+.fds-form-check-input.is-invalid:focus {
     box-shadow: 0 0 0 var(--fds-focus-ring-width)
         var(--fds-color-danger-light-80);
 }
 
 /* Disabled state */
-.form-check-input:disabled,
-.form-check-input:disabled ~ .form-check-label {
+.fds-form-check-input:disabled,
+.fds-form-check-input:disabled ~ .fds-form-check-label {
     opacity: var(--fds-form-check-input-disabled-opacity);
     cursor: not-allowed;
 }

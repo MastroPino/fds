@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div class="container" style="max-width: 272px">
+        <div class="fds-container" style="max-width: 272px">
             <section
                 style="margin: 2rem auto"
                 aria-labelledby="typography-title"
@@ -29,25 +29,28 @@
                     aria-label="Configurazione tipografia"
                 >
                     <div class="editor-component">
-                        <h2 id="typography-title" class="fw-medium mb-0">
+                        <h2
+                            id="typography-title"
+                            class="fds-fw-medium fds-fds-mb-0"
+                        >
                             Tipografia
                         </h2>
                         <div class="editor-component-body">
                             <!-- Dropdown Font Family -->
-                            <div class="dropdown">
+                            <div class="fds-dropdown">
                                 <button
                                     id="font-family-button"
-                                    class="dropdown-toggle dropdown-input"
+                                    class="fds-dropdown-toggle fds-dropdown-input"
                                     aria-expanded="false"
                                     aria-haspopup="listbox"
                                     aria-controls="font-family-list"
                                     aria-labelledby="font-family-label font-family-selected"
                                     tabindex="0"
                                 >
-                                    <div class="dropdown-input-titles">
+                                    <div class="fds-dropdown-input-titles">
                                         <span
                                             id="font-family-label"
-                                            class="form-label-sm"
+                                            class="fds-form-label-sm"
                                             role="heading"
                                             aria-level="3"
                                         >
@@ -55,7 +58,7 @@
                                         </span>
                                         <span
                                             id="font-family-selected"
-                                            class="selected-item"
+                                            class="fds-selected-item"
                                             aria-live="polite"
                                         >
                                             Poppins
@@ -64,33 +67,33 @@
                                 </button>
                                 <div
                                     id="font-family-list"
-                                    class="dropdown-menu"
+                                    class="fds-dropdown-menu"
                                     role="listbox"
                                     aria-labelledby="font-family-label"
                                     hidden
                                 >
-                                    <div class="dropdown-menu-header">
+                                    <div class="fds-dropdown-menu-header">
                                         <h5>Font family</h5>
                                     </div>
-                                    <div class="dropdown-menu-body">
-                                        <ul class="list-unstyled">
+                                    <div class="fds-dropdown-menu-body">
+                                        <ul class="fds-list-unstyled">
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                     >Action</a
                                                 >
                                             </li>
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                     >Another action</a
                                                 >
                                             </li>
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                     >Something else here</a
                                                 >
@@ -99,51 +102,53 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr class="m-0" />
-                            <div class="dropdown">
+                            <hr class="fds fds-m-0" />
+                            <div class="fds-dropdown">
                                 <button
-                                    class="dropdown-toggle dropdown-input"
+                                    class="fds-dropdown-toggle fds-dropdown-input"
                                     aria-expanded="false"
                                     aria-haspopup="true"
                                     aria-controls="font-family"
                                     tabindex="0"
                                 >
-                                    <div class="dropdown-input-titles">
+                                    <div class="fds-dropdown-input-titles">
                                         <span class="form-label-sm"
                                             >Dimensione</span
                                         >
-                                        <span class="selected-item"
+                                        <span class="fds-selected-item"
                                             >Paragrafo</span
                                         >
                                     </div>
                                 </button>
                                 <div
-                                    class="dropdown-menu"
+                                    class="fds-dropdown-menu"
                                     id="menu-id"
                                     role="menu"
                                     hidden
                                 >
-                                    <div class="dropdown-menu-header">
+                                    <div class="fds-dropdown-menu-header">
                                         <h5>Dimensione</h5>
                                     </div>
-                                    <div class="dropdown-menu-body">
-                                        <ul class="list-unstyled">
+                                    <div class="fds-dropdown-menu-body">
+                                        <ul class="fds-list-unstyled">
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                 >
-                                                    <div class="card is-active">
+                                                    <div
+                                                        class="fds-card is-active"
+                                                    >
                                                         <div
-                                                            class="card-body py-1"
+                                                            class="fds-card-body fds-py-1"
                                                         >
                                                             <p
-                                                                class="card-title fs-sm mb-0"
+                                                                class="fds-card-title fs-sm fds-mb-0"
                                                             >
                                                                 Piccolo
                                                             </p>
                                                             <p
-                                                                class="card-text text-body-secondary mb-0"
+                                                                class="fds-card-text fds-text-body-secondary fds-mb-0"
                                                             >
                                                                 <small
                                                                     >Dimensione
@@ -156,20 +161,20 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                 >
-                                                    <div class="card">
+                                                    <div class="fds-card">
                                                         <div
-                                                            class="card-body py-1"
+                                                            class="fds-card-body fds-py-1"
                                                         >
                                                             <p
-                                                                class="card-title fs-default mb-0"
+                                                                class="fds-card-title fs-default fds-mb-0"
                                                             >
                                                                 Paragrafo
                                                             </p>
                                                             <p
-                                                                class="card-text text-body-secondary mb-0"
+                                                                class="fds-card-text fds-text-body-secondary fds-mb-0"
                                                             >
                                                                 <small
                                                                     >Dimensione
@@ -182,20 +187,20 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                 >
-                                                    <div class="card">
+                                                    <div class="fds-card">
                                                         <div
-                                                            class="card-body py-1"
+                                                            class="fds-card-body fds-py-1"
                                                         >
                                                             <p
-                                                                class="card-title fs-4 mb-0"
+                                                                class="fds-card-title fds-fs-4 fds-mb-0"
                                                             >
                                                                 Titolo 4
                                                             </p>
                                                             <p
-                                                                class="card-text text-body-secondary mb-0"
+                                                                class="fds-card-text fds-text-body-secondary fds-mb-0"
                                                             >
                                                                 <small
                                                                     >Dimensione
@@ -208,20 +213,20 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                 >
-                                                    <div class="card">
+                                                    <div class="fds-card">
                                                         <div
-                                                            class="card-body py-1"
+                                                            class="fds-card-body fds-py-1"
                                                         >
                                                             <p
-                                                                class="card-title fs-3 mb-0"
+                                                                class="fds-card-title fs-3 fds-mb-0"
                                                             >
                                                                 Titolo 3
                                                             </p>
                                                             <p
-                                                                class="card-text text-body-secondary mb-0"
+                                                                class="fds-card-text fds-text-body-secondary fds-mb-0"
                                                             >
                                                                 <small
                                                                     >Dimensione
@@ -234,20 +239,20 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                 >
-                                                    <div class="card">
+                                                    <div class="fds-card">
                                                         <div
-                                                            class="card-body py-1"
+                                                            class="fds-card-body fds-py-1"
                                                         >
                                                             <p
-                                                                class="card-title fs-2 mb-0"
+                                                                class="fds-card-title fs-2 fds-mb-0"
                                                             >
                                                                 Titolo 2
                                                             </p>
                                                             <p
-                                                                class="card-text text-body-secondary mb-0"
+                                                                class="fds-card-text fds-text-body-secondary fds-mb-0"
                                                             >
                                                                 <small
                                                                     >Dimensione
@@ -260,20 +265,20 @@
                                             </li>
                                             <li>
                                                 <a
-                                                    class="dropdown-item"
+                                                    class="fds-dropdown-item"
                                                     href="#"
                                                 >
-                                                    <div class="card">
+                                                    <div class="fds-card">
                                                         <div
-                                                            class="card-body py-1"
+                                                            class="fds-card-body fds-py-1"
                                                         >
                                                             <p
-                                                                class="card-title fs-1 mb-0"
+                                                                class="fds-card-title fs-1 fds-mb-0"
                                                             >
                                                                 Titolo 1
                                                             </p>
                                                             <p
-                                                                class="card-text text-body-secondary mb-0"
+                                                                class="fds-card-text fds-text-body-secondary fds-mb-0"
                                                             >
                                                                 <small
                                                                     >Dimensione
@@ -286,8 +291,12 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="dropdown-menu-footer d-grid">
-                                        <button class="btn btn-outline-primary">
+                                    <div
+                                        class="fds-dropdown-menu-footer fds-d-grid"
+                                    >
+                                        <button
+                                            class="fds-btn fds-btn-outline-primary"
+                                        >
                                             <i
                                                 class="fa-regular fa-circle-plus"
                                             ></i>
@@ -297,7 +306,10 @@
                                 </div>
                             </div>
                             <p>
-                                <a class="link fs-sm mt-3" href="#" tabindex="0"
+                                <a
+                                    class="fds-link fds-fs-sm fds-mt-3"
+                                    href="#"
+                                    tabindex="0"
                                     >Configurazione avanzata
                                     <i class="fa-regular fa-arrow-right"></i
                                 ></a>
@@ -317,12 +329,12 @@
                                 <div class="toolbar-slider-control-header">
                                     <label
                                         for="customRange3"
-                                        class="form-label form-label-sm mb-0"
+                                        class="fds-form-label fds-form-label-sm fds-mb-0"
                                         >Dimensione</label
                                     >
-                                    <div class="btn-group">
+                                    <div class="fds-btn-group">
                                         <button
-                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            class="fds-btn fds-btn-sm fds-btn-icon-only fds-btn-outline-primary"
                                             tabindex="0"
                                         >
                                             <i
@@ -331,11 +343,11 @@
                                         </button>
                                         <input
                                             type="text"
-                                            class="form-control form-control-sm"
+                                            class="fds-form-control fds-form-control-sm"
                                             value="16px"
                                         />
                                         <button
-                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            class="fds-btn fds-btn-sm fds-btn-icon-only fds-btn-outline-primary"
                                             tabindex="0"
                                         >
                                             <i
@@ -344,18 +356,18 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="form-range-container">
+                                <div class="fds-form-range-container">
                                     <input
                                         type="range"
-                                        class="form-range"
+                                        class="fds-form-range"
                                         min="0"
                                         max="40"
                                         step="4"
                                     />
-                                    <div class="form-range-ticks"></div>
+                                    <div class="fds-form-range-ticks"></div>
                                 </div>
                             </div>
-                            <hr class="m-0" />
+                            <hr class="fds fds-m-0" />
                             <!--
                             Controllo slider per la spaziatura dei caratteri
                             Componenti:
@@ -369,12 +381,12 @@
                                 <div class="toolbar-slider-control-header">
                                     <label
                                         for="letter-spacing"
-                                        class="form-label form-label-sm mb-0"
+                                        class="fds-form-label fds-form-label-sm fds-mb-0"
                                         >Spaziatura caratteri</label
                                     >
-                                    <div class="btn-group">
+                                    <div class="fds-btn-group">
                                         <button
-                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            class="fds-btn fds-btn-sm fds-btn-icon-only fds-btn-outline-primary"
                                             tabindex="0"
                                         >
                                             <i
@@ -383,12 +395,12 @@
                                         </button>
                                         <input
                                             type="text"
-                                            class="form-control form-control-sm"
+                                            class="fds-form-control fds-form-control-sm"
                                             id="letter-spacing"
                                             value="0px"
                                         />
                                         <button
-                                            class="btn btn-sm btn-icon-only btn-outline-primary"
+                                            class="fds-btn fds-btn-sm fds-btn-icon-only fds-btn-outline-primary"
                                             tabindex="0"
                                         >
                                             <i
@@ -397,19 +409,19 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="form-range-container">
+                                <div class="fds-form-range-container">
                                     <input
                                         type="range"
-                                        class="form-range"
+                                        class="fds-form-range"
                                         for="letter-spacing"
                                         min="0"
                                         max="2"
                                         step="0.1"
                                     />
-                                    <div class="form-range-ticks"></div>
+                                    <div class="fds-form-range-ticks"></div>
                                 </div>
                             </div>
-                            <hr class="m-0" />
+                            <hr class="fds fds-m-0" />
                             <!--
                             Controllo bottoni per il peso del font
                             Componenti:
@@ -421,43 +433,43 @@
                             <div class="toolbar-button-control">
                                 <span
                                     for="font-weight"
-                                    class="form-label form-label-sm"
+                                    class="fds-form-label fds-form-label-sm"
                                     >Peso</span
                                 >
-                                <div class="btn-wrapper">
+                                <div class="fds-btn-wrapper">
                                     <button
-                                        class="btn btn-icon-only btn-outline-info fw-light"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-fw-light"
                                         tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
-                                        class="btn btn-icon-only btn-outline-info fw-normal is-active"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-fw-normal is-active"
                                         tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
-                                        class="btn btn-icon-only btn-outline-info fw-medium"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-fw-medium"
                                         tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
-                                        class="btn btn-icon-only btn-outline-info fw-semibold"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-fw-semibold"
                                         tabindex="0"
                                     >
                                         A
                                     </button>
                                     <button
-                                        class="btn btn-icon-only btn-outline-info fw-bold"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-fw-bold"
                                         tabindex="0"
                                     >
                                         A
                                     </button>
                                 </div>
                             </div>
-                            <hr class="m-0" />
+                            <hr class="fds fds-m-0" />
                             <!--
                             Controllo bottoni per la formattazione del testo
                             Componenti:
@@ -468,33 +480,57 @@
                             - Stile base senza bordi colorati
                             -->
                             <div class="toolbar-text-format">
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-italic"></i>
                                 </button>
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-underline"></i>
                                 </button>
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-text-slash"></i>
                                 </button>
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-font-case"></i>
                                 </button>
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-align-left"></i>
                                 </button>
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-align-center"></i>
                                 </button>
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-align-right"></i>
                                 </button>
-                                <button class="btn btn-icon-only" tabindex="0">
+                                <button
+                                    class="fds-btn fds-btn-icon-only"
+                                    tabindex="0"
+                                >
                                     <i class="fa-solid fa-align-justify"></i>
                                 </button>
                             </div>
                             <p>
-                                <a class="link fs-sm mt-3" href="#"
+                                <a class="fds-link fds-fs-sm fds-mt-3" href="#"
                                     >Configurazione semplice
                                     <i class="fa-regular fa-arrow-right"></i
                                 ></a>
@@ -503,7 +539,7 @@
                     </div>
                     <hr />
                     <div class="editor-component">
-                        <p class="fw-medium mb-0">Colori</p>
+                        <p class="fw-medium fds-mb-0">Colori</p>
                         <div class="editor-component-body">
                             <!--
                             Controllo colori del tema
@@ -516,38 +552,38 @@
                             <div class="toolbar-button-control">
                                 <label
                                     for="themeColors"
-                                    class="form-label form-label-sm"
+                                    class="fds-form-label fds-form-label-sm"
                                     >Colori del tuo tema</label
                                 >
-                                <div class="btn-wrapper">
+                                <div class="fds-btn-wrapper">
                                     <a
-                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body is-active"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fsd-p-0 fds-rounded-circle fds-bg-text-body is-active"
                                         tabindex="0"
                                         href="#"
                                     ></a>
                                     <a
-                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body-secondary"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-p-0 fds-rounded-circle bg-fds-text-body-secondary"
                                         tabindex="0"
                                         href="#"
                                     ></a>
                                     <a
-                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-text-body-tertiary"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fsd-p-0 fds-rounded-circle fds-bg-text-body-tertiary"
                                         tabindex="0"
                                         href="#"
                                     ></a>
                                     <a
-                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-white"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-p-0 fds-rounded-circle fds-bg-white"
                                         tabindex="0"
                                         href="#"
                                     ></a>
                                     <a
-                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-p-0 fds-rounded-circle fds-bg-primary"
                                         tabindex="0"
                                         href="#"
                                     ></a>
                                 </div>
                             </div>
-                            <hr class="m-0" />
+                            <hr class="fds fds-m-0" />
                             <!--
                             Controllo colori personalizzati
                             Componenti:
@@ -559,12 +595,12 @@
                             <div class="toolbar-button-control">
                                 <label
                                     for="themeColors"
-                                    class="form-label form-label-sm"
+                                    class="fds-form-label fds-form-label-sm"
                                     >Colori personalizzati</label
                                 >
-                                <div class="btn-wrapper">
+                                <div class="fds-btn-wrapper">
                                     <a
-                                        class="btn btn-icon-only btn-outline-info p-0 rounded-circle bg-primary btn-trash-hover"
+                                        class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-p-0 fds-rounded-circle fds-bg-primary fds-btn-trash-hover"
                                         tabindex="0"
                                     ></a>
                                     <div
@@ -573,7 +609,7 @@
                                     >
                                         <input
                                             type="color"
-                                            class="form-control form-control-color"
+                                            class="fds-form-control fds-form-control-color"
                                             id="exampleColorInput"
                                             value="#563d7c"
                                             title="Choose your color"
@@ -586,7 +622,7 @@
 
                                         <button
                                             onclick="document.getElementById('exampleColorInput').click()"
-                                            class="btn btn-icon-only btn-outline-info fw-light"
+                                            class="fds-btn fds-btn-icon-only fds-btn-outline-info fds-fw-light"
                                             tabindex="0"
                                         >
                                             <i
@@ -601,7 +637,7 @@
                 </aside>
             </section>
         </div>
-        <script src="scripts/form-range.js"></script>
+        <script src="scripts/fds-form-range.js"></script>
         <script src="scripts/dropdown.js"></script>
     </body>
 </html>
