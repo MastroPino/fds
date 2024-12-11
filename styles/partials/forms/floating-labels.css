@@ -247,6 +247,7 @@
     height: 3rem;
     width: 3rem;
     border-radius: calc(
-        var(--fds-radius-2) - var(--fds-form-floating-input-border-width)
+        var(--fds-radius-2) -
+            calc(var(--fds-form-floating-input-border-width) * 4)
     );
 }
