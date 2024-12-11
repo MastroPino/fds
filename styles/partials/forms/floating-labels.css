@@ -1,6 +1,6 @@
 /* Form Floating */
 :root {
-    --fds-form-floating-height: 3.5rem;
+    --fds-form-floating-height: 3.4rem;
     --fds-form-floating-border-height: 2px;
     --fds-form-floating-total-height: calc(
         var(--fds-form-floating-height) + var(--fds-form-floating-border-height)
@@ -8,6 +8,9 @@
     --fds-form-floating-line-height: 1.5;
     --fds-form-floating-padding-x: var(--fds-spacer-2);
     --fds-form-floating-padding-y: var(--fds-spacer-2);
+    --fds-form-floating-input-border-width: 1px;
+    --fds-form-floating-input-border-style: solid;
+    --fds-form-floating-input-border-color: var(--fds-border-input);
     --fds-form-floating-input-padding-top: 1.625rem;
     --fds-form-floating-input-padding-bottom: 0.625rem;
     --fds-form-floating-label-height: 1.5em;
@@ -33,7 +36,9 @@
         var(--fds-form-floating-padding-x);
     background-color: var(--fds-color-white);
     background-clip: padding-box;
-    border: 1px solid var(--fds-border-input);
+    border: var(--fds-form-floating-input-border-width)
+        var(--fds-form-floating-input-border-style)
+        var(--fds-form-floating-input-border-color);
     border-radius: var(--fds-radius-2);
     color: var(--fds-text-body);
     font-family: var(--fds-font-family-base);
@@ -233,4 +238,15 @@
 .fds-form-floating > .fds-form-control.is-valid ~ .valid-feedback,
 .fds-form-floating > .fds-form-control.is-invalid ~ .invalid-feedback {
     display: block;
+}
+
+.fds-btn-icon-only {
+    position: absolute;
+    right: calc(var(--fds-form-floating-input-border-width) * 4);
+    top: calc(var(--fds-form-floating-input-border-width) * 4);
+    height: 3rem;
+    width: 3rem;
+    border-radius: calc(
+        var(--fds-radius-2) - var(--fds-form-floating-input-border-width)
+    );
 }

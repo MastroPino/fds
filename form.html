@@ -286,6 +286,72 @@
                     margin: 2rem auto;
                 "
             >
+                <h1>actionable inputs</h1>
+                <!-- Input standard -->
+                <div class="fds-form-floating">
+                    <input
+                        type="text"
+                        class="fds-form-control"
+                        placeholder=" "
+                        id="inputWithButton"
+                    />
+                    <label for="inputWithButton">Label</label>
+                    <button class="fds-btn fds-btn-primary fds-btn-icon-only">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </button>
+                </div>
+
+                <!-- Input con valore pre-popolato -->
+                <div class="fds-form-floating">
+                    <input
+                        type="text"
+                        class="fds-form-control"
+                        id="floatingInput2"
+                        placeholder="Name"
+                        value="Mario Rossi"
+                    />
+                    <label for="floatingInput2">Name</label>
+                </div>
+
+                <!-- Input con icona -->
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input
+                        type="text"
+                        class="fds-form-control"
+                        id="floatingInput3"
+                        placeholder="Name"
+                        value="Ciaone"
+                    />
+                    <label for="floatingInput3">Name</label>
+                </div>
+
+                <!-- Input con icona -->
+                <div class="fds-form-floating">
+                    <div class="fds-form-control-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input
+                        type="text"
+                        class="fds-form-control"
+                        id="floatingInput3"
+                        placeholder="Name"
+                        value=""
+                    />
+                    <label for="floatingInput3">Name</label>
+                </div>
+            </section>
+
+            <section
+                style="
+                    display: flex;
+                    flex-flow: column;
+                    gap: 2rem;
+                    margin: 2rem auto;
+                "
+            >
                 <h1>select</h1>
                 <div class="fds-form-floating">
                     <select class="fds-form-select" id="floatingSelect">
