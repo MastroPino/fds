@@ -196,6 +196,10 @@
     transform-origin: left top;
 }
 
+.fds-form-floating:has(.fds-btn-icon-only) .fds-form-control {
+    padding-right: 4rem;
+}
+
 /* Form Floating validation states */
 .fds-form-floating > .fds-form-control.is-valid {
     border-color: var(--fds-form-feedback-border-valid);
@@ -244,10 +248,10 @@
     position: absolute;
     right: calc(var(--fds-form-floating-input-border-width) * 4);
     top: calc(var(--fds-form-floating-input-border-width) * 4);
-    height: 3rem;
+    height: calc(100% - calc(var(--fds-form-floating-input-border-width) * 8));
     width: 3rem;
     border-radius: calc(
-        var(--fds-radius-2) -
+        var(--fds-form-floating-input-border-radius) -
             calc(var(--fds-form-floating-input-border-width) * 4)
     );
 }

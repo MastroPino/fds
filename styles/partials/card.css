@@ -1,7 +1,7 @@
 :root {
     --fds-card-bg: var(--fds-color-white);
     --fds-card-border-color: var(--fds-border-card);
-    --fds-card-border-radius: var(--fds-radius-1);
+    --fds-card-border-radius: var(--fds-radius-3);
     --fds-card-padding: var(--fds-spacer-2);
     --fds-card-header-bg: var(--fds-neutral-gray);
     --fds-card-footer-bg: var(--fds-neutral-gray);
@@ -25,6 +25,7 @@
     border: var(--fds-card-border-width) var(--fds-card-border-style)
         var(--fds-card-border-color);
     border-radius: var(--fds-card-border-radius);
+    color: var(--fds-text-body);
 }
 
 .fds-card-body {
@@ -33,11 +34,11 @@
 }
 
 .fds-card-title {
-    margin-bottom: 0.fds-75rem;
+    margin-bottom: 0fds-75rem;
 }
 
 .fds-card-subtitle {
-    margin-top: -0.fds-375rem;
+    margin-top: -0fds-375rem;
     margin-bottom: 0;
 }
 

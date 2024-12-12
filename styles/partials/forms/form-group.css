@@ -1,0 +1,23 @@
+.fds-form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--fds-spacer-1);
+    align-self: stretch;
+}
+
+.fds-form-group-hint {
+    align-self: stretch;
+    font-size: var(--fds-font-size-xs);
+    line-height: 1rem;
+}
+
+.fds-form-group:has(.fds-form-control.is-valid) .fds-form-group-hint,
+.fds-form-group:has(.fds-form-control.is-invalid) .fds-form-group-hint {
+    color: var(--fds-color-success-dark-20);
+}
+
+.fds-form-group:has(.fds-form-control.invalid) .fds-form-group-hint,
+.fds-form-group:has(.fds-form-control.is-invalid) .fds-form-group-hint {
+    color: var(--fds-color-danger-dark-20);
+}

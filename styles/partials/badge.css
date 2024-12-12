@@ -1,0 +1,91 @@
+:root {
+    --fds-badge-padding-y: var(--fds-spacer-1);
+    --fds-badge-padding-x: var(--fds-spacer-3);
+    --fds-badge-font-size: var(--fds-font-size-sm);
+    --fds-badge-font-weight: var(--fds-fw-medium);
+    --fds-badge-border-radius: var(--fds-radius-1);
+    --fds-badge-color: var(--fds-color-white);
+}
+
+.fds-badge {
+    display: inline-block;
+    padding: var(--fds-badge-padding-y) var(--fds-badge-padding-x);
+    font-size: var(--fds-badge-font-size);
+    font-weight: var(--fds-badge-font-weight);
+    line-height: 1;
+    color: var(--fds-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--fds-badge-border-radius);
+}
+
+.fds-badge-primary {
+    background-color: var(--fds-color-primary);
+}
+
+.fds-badge-secondary {
+    background-color: var(--fds-color-secondary);
+}
+
+.fds-badge-success {
+    background-color: var(--fds-color-success);
+}
+
+.fds-badge-danger {
+    background-color: var(--fds-color-danger);
+}
+
+.fds-badge-warning {
+    background-color: var(--fds-color-warning);
+}
+
+.fds-badge-info {
+    background-color: var(--fds-color-info);
+}
+
+.fds-badge-light {
+    background-color: var(--fds-color-light);
+    color: var(--fds-text-body-secondary);
+}
+
+.fds-badge-dark {
+    background-color: var(--fds-color-dark);
+}
+
+.fds-badge-neutral {
+    background-color: var(--fds-color-neutral);
+    color: var(--fds-text-body);
+}
+
+.fds-badge-promo,
+.fds-badge-eye-complementary {
+    background-color: var(--fds-color-complementary);
+    color: var(--fds-text-body);
+}
+
+.fds-badge-eye-catcher {
+    background-color: var(--fds-color-eye-catcher);
+}
+
+/* Badge link */
+.fds-badge a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fds-badge a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Modificatori per la dimensione */
+.fds-badge-sm {
+    padding: var(--fds-spacer-1) var(--fds-spacer-2);
+    font-size: var(--fds-font-size-xs);
+}
+
+.fds-badge-lg {
+    padding: var(--fds-spacer-1) var(--fds-spacer-4);
+    font-size: var(--fds-font-size-base);
+}
