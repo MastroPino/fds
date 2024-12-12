@@ -1,9 +1,6 @@
 :root {
     --fds-select-text-color: var(--fds-text-body);
     --fds-select-bg-color: var(--fds-color-white);
-    --fds-select-border-color: var(--fds-border-input);
-    --fds-select-focus-border-color: var(--fds-color-primary);
-    --fds-select-focus-box-shadow-color: var(--fds-color-primary-light-90);
     --fds-select-transition: border-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out;
     --fds-select-padding-right: 2.5rem;
@@ -32,8 +29,10 @@
     line-height: var(--fds-floating-line-height);
     color: var(--fds-select-text-color);
     background-color: var(--fds-select-bg-color);
-    border: 1px solid var(--fds-select-border-color);
-    border-radius: var(--fds-input-border-radius);
+    border: var(--fds-form-floating-input-border-width)
+        var(--fds-form-floating-input-border-style)
+        var(--fds-form-floating-input-border-color);
+    border-radius: var(--fds-form-floating-input-border-radius);
     transition: var(--fds-select-transition);
     appearance: none;
     background-image: var(--fds-floating-background-image);
@@ -43,9 +42,9 @@
 }
 
 .fds-form-select:focus {
-    border-color: var(--fds-select-focus-border-color);
+    border-color: var(--fds-input-focus-border-color);
     outline: 0;
-    box-shadow: 0 0 0 0.25rem var(--fds-select-focus-box-shadow-color);
+    box-shadow: var(--fds-focus-ring-box-shadow);
 }
 
 /* Stati focus e filled per select standard */

@@ -8,6 +8,7 @@
     --fds-form-floating-line-height: 1.5;
     --fds-form-floating-padding-x: var(--fds-spacer-2);
     --fds-form-floating-padding-y: var(--fds-spacer-2);
+    --fds-form-floating-input-border-radius: var(--fds-card-border-radius);
     --fds-form-floating-input-border-width: 1px;
     --fds-form-floating-input-border-style: solid;
     --fds-form-floating-input-border-color: var(--fds-border-input);
@@ -39,7 +40,7 @@
     border: var(--fds-form-floating-input-border-width)
         var(--fds-form-floating-input-border-style)
         var(--fds-form-floating-input-border-color);
-    border-radius: var(--fds-radius-2);
+    border-radius: var(--fds-form-floating-input-border-radius);
     color: var(--fds-text-body);
     font-family: var(--fds-font-family-base);
     font-size: var(--fds-font-size-base);
@@ -106,7 +107,6 @@
     height: 1.5em;
     content: "";
     background-color: var(--fds-color-white);
-    border-radius: var(--fds-radius-2);
 }
 
 /* Disabled state */
