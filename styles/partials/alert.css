@@ -1,0 +1,76 @@
+/* Alert styles */
+.fds-alert {
+    padding: var(--fds-spacer-2) var(--fds-spacer-3);
+    margin-bottom: var(--fds-spacer-2);
+    border: 1px solid transparent;
+    border-radius: var(--fds-card-border-radius);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: var(--fds-spacer-1);
+}
+
+.fds-alert-primary {
+    color: var(--fds-color-primary-dark-80);
+    background-color: var(--fds-color-primary-light-90);
+    border-color: var(--fds-color-primary-light-90);
+}
+
+.fds-alert-secondary {
+    color: var(--fds-color-complementary-dark-80);
+    background-color: var(--fds-color-complementary-light-90);
+    border-color: var(--fds-color-complementary-light-90);
+}
+
+.fds-alert-success {
+    color: var(--fds-color-success-dark-80);
+    background-color: var(--fds-color-success-light-90);
+    border-color: var(--fds-color-success-light-90);
+}
+
+.fds-alert-danger {
+    color: var(--fds-color-danger-dark-80);
+    background-color: var(--fds-color-danger-light-90);
+    border-color: var(--fds-color-danger-light-90);
+}
+
+.fds-alert-warning {
+    color: var(--fds-color-warning-dark-80);
+    background-color: var(--fds-color-warning-light-90);
+    border-color: var(--fds-color-warning-light-90);
+}
+
+.fds-alert-info {
+    color: var(--fds-color-info-dark-80);
+    background-color: var(--fds-color-info-light-90);
+    border-color: var(--fds-color-info-light-90);
+}
+
+.fds-alert-light {
+    color: var(--fds-text-body);
+    background-color: var(--fds-color-neutral-white);
+    border-color: var(--fds-border-color);
+}
+
+.fds-alert-dark {
+    color: var(--fds-color-white);
+    background-color: var(--fds-color-black);
+    border-color: var(--fds-color-black);
+}
+
+.fds-alert .fds-close {
+    position: absolute;
+    top: var(--fds-spacer-1);
+    right: var(--fds-spacer-1);
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.fds-alert .fds-close:hover {
+    opacity: 1;
+}

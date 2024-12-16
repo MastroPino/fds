@@ -1,270 +1,448 @@
 :root {
     /* Primary color - tutte le shade necessarie con percentuali esplicite */
-    --fds-color-primary-light-95: color-mix(in srgb,
-            var(--fds-color-primary) 5%,
-            white 95%);
-    --fds-color-primary-light-90: color-mix(in srgb,
-            var(--fds-color-primary) 10%,
-            white 90%);
-    --fds-color-primary-light-80: color-mix(in srgb,
-            var(--fds-color-primary) 20%,
-            white 80%);
-    --fds-color-primary-light-70: color-mix(in srgb,
-            var(--fds-color-primary) 30%,
-            white 70%);
-    --fds-color-primary-light-60: color-mix(in srgb,
-            var(--fds-color-primary) 40%,
-            white 60%);
-    --fds-color-primary-light-50: color-mix(in srgb,
-            var(--fds-color-primary) 50%,
-            white 50%);
-    --fds-color-primary-light-40: color-mix(in srgb,
-            var(--fds-color-primary) 60%,
-            white 40%);
-    --fds-color-primary-light-30: color-mix(in srgb,
-            var(--fds-color-primary) 70%,
-            white 30%);
-    --fds-color-primary-light-20: color-mix(in srgb,
-            var(--fds-color-primary) 80%,
-            white 20%);
-    --fds-color-primary-light-10: color-mix(in srgb,
-            var(--fds-color-primary) 90%,
-            white);
+    --fds-color-primary-light-95: color-mix(
+        in srgb,
+        var(--fds-color-primary) 5%,
+        white 95%
+    );
+    --fds-color-primary-light-90: color-mix(
+        in srgb,
+        var(--fds-color-primary) 10%,
+        white 90%
+    );
+    --fds-color-primary-light-80: color-mix(
+        in srgb,
+        var(--fds-color-primary) 20%,
+        white 80%
+    );
+    --fds-color-primary-light-70: color-mix(
+        in srgb,
+        var(--fds-color-primary) 30%,
+        white 70%
+    );
+    --fds-color-primary-light-60: color-mix(
+        in srgb,
+        var(--fds-color-primary) 40%,
+        white 60%
+    );
+    --fds-color-primary-light-50: color-mix(
+        in srgb,
+        var(--fds-color-primary) 50%,
+        white 50%
+    );
+    --fds-color-primary-light-40: color-mix(
+        in srgb,
+        var(--fds-color-primary) 60%,
+        white 40%
+    );
+    --fds-color-primary-light-30: color-mix(
+        in srgb,
+        var(--fds-color-primary) 70%,
+        white 30%
+    );
+    --fds-color-primary-light-20: color-mix(
+        in srgb,
+        var(--fds-color-primary) 80%,
+        white 20%
+    );
+    --fds-color-primary-light-10: color-mix(
+        in srgb,
+        var(--fds-color-primary) 90%,
+        white
+    );
 
-    --fds-color-primary-dark-10: color-mix(in srgb,
-            var(--fds-color-primary) 90%,
-            black);
-    --fds-color-primary-dark-20: color-mix(in srgb,
-            var(--fds-color-primary) 80%,
-            black);
-    --fds-color-primary-dark-30: color-mix(in srgb,
-            var(--fds-color-primary) 70%,
-            black);
-    --fds-color-primary-dark-40: color-mix(in srgb,
-            var(--fds-color-primary) 60%,
-            black);
-    --fds-color-primary-dark-50: color-mix(in srgb,
-            var(--fds-color-primary) 50%,
-            black);
-    --fds-color-primary-dark-60: color-mix(in srgb,
-            var(--fds-color-primary) 40%,
-            black);
-    --fds-color-primary-dark-70: color-mix(in srgb,
-            var(--fds-color-primary) 30%,
-            black);
-    --fds-color-primary-dark-80: color-mix(in srgb,
-            var(--fds-color-primary) 20%,
-            black);
-    --fds-color-primary-dark-90: color-mix(in srgb,
-            var(--fds-color-primary) 10%,
-            black);
-
-    /* Light variations usando color-mix con bianco */
-    --fds-color-complementary-light-95: color-mix(in srgb,
-            var(--fds-color-complementary) 5%,
-            white 95%);
-    --fds-color-complementary-light-90: color-mix(in srgb,
-            var(--fds-color-complementary) 10%,
-            white 90%);
-    --fds-color-complementary-light-80: color-mix(in srgb,
-            var(--fds-color-complementary) 20%,
-            white 80%);
-    --fds-color-complementary-light-70: color-mix(in srgb,
-            var(--fds-color-complementary) 30%,
-            white 70%);
-    --fds-color-complementary-light-60: color-mix(in srgb,
-            var(--fds-color-complementary) 40%,
-            white 60%);
-    --fds-color-complementary-light-20: color-mix(in srgb,
-            var(--fds-color-complementary) 80%,
-            white 20%);
-    --fds-color-complementary-light-10: color-mix(in srgb,
-            var(--fds-color-complementary) 90%,
-            white 10%);
-
-    /* Dark variations usando color-mix con nero */
-    --fds-color-complementary-dark-10: color-mix(in srgb,
-            var(--fds-color-complementary) 90%,
-            black 10%);
-    --fds-color-complementary-dark-20: color-mix(in srgb,
-            var(--fds-color-complementary) 80%,
-            black 20%);
-    --fds-color-complementary-dark-30: color-mix(in srgb,
-            var(--fds-color-complementary) 70%,
-            black 30%);
-    --fds-color-complementary-dark-40: color-mix(in srgb,
-            var(--fds-color-complementary) 60%,
-            black 40%);
-    --fds-color-complementary-dark-50: color-mix(in srgb,
-            var(--fds-color-complementary) 50%,
-            black 50%);
-    --fds-color-complementary-dark-60: color-mix(in srgb,
-            var(--fds-color-complementary) 40%,
-            black 60%);
-    --fds-color-complementary-dark-70: color-mix(in srgb,
-            var(--fds-color-complementary) 30%,
-            black 70%);
-    --fds-color-complementary-dark-80: color-mix(in srgb,
-            var(--fds-color-complementary) 20%,
-            black 80%);
-    --fds-color-complementary-dark-90: color-mix(in srgb,
-            var(--fds-color-complementary) 10%,
-            black 90%);
+    --fds-color-primary-dark-10: color-mix(
+        in srgb,
+        var(--fds-color-primary) 90%,
+        black
+    );
+    --fds-color-primary-dark-20: color-mix(
+        in srgb,
+        var(--fds-color-primary) 80%,
+        black
+    );
+    --fds-color-primary-dark-30: color-mix(
+        in srgb,
+        var(--fds-color-primary) 70%,
+        black
+    );
+    --fds-color-primary-dark-40: color-mix(
+        in srgb,
+        var(--fds-color-primary) 60%,
+        black
+    );
+    --fds-color-primary-dark-50: color-mix(
+        in srgb,
+        var(--fds-color-primary) 50%,
+        black
+    );
+    --fds-color-primary-dark-60: color-mix(
+        in srgb,
+        var(--fds-color-primary) 40%,
+        black
+    );
+    --fds-color-primary-dark-70: color-mix(
+        in srgb,
+        var(--fds-color-primary) 30%,
+        black
+    );
+    --fds-color-primary-dark-80: color-mix(
+        in srgb,
+        var(--fds-color-primary) 20%,
+        black
+    );
+    --fds-color-primary-dark-90: color-mix(
+        in srgb,
+        var(--fds-color-primary) 10%,
+        black
+    );
 
     /* Light variations usando color-mix con bianco */
-    --fds-color-eye-catcher-light-95: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 5%,
-            white 95%);
-    --fds-color-eye-catcher-light-90: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 10%,
-            white 90%);
-    --fds-color-eye-catcher-light-80: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 20%,
-            white 80%);
-    --fds-color-eye-catcher-light-70: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 30%,
-            white 70%);
-    --fds-color-eye-catcher-light-60: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 40%,
-            white 60%);
-    --fds-color-eye-catcher-light-20: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 80%,
-            white 20%);
-    --fds-color-eye-catcher-light-10: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 90%,
-            white 10%);
+    --fds-color-complementary-light-95: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 5%,
+        white 95%
+    );
+    --fds-color-complementary-light-90: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 10%,
+        white 90%
+    );
+    --fds-color-complementary-light-80: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 20%,
+        white 80%
+    );
+    --fds-color-complementary-light-70: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 30%,
+        white 70%
+    );
+    --fds-color-complementary-light-60: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 40%,
+        white 60%
+    );
+    --fds-color-complementary-light-20: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 80%,
+        white 20%
+    );
+    --fds-color-complementary-light-10: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 90%,
+        white 10%
+    );
 
     /* Dark variations usando color-mix con nero */
-    --fds-color-eye-catcher-dark-10: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 90%,
-            black 10%);
-    --fds-color-eye-catcher-dark-20: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 80%,
-            black 20%);
-    --fds-color-eye-catcher-dark-30: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 70%,
-            black 30%);
-    --fds-color-eye-catcher-dark-40: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 60%,
-            black 40%);
-    --fds-color-eye-catcher-dark-50: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 50%,
-            black 50%);
-    --fds-color-eye-catcher-dark-60: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 40%,
-            black 60%);
-    --fds-color-eye-catcher-dark-70: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 30%,
-            black 70%);
-    --fds-color-eye-catcher-dark-80: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 20%,
-            black 80%);
-    --fds-color-eye-catcher-dark-90: color-mix(in srgb,
-            var(--fds-color-eye-catcher) 10%,
-            black 90%);
+    --fds-color-complementary-dark-10: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 90%,
+        black 10%
+    );
+    --fds-color-complementary-dark-20: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 80%,
+        black 20%
+    );
+    --fds-color-complementary-dark-30: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 70%,
+        black 30%
+    );
+    --fds-color-complementary-dark-40: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 60%,
+        black 40%
+    );
+    --fds-color-complementary-dark-50: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 50%,
+        black 50%
+    );
+    --fds-color-complementary-dark-60: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 40%,
+        black 60%
+    );
+    --fds-color-complementary-dark-70: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 30%,
+        black 70%
+    );
+    --fds-color-complementary-dark-80: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 20%,
+        black 80%
+    );
+    --fds-color-complementary-dark-90: color-mix(
+        in srgb,
+        var(--fds-color-complementary) 10%,
+        black 90%
+    );
+
+    /* Light variations usando color-mix con bianco */
+    --fds-color-eye-catcher-light-95: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 5%,
+        white 95%
+    );
+    --fds-color-eye-catcher-light-90: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 10%,
+        white 90%
+    );
+    --fds-color-eye-catcher-light-80: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 20%,
+        white 80%
+    );
+    --fds-color-eye-catcher-light-70: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 30%,
+        white 70%
+    );
+    --fds-color-eye-catcher-light-60: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 40%,
+        white 60%
+    );
+    --fds-color-eye-catcher-light-20: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 80%,
+        white 20%
+    );
+    --fds-color-eye-catcher-light-10: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 90%,
+        white 10%
+    );
+
+    /* Dark variations usando color-mix con nero */
+    --fds-color-eye-catcher-dark-10: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 90%,
+        black 10%
+    );
+    --fds-color-eye-catcher-dark-20: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 80%,
+        black 20%
+    );
+    --fds-color-eye-catcher-dark-30: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 70%,
+        black 30%
+    );
+    --fds-color-eye-catcher-dark-40: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 60%,
+        black 40%
+    );
+    --fds-color-eye-catcher-dark-50: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 50%,
+        black 50%
+    );
+    --fds-color-eye-catcher-dark-60: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 40%,
+        black 60%
+    );
+    --fds-color-eye-catcher-dark-70: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 30%,
+        black 70%
+    );
+    --fds-color-eye-catcher-dark-80: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 20%,
+        black 80%
+    );
+    --fds-color-eye-catcher-dark-90: color-mix(
+        in srgb,
+        var(--fds-color-eye-catcher) 10%,
+        black 90%
+    );
 
     /* Colori semantici con percentuali esplicite per entrambi i colori */
     /* Info */
-    --fds-color-info-light-90: color-mix(in srgb,
-            var(--fds-color-info) 10%,
-            white 90%);
+    --fds-color-info-light-90: color-mix(
+        in srgb,
+        var(--fds-color-info) 10%,
+        white 90%
+    );
+    /* Alert color */
+    --fds-color-info-dark-80: color-mix(
+        in srgb,
+        var(--fds-color-danger) 20%,
+        black 80%
+    );
     /* Alert bg */
-    --fds-color-info-light-80: color-mix(in srgb,
-            var(--fds-color-info) 20%,
-            white 80%);
+    --fds-color-info-light-80: color-mix(
+        in srgb,
+        var(--fds-color-info) 20%,
+        white 80%
+    );
     /* Focus ring */
-    --fds-color-info-light-20: color-mix(in srgb,
-            var(--fds-color-info) 80%,
-            white 20%);
+    --fds-color-info-light-20: color-mix(
+        in srgb,
+        var(--fds-color-info) 80%,
+        white 20%
+    );
     /* Button hover */
-    --fds-color-info-dark-20: color-mix(in srgb,
-            var(--fds-color-info) 80%,
-            black 20%);
+    --fds-color-info-dark-20: color-mix(
+        in srgb,
+        var(--fds-color-info) 80%,
+        black 20%
+    );
     /* Alert text */
 
     /* Success */
-    --fds-color-success-light-90: color-mix(in srgb,
-            var(--fds-color-success) 10%,
-            white 90%);
+    --fds-color-success-light-90: color-mix(
+        in srgb,
+        var(--fds-color-success) 10%,
+        white 90%
+    );
+    /* Alert color */
+    --fds-color-success-dark-80: color-mix(
+        in srgb,
+        var(--fds-color-danger) 20%,
+        black 80%
+    );
     /* Alert bg */
-    --fds-color-success-light-80: color-mix(in srgb,
-            var(--fds-color-success) 20%,
-            white 80%);
+    --fds-color-success-light-80: color-mix(
+        in srgb,
+        var(--fds-color-success) 20%,
+        white 80%
+    );
     /* Focus ring */
-    --fds-color-success-light-20: color-mix(in srgb,
-            var(--fds-color-success) 80%,
-            white 20%);
+    --fds-color-success-light-20: color-mix(
+        in srgb,
+        var(--fds-color-success) 80%,
+        white 20%
+    );
     /* Button hover */
-    --fds-color-success-dark-20: color-mix(in srgb,
-            var(--fds-color-success) 80%,
-            black 20%);
+    --fds-color-success-dark-20: color-mix(
+        in srgb,
+        var(--fds-color-success) 80%,
+        black 20%
+    );
     /* Alert text */
 
     /* Warning */
-    --fds-color-warning-light-90: color-mix(in srgb,
-            var(--fds-color-warning) 10%,
-            white 90%);
+    --fds-color-warning-light-90: color-mix(
+        in srgb,
+        var(--fds-color-warning) 10%,
+        white 90%
+    );
     /* Alert bg */
-    --fds-color-warning-light-80: color-mix(in srgb,
-            var(--fds-color-warning) 20%,
-            white 80%);
+    --fds-color-warning-light-80: color-mix(
+        in srgb,
+        var(--fds-color-warning) 20%,
+        white 80%
+    );
+    /* Alert color */
+    --fds-color-warning-dark-80: color-mix(
+        in srgb,
+        var(--fds-color-danger) 20%,
+        black 80%
+    );
     /* Focus ring */
-    --fds-color-warning-light-20: color-mix(in srgb,
-            var(--fds-color-warning) 80%,
-            white 20%);
+    --fds-color-warning-light-20: color-mix(
+        in srgb,
+        var(--fds-color-warning) 80%,
+        white 20%
+    );
     /* Button hover */
-    --fds-color-warning-dark-20: color-mix(in srgb,
-            var(--fds-color-warning) 80%,
-            black 20%);
+    --fds-color-warning-dark-20: color-mix(
+        in srgb,
+        var(--fds-color-warning) 80%,
+        black 20%
+    );
     /* Alert text */
 
     /* Danger */
-    --fds-color-danger-light-90: color-mix(in srgb,
-            var(--fds-color-danger) 10%,
-            white 90%);
+    --fds-color-danger-light-90: color-mix(
+        in srgb,
+        var(--fds-color-danger) 10%,
+        white 90%
+    );
     /* Alert bg */
-    --fds-color-danger-light-80: color-mix(in srgb,
-            var(--fds-color-danger) 20%,
-            white 80%);
+    --fds-color-danger-light-80: color-mix(
+        in srgb,
+        var(--fds-color-danger) 20%,
+        white 80%
+    );
+    /* Alert color */
+    --fds-color-danger-dark-80: color-mix(
+        in srgb,
+        var(--fds-color-danger) 20%,
+        black 80%
+    );
     /* Focus ring */
-    --fds-color-danger-light-20: color-mix(in srgb,
-            var(--fds-color-danger) 80%,
-            white 20%);
+    --fds-color-danger-light-20: color-mix(
+        in srgb,
+        var(--fds-color-danger) 80%,
+        white 20%
+    );
     /* Button hover */
-    --fds-color-danger-dark-20: color-mix(in srgb,
-            var(--fds-color-danger) 80%,
-            black 20%);
+    --fds-color-danger-dark-20: color-mix(
+        in srgb,
+        var(--fds-color-danger) 80%,
+        black 20%
+    );
     /* Alert text */
 
     /* Colori neutri */
-    --fds-color-black-95: color-mix(in srgb,
-            var(--fds-color-black) 5%,
-            white 95%);
-    --fds-color-black-90: color-mix(in srgb,
-            var(--fds-color-black) 10%,
-            white 90%);
-    --fds-color-black-80: color-mix(in srgb,
-            var(--fds-color-black) 20%,
-            white 80%);
-    --fds-color-black-70: color-mix(in srgb,
-            var(--fds-color-black) 30%,
-            white 70%);
-    --fds-color-black-60: color-mix(in srgb,
-            var(--fds-color-black) 40%,
-            white 60%);
-    --fds-color-black-50: color-mix(in srgb,
-            var(--fds-color-black) 50%,
-            white 50%);
-    --fds-color-black-40: color-mix(in srgb,
-            var(--fds-color-black) 60%,
-            white 40%);
-    --fds-color-black-30: color-mix(in srgb,
-            var(--fds-color-black) 70%,
-            white 30%);
-    --fds-color-black-20: color-mix(in srgb,
-            var(--fds-color-black) 80%,
-            white 20%);
-    --fds-color-black-10: color-mix(in srgb,
-            var(--fds-color-black) 90%,
-            white 10%);
+    --fds-color-black-95: color-mix(
+        in srgb,
+        var(--fds-color-black) 5%,
+        white 95%
+    );
+    --fds-color-black-90: color-mix(
+        in srgb,
+        var(--fds-color-black) 10%,
+        white 90%
+    );
+    --fds-color-black-80: color-mix(
+        in srgb,
+        var(--fds-color-black) 20%,
+        white 80%
+    );
+    --fds-color-black-70: color-mix(
+        in srgb,
+        var(--fds-color-black) 30%,
+        white 70%
+    );
+    --fds-color-black-60: color-mix(
+        in srgb,
+        var(--fds-color-black) 40%,
+        white 60%
+    );
+    --fds-color-black-50: color-mix(
+        in srgb,
+        var(--fds-color-black) 50%,
+        white 50%
+    );
+    --fds-color-black-40: color-mix(
+        in srgb,
+        var(--fds-color-black) 60%,
+        white 40%
+    );
+    --fds-color-black-30: color-mix(
+        in srgb,
+        var(--fds-color-black) 70%,
+        white 30%
+    );
+    --fds-color-black-20: color-mix(
+        in srgb,
+        var(--fds-color-black) 80%,
+        white 20%
+    );
+    --fds-color-black-10: color-mix(
+        in srgb,
+        var(--fds-color-black) 90%,
+        white 10%
+    );
 }

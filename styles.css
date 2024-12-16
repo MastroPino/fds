@@ -35,6 +35,7 @@
 @import "styles/partials/list-group.css";
 @import "styles/partials/badge.css";
 @import "styles/partials/accordion.css";
+@import "styles/partials/alert.css";
 
 /* Component style */
 @import "styles/components/editor-component.css";
