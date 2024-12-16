@@ -5,9 +5,14 @@
     border: 1px solid transparent;
     border-radius: var(--fds-card-border-radius);
     font-family: "Poppins", sans-serif;
+    font-size: var(--fds-base-font-size);
     display: flex;
     align-items: center;
     gap: var(--fds-spacer-1);
+}
+
+.fds-alert-sm {
+    font-size: var(--fds-font-size-sm);
 }
 
 .fds-alert-primary {
