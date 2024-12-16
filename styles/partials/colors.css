@@ -2,7 +2,8 @@
 :root {
     --fds-border-color: #e0e0e0;
     --fds-border-card: var(--fds-border-color);
-    --fds-neutral-gray: #f5f5f5;
+    --fds-color-neutral-gray: #f5f5f5;
+    --fds-color-neutral-white: #fafafa;
     --fds-border-input: #a9a9a9;
     --fds-text-blue: var(--fds-color-info);
     --fds-text-body: #384049;

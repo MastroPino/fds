@@ -4,7 +4,7 @@
     --fds-dropdown-padding: var(--fds-spacer-2);
     --fds-dropdown-border: var(--fds-btn-border-width) solid
         var(--fds-btn-border-color);
-    --fds-dropdown-item-bg-hover: var(--fds-neutral-gray);
+    --fds-dropdown-item-bg-hover: var(--fds-color-neutral-gray);
     --fds-dropdown-item-padding: var(--fds-spacer-1) var(--fds-spacer-2);
     --fds-dropdown-item-text-color: var(--fds-text-body);
     --fds-dropdown-menu-bg-color: var(--fds-color-white);
@@ -36,7 +36,7 @@
 
 .fds-dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
 }
 
 .fds-dropdown-toggle {
@@ -92,12 +92,12 @@
         var(--fds-dropdown-menu-border-color);
 }
 
-.fds-dropdown-menu.fds-show {
+.fds-dropdown-menu.show {
     display: grid;
     grid-template: auto 1fr auto/auto;
 }
 
-.fds-dropdown-menu.fds-show + .fds-dropdown-toggle {
+.fds-dropdown-menu.show + .fds-dropdown-toggle {
     border-color: var(
         --fds-input-border-focus-color
     ); /* Colore del bordo in stato di focus */

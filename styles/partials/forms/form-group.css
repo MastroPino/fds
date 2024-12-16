@@ -4,6 +4,7 @@
     justify-content: center;
     gap: var(--fds-spacer-1);
     align-self: stretch;
+    position: relative;
 }
 
 .fds-form-group-hint {

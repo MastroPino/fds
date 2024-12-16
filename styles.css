@@ -1,16 +1,19 @@
 @import "styles/main.css";
 
-@import "styles/utilities/reboot.css";
+@import "styles/utilities/position.css";
 @import "styles/utilities/colors.css";
 @import "styles/utilities/colors-shade.css";
-@import "styles/utilities/text.css";
 @import "styles/utilities/margin.css";
 @import "styles/utilities/padding.css";
-@import "styles/utilities/link.css";
 @import "styles/utilities/radius.css";
 @import "styles/utilities/display.css";
 @import "styles/utilities/flex.css";
+@import "styles/utilities/gap.css";
 
+/* Partials */
+@import "styles/partials/text.css";
+@import "styles/partials/link.css";
+@import "styles/partials/stretched-link.css";
 @import "styles/partials/container.css";
 @import "styles/partials/focus-ring.css";
 @import "styles/partials/root.css";
@@ -22,13 +25,18 @@
 
 /* Mol */
 @import "styles/partials/btn.css";
-@import "styles/partials/input-group.css";
+@import "styles/partials/btn-group.css";
 @import "styles/partials/form.css";
+@import "styles/partials/input-group.css";
 @import "styles/partials/dropdown.css";
 @import "styles/partials/card.css";
+@import "styles/partials/modal.css";
+@import "styles/partials/breadcrumb.css";
+@import "styles/partials/list-group.css";
+@import "styles/partials/badge.css";
+@import "styles/partials/accordion.css";
 
 /* Component style */
-@import "styles/components/accordion.css";
 @import "styles/components/editor-component.css";
 @import "styles/components/toolbar.css";
 @import "styles/components/toolbar-slider-control.css";

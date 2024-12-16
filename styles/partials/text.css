@@ -102,9 +102,13 @@
     font-size: var(--fds-h4-font-size) !important;
 }
 .fds-fs-5,
+.fds-default,
 .fds-fs-default {
     font-size: var(--fds-h5-font-size) !important;
 }
+small,
+.fds-small,
+.fds-fs-small,
 .fds-fs-sm {
     font-size: var(--fds-font-size-sm) !important;
 }
@@ -133,4 +137,25 @@
 }
 .fds-user-select-none {
     user-select: none !important;
+}
+
+/* Liste senza stile */
+ul.fds-list-unstyled,
+ol.fds-list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Liste inline */
+ul.fds-list-inline,
+ol.fds-list-inline {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.fds-list-inline li,
+ol.fds-list-inline li {
+    margin-right: var(--fds-spacer-1);
 }

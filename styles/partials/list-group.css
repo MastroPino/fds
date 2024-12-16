@@ -1,0 +1,69 @@
+:root {
+    --fds-list-group-bg: var(--fds-color-white);
+    --fds-list-group-border-width: 1px;
+    --fds-list-group-border-color: var(--fds-border-color);
+    --fds-list-group-border-radius: var(--fds-card-border-radius);
+    --fds-list-group-item-padding-y: var(--fds-spacer-2);
+    --fds-list-group-item-padding-x: var(--fds-spacer-2);
+    --fds-list-group-item-bg: var(--fds-color-white);
+    --fds-list-group-item-hover-bg: var(--fds-color-neutral-gray);
+    --fds-list-group-item-active-bg: var(--fds-color-primary);
+    --fds-list-group-item-active-color: var(--fds-color-white);
+    --fds-list-group-item-color: var(--fds-text-body);
+    --fds-list-group-item-border-color: var(--fds-border-color);
+}
+
+.fds-list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: var(--fds-spacer-2);
+    background-color: var(--fds-list-group-bg);
+    border-radius: var(--fds-list-group-border-radius);
+}
+
+.fds-list-group-item {
+    position: relative;
+    display: block;
+    padding: var(--fds-list-group-item-padding-y)
+        var(--fds-list-group-item-padding-x);
+    background-color: var(--fds-list-group-item-bg);
+    border: var(--fds-list-group-border-width) solid
+        var(--fds-list-group-item-border-color);
+    color: var(--fds-list-group-item-color);
+    text-decoration: none;
+}
+
+.fds-list-group-item-status:hover {
+    background-color: var(--fds-list-group-item-hover-bg);
+    color: var(--fds-list-group-item-color);
+}
+
+.fds-list-group-item-status.active,
+.fds-list-group-item-status.is-active {
+    background-color: var(--fds-list-group-item-active-bg);
+    color: var(--fds-list-group-item-active-color);
+    border-color: var(--fds-list-group-item-active-bg);
+}
+
+.fds-list-group-item + .fds-list-group-item {
+    border-top-width: 0;
+}
+
+.fds-list-group-item:first-child {
+    border-top-left-radius: calc(
+        var(--fds-list-group-border-radius) - var(--fds-list-group-border-width)
+    );
+    border-top-right-radius: calc(
+        var(--fds-list-group-border-radius) - var(--fds-list-group-border-width)
+    );
+}
+
+.fds-list-group-item:last-child {
+    border-bottom-right-radius: calc(
+        var(--fds-list-group-border-radius) - var(--fds-list-group-border-width)
+    );
+    border-bottom-left-radius: calc(
+        var(--fds-list-group-border-radius) - var(--fds-list-group-border-width)
+    );
+}

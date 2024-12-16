@@ -52,6 +52,18 @@
 .fds-bg-white {
     background-color: var(--fds-color-white) !important;
 }
+.fds-bg-complementary {
+    background-color: var(--fds-color-complementary) !important;
+}
+.fds-bg-eye-catcher {
+    background-color: var(--fds-color-eye-catcher) !important;
+}
+.fds-bg-neutral-white {
+    background-color: var(--fds-color-neutral-white) !important;
+}
+.fds-bg-neutral-gray {
+    background-color: var(--fds-color-neutral-gray) !important;
+}
 
 /* Border colors */
 .fds-border-primary {

@@ -3,8 +3,8 @@
     --fds-card-border-color: var(--fds-border-card);
     --fds-card-border-radius: var(--fds-radius-3);
     --fds-card-padding: var(--fds-spacer-2);
-    --fds-card-header-bg: var(--fds-neutral-gray);
-    --fds-card-footer-bg: var(--fds-neutral-gray);
+    --fds-card-header-bg: var(--fds-color-neutral-gray);
+    --fds-card-footer-bg: var(--fds-color-neutral-gray);
     --fds-card-link-color: var(--fds-color-info);
     --fds-card-link-hover-color: var(--fds-color-info-dark-20);
     --fds-card-border-width: 1px;

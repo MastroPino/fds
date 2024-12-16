@@ -1,0 +1,84 @@
+/* Position Utilities */
+
+/* Position Values */
+.fds-position-static {
+    position: static !important;
+}
+
+.fds-position-relative {
+    position: relative !important;
+}
+
+.fds-position-absolute {
+    position: absolute !important;
+}
+
+.fds-position-fixed {
+    position: fixed !important;
+}
+
+.fds-position-sticky {
+    position: sticky !important;
+}
+
+/* Top, Right, Bottom, Left */
+.fds-top-0 {
+    top: 0 !important;
+}
+
+.fds-right-0 {
+    right: 0 !important;
+}
+
+.fds-bottom-0 {
+    bottom: 0 !important;
+}
+
+.fds-left-0 {
+    left: 0 !important;
+}
+
+.fds-top-50 {
+    top: 50% !important;
+}
+
+.fds-right-50 {
+    right: 50% !important;
+}
+
+.fds-bottom-50 {
+    bottom: 50% !important;
+}
+
+.fds-left-50 {
+    left: 50% !important;
+}
+
+.fds-top-100 {
+    top: 100% !important;
+}
+
+.fds-right-100 {
+    right: 100% !important;
+}
+
+.fds-bottom-100 {
+    bottom: 100% !important;
+}
+
+.fds-left-100 {
+    left: 100% !important;
+}
+
+/* Translate Middle */
+.fds-translate-middle {
+    transform: translate(-50%, -50%) !important;
+}
+
+.fds-translate-middle-x {
+    transform: translateX(-50%) !important;
+}
+
+.fds-translate-middle-y {
+    transform: translateY(-50%) !important;
+}

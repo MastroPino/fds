@@ -28,9 +28,9 @@
     --fds-btn-padding-y-lg: 1.25rem;
     --fds-btn-padding-x-lg: 2.5rem;
 
-    --fds-btn-border-radius: var(--fds-radius-2);
-    --fds-btn-border-radius-sm: var(--fds-radius-1);
-    --fds-btn-border-radius-lg: var(--fds-radius-2);
+    --fds-btn-border-radius: var(--fds-radius-3);
+    --fds-btn-border-radius-sm: var(--fds-radius-2);
+    --fds-btn-border-radius-lg: var(--fds-radius-3);
 }
 
 /* Base button styles */
@@ -54,28 +54,38 @@
 }
 
 /* Base button interactions */
-.fds-btn:not([class*="fds-btn-primary"]):not([class*="fds-btn-outline-"]):hover {
+.fds-btn:not([class*="fds-btn-primary"]):not(
+        [class*="fds-btn-outline-"]
+    ):hover {
     border-color: var(--fds-color-info);
     background-color: transparent;
 }
 
-.fds-btn:not([class*="fds-btn-primary"]):not([class*="fds-btn-outline-"]):active,
-.fds-btn:not([class*="fds-btn-primary"]):not([class*="fds-btn-outline-"]).active,
-.fds-btn:not([class*="fds-btn-primary"]):not([class*="fds-btn-outline-"]).is-active {
+.fds-btn:not([class*="fds-btn-primary"]):not(
+        [class*="fds-btn-outline-"]
+    ):active,
+.fds-btn:not([class*="fds-btn-primary"]):not(
+        [class*="fds-btn-outline-"]
+    ).active,
+.fds-btn:not([class*="fds-btn-primary"]):not(
+        [class*="fds-btn-outline-"]
+    ).is-active {
     border-color: var(--fds-color-info);
     background-color: transparent;
 }
 
 .fds-btn:not([class*="fds-btn-primary"]):not([class*="fds-btn-outline-"]):focus,
-.fds-btn:not([class*="fds-btn-primary"]):not([class*="fds-btn-outline-"]):focus-visible {
+.fds-btn:not([class*="fds-btn-primary"]):not(
+        [class*="fds-btn-outline-"]
+    ):focus-visible {
     outline: 0;
     border-color: var(--fds-color-info);
     box-shadow: var(--fds-btn-focus-shadow) var(--fds-color-info-200);
 }
 
-.fds-btn:not([class*="fds-btn-primary"]):not([class*="fds-btn-outline-"]):focus:not(
-        :focus-visible
-    ) {
+.fds-btn:not([class*="fds-btn-primary"]):not(
+        [class*="fds-btn-outline-"]
+    ):focus:not(:focus-visible) {
     box-shadow: none;
 }
 
@@ -182,6 +192,7 @@
 
 /* Disabled state */
 .fds-btn:disabled,
+.fds-btn.is-disabled,
 .fds-btn.disabled {
     color: var(--fds-color-disabled-dark);
     background-color: var(--fds-color-disabled-light);
@@ -191,6 +202,7 @@
 
 /* Specific disabled states for outline variant */
 .fds-btn-outline-primary:disabled,
+.fds-btn-outline-primary.is-disabled,
 .fds-btn-outline-primary.disabled {
     color: var(--fds-color-disabled-dark);
     background-color: transparent;
@@ -234,6 +246,7 @@
 
 /* Specific disabled states for outline danger variant */
 .fds-btn-outline-info:disabled,
+.fds-btn-outline-info.is-disabled,
 .fds-btn-outline-info.disabled {
     color: var(--fds-color-disabled-dark);
     background-color: transparent;
@@ -277,6 +290,7 @@
 
 /* Specific disabled states for outline danger variant */
 .fds-btn-outline-danger:disabled,
+.fds-btn-outline-danger.is-disabled,
 .fds-btn-outline-danger.disabled {
     color: var(--fds-color-disabled-dark);
     background-color: transparent;
@@ -320,6 +334,7 @@
 
 /* Specific disabled states for outline success variant */
 .fds-btn-outline-success:disabled,
+.fds-btn-outline-success.is-disabled,
 .fds-btn-outline-success.disabled {
     color: var(--fds-color-disabled-dark);
     background-color: transparent;

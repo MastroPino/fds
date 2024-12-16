@@ -1,0 +1,215 @@
+/* --------------------------------
+   Base link styles
+-------------------------------- */
+.fds-link {
+    display: inline;
+    font-weight: var(--fds-fw-medium);
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+/* --------------------------------
+   Link variants
+-------------------------------- */
+.fds-link-primary {
+    color: var(--fds-color-primary) !important;
+    text-decoration-color: var(--fds-color-primary) !important;
+}
+
+.fds-link,
+.fds-link-info {
+    color: var(--fds-color-info) !important;
+    text-decoration-color: var(--fds-color-info) !important;
+}
+
+.fds-link-success {
+    color: var(--fds-color-success) !important;
+    text-decoration-color: var(--fds-color-success) !important;
+}
+
+.fds-link-danger {
+    color: var(--fds-color-danger) !important;
+    text-decoration-color: var(--fds-color-danger) !important;
+}
+
+/* New dark variant */
+.fds-link-dark {
+    color: var(--fds-text-body) !important;
+    text-decoration-color: var(--fds-text-body) !important;
+}
+
+/* --------------------------------
+   Hover states
+-------------------------------- */
+.fds-link-primary:hover {
+    color: var(--fds-color-primary-dark-20) !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--fds-color-primary-dark-20) !important;
+}
+
+.fds-link-info:hover {
+    color: var(--fds-color-info-dark-20) !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--fds-color-info-dark-20) !important;
+}
+
+.fds-link-success:hover {
+    color: var(--fds-color-success-dark-20) !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--fds-color-success-dark-20) !important;
+}
+
+.fds-link-danger:hover {
+    color: var(--fds-color-danger-dark-20) !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--fds-color-danger-dark-20) !important;
+}
+
+/* Hover state for dark variant */
+.fds-link-dark:hover {
+    color: var(--fds-color-black-20) !important;
+    text-decoration: underline !important;
+    text-decoration-color: var(--fds-color-black-20) !important;
+}
+
+/* --------------------------------
+   Thickness variants
+-------------------------------- */
+.fds-link-thin {
+    text-decoration-thickness: 1px;
+}
+
+.fds-link-medium {
+    text-decoration-thickness: 2px;
+}
+
+.fds-link-thick {
+    text-decoration-thickness: 3px;
+}
+
+/* --------------------------------
+   Focus states
+-------------------------------- */
+.fds-link:focus {
+    outline: none !important;
+    text-decoration: none !important;
+    border-radius: 0.25rem !important;
+    transition: box-shadow 0.2s ease-in-out !important;
+}
+
+.fds-link:focus-visible {
+    text-decoration: none !important;
+    box-shadow: var(--fds-focus-ring-box-shadow) !important;
+}
+
+.fds-link-primary:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-primary-light-80) !important;
+}
+
+.fds-link-info:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width) var(--fds-color-info-light-80) !important;
+}
+
+.fds-link-success:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-success-light-80) !important;
+}
+
+.fds-link-danger:focus-visible {
+    box-shadow: 0 0 0 var(--fds-focus-ring-width)
+        var(--fds-color-danger-light-80) !important;
+}
+
+/* Focus states per ogni variante */
+.fds-link-primary:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-primary),
+            transparent var(--fds-focus-ring-opacity)
+        ) !important;
+}
+
+.fds-link-success:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-success),
+            transparent var(--fds-focus-ring-opacity)
+        ) !important;
+}
+
+.fds-link-danger:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-danger),
+            transparent var(--fds-focus-ring-opacity)
+        ) !important;
+}
+
+/* Focus state for dark variant */
+.fds-link-dark:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-text-body),
+            transparent var(--fds-focus-ring-opacity)
+        ) !important;
+}
+
+/* Underline offset utilities */
+.fds-link-offset-1 {
+    text-underline-offset: 0.125em;
+}
+
+.fds-link-offset-2 {
+    text-underline-offset: 0.25em;
+}
+
+.fds-link-offset-3 {
+    text-underline-offset: 0.375em;
+}
+
+.fds-link-offset-4 {
+    text-underline-offset: 0.45em;
+}
+
+/* Animated hover effect */
+.fds-link-offset-animated {
+    transition: text-underline-offset 0.2s ease;
+}
+
+.fds-link-offset-animated:hover {
+    text-underline-offset: 0.4em;
+}
+
+/* Focus states per ogni variante */
+.fds-link-primary:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-primary),
+            transparent var(--fds-focus-ring-opacity)
+        ) !important;
+}
+
+.fds-link-success:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-success),
+            transparent var(--fds-focus-ring-opacity)
+        ) !important;
+}
+
+.fds-link-danger:focus {
+    box-shadow: 0 0 var(--fds-focus-ring-blur) var(--fds-focus-ring-width)
+        color-mix(
+            in srgb,
+            var(--fds-color-danger),
+            transparent var(--fds-focus-ring-opacity)
+        ) !important;
+}

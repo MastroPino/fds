@@ -20,7 +20,7 @@
     /* Spacing - aggiornato secondo Figma */
     --fds-form-check-margin-bottom: var(--fds-spacer-2);
     --fds-form-check-label-padding-left: 0.75rem; /* 12px */
-    --fds-form-check-input-margin-y: 0.1875rem; /* 3px per allineamento verticale */
+    --fds-form-check-label-line-height: 1;
 
     /* States */
     --fds-form-check-input-disabled-opacity: 0.5;
@@ -35,12 +35,13 @@
 
     /* Background size per le icone */
     --fds-form-check-input-checked-size: 0.75rem;
-    --fds-form-radio-input-checked-size: 0.65rem;
+    --fds-form-radio-input-checked-size: 0.75rem;
 }
 
 .fds-form-check {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     min-height: 1.5rem; /* 24px secondo Figma */
     margin-bottom: var(--fds-form-check-margin-bottom);
     cursor: pointer;
@@ -49,7 +50,6 @@
 .fds-form-check-input {
     width: var(--fds-form-check-input-width);
     height: var(--fds-form-check-input-height);
-    margin-top: var(--fds-form-check-input-margin-y);
     background-color: var(--fds-form-check-input-bg);
     border: var(--fds-form-check-input-border-width) solid
         var(--fds-form-check-input-border-color); /* Border più spesso */
@@ -77,6 +77,7 @@
 .fds-form-check-input:focus {
     border-color: var(--fds-color-primary);
     box-shadow: var(--fds-form-check-input-focus-box-shadow);
+    outline: none;
 }
 
 .fds-form-check-input:disabled {
@@ -113,12 +114,16 @@
     display: inline-block;
     margin-left: var(--fds-form-check-label-padding-left);
     font-size: var(--fds-font-size-base);
-    line-height: 1.5;
+    line-height: var(--fds-form-check-label-line-height);
     color: var(--fds-text-body);
     font-family: var(--fds-font-family-base);
     font-size: var(--fds-input-font-size);
     font-weight: var(--fds-input-font-weight);
     user-select: none;
+    /* FIXME: per il vecchio stile */
+    margin-top: unset;
+    padding-left: 0;
+    float: none;
 }
 
 /* Hover state */
@@ -158,4 +163,14 @@
 .fds-form-check-input:disabled ~ .fds-form-check-label {
     opacity: var(--fds-form-check-input-disabled-opacity);
     cursor: not-allowed;
+}
+
+.fds-form-check-hint {
+    flex: 1 0 100%;
+    padding-left: calc(
+        var(--fds-form-check-input-width) +
+            var(--fds-form-check-label-padding-left)
+    ); /*;2rem;*/
+    font-size: var(--fds-font-size-sm);
+    color: var(--fds-text-body-secondary);
 }

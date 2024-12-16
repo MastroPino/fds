@@ -50,7 +50,7 @@ h6 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: var(--fds-font-family-base);
-    font-weight: var(--fds-fw-bold);
+    font-weight: var(--fds-fw-semibold);
     line-height: var(--fds-lh-base);
     color: var(--fds-text-body);
 }
@@ -60,7 +60,7 @@ h1,
 .h1 {
     font-size: var(--fds-h1-font-size);
     line-height: 3.375rem;
-    font-weight: var(--fds-fw-bold);
+    font-weight: var(--fds-fw-semibold);
     color: var(--fds-text-body);
 }
 
@@ -69,7 +69,7 @@ h2,
 .h2 {
     font-size: var(--fds-h2-font-size);
     line-height: 2.25rem;
-    font-weight: var(--fds-fw-bold);
+    font-weight: var(--fds-fw-semibold);
     color: var(--fds-text-body);
 }
 
@@ -78,7 +78,7 @@ h3,
 .h3 {
     font-size: var(--fds-h3-font-size);
     line-height: 1.875rem;
-    font-weight: var(--fds-fw-bold);
+    font-weight: var(--fds-fw-semibold);
     color: var(--fds-text-body);
 }
 
@@ -87,7 +87,7 @@ h4,
 .h4 {
     font-size: var(--fds-h4-font-size);
     line-height: 1.625rem;
-    font-weight: var(--fds-fw-bold);
+    font-weight: var(--fds-fw-semibold);
     color: var(--fds-text-body);
 }
 
@@ -96,7 +96,7 @@ h5,
 .h5 {
     font-size: var(--fds-h5-font-size);
     line-height: 1.5rem;
-    font-weight: var(--fds-fw-bold);
+    font-weight: var(--fds-fw-semibold);
     color: var(--fds-text-body);
 }
 

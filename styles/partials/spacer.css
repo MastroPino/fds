@@ -16,6 +16,6 @@ hr.fds {
     margin: 1rem 0;
     color: inherit;
     border: 0;
-    border-top: var(--fds-border-width) solid;
-    opacity: 0.25;
+    border-top: var(--fds-border-width) solid var(--fds-border-color);
+    opacity: 1;
 }
