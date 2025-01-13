@@ -22,6 +22,7 @@
 @import "styles/partials/spacer.css";
 @import "styles/partials/shadow.css";
 @import "styles/partials/radius.css";
+@import "styles/partials/spinner.css";
 
 /* Mol */
 @import "styles/partials/btn.css";
@@ -44,6 +45,7 @@
 @import "styles/components/toolbar-button-control.css";
 @import "styles/components/toolbar-text-format.css";
 @import "styles/components/toolbar-dropdown.css";
+@import "styles/components/spinner.css";
 
 /* Remove demo css */
 @import "styles/demo.css";
