@@ -1,8 +1,8 @@
 .fds-spinner-border {
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    vertical-align: text-bottom;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
     border: 0.25em solid var(--fds-spinner-border-color, #f3f3f3);
     border-right-color: transparent;
     border-radius: 50%;
@@ -17,9 +17,9 @@
 
 .fds-spinner-grow {
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    vertical-align: text-bottom;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
     background-color: var(--fds-spinner-grow-color, #000);
     border-radius: 50%;
     opacity: 0;
@@ -42,23 +42,23 @@
 
 /* Spinner sizes */
 .fds-spinner-border-sm {
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     border-width: 0.2em;
 }
 
 .fds-spinner-border-lg {
-    width: 3rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-width: 0.3em;
 }
 
 .fds-spinner-grow-sm {
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
 }
 
 .fds-spinner-grow-lg {
-    width: 3rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
