@@ -37,6 +37,7 @@
 @import "styles/partials/badge.css";
 @import "styles/partials/accordion.css";
 @import "styles/partials/alert.css";
+@import "styles/partials/spinner.css";
 
 /* Component style */
 @import "styles/components/editor-component.css";
@@ -45,7 +46,6 @@
 @import "styles/components/toolbar-button-control.css";
 @import "styles/components/toolbar-text-format.css";
 @import "styles/components/toolbar-dropdown.css";
-@import "styles/components/spinner.css";
 
 /* Remove demo css */
 @import "styles/demo.css";
